@@ -1,0 +1,1 @@
+$("#primary").addClass("fixed");$(document).ready(function(){$("#toggle").click(function(){$("#primary").toggleClass("open")});$(".full-screen").css("height",$(window).height());$("article").fitVids()});

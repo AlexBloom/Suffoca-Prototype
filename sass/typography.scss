@@ -1,0 +1,110 @@
+/* 	ADVANCED TYPOGRAPHY STYLES ============================================================================== */
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2cbcce");  
+@font-face {
+	font-family: 'Breakers-Regular';
+	src: url('../fonts/2CBCCE_0_0.eot');
+	src: url('../fonts/2CBCCE_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/2CBCCE_0_0.woff2') format('woff2'),
+		 url('../fonts/2CBCCE_0_0.woff') format('woff'),
+		 url('../fonts/2CBCCE_0_0.ttf') format('truetype');}
+@font-face {
+	font-family: 'Breakers-Bold';
+	src: url('../fonts/2CBCCE_1_0.eot');
+	src: url('../fonts/2CBCCE_1_0.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/2CBCCE_1_0.woff2') format('woff2'),
+		 url('../fonts/2CBCCE_1_0.woff') format('woff'),
+		 url('../fonts/2CBCCE_1_0.ttf') format('truetype');}
+		 @font-face {
+		 	font-family: 'Suffoca-Icons';
+		 	src:url('../fonts/Suffoca-Icons.eot?-xdq23p');
+		 	src:url('../fonts/Suffoca-Icons.eot?#iefix-xdq23p') format('embedded-opentype'),
+		 		url('../fonts/Suffoca-Icons.woff?-xdq23p') format('woff'),
+		 		url('../fonts/Suffoca-Icons.ttf?-xdq23p') format('truetype'),
+		 		url('../fonts/Suffoca-Icons.svg?-xdq23p#Suffoca-Icons') format('svg');
+		 	font-weight: normal;
+		 	font-style: normal;
+		 }
+
+ [class^="icon-"], [class*=" icon-"] {
+ 	font-family: 'Suffoca-Icons';
+	font-size:2em;
+ 	speak: none;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-variant: normal;
+ 	text-transform: none;
+ 	line-height: 1;
+
+ 	/* Better Font Rendering =========== */
+ 	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+ } 
+ .icon-face:before { 	content: "\e600"; } .icon-mail:before { 	content: "\e002"; } .icon-left:before { 	content: "\e094"; } .icon-right:before { 	content: "\e095"; } .icon-up:before { 	content: "\e096"; }  .icon-down:before { 	content: "\e097"; } .icon-max:before { 	content: "\e112"; } .icon-min:before { 	content: "\e113"; } .icon-plus:before { 	content: "\e114"; } .icon-minus:before { 	content: "\e115"; } .icon-close:before { 	content: "\e117"; } .icon-menu:before { 	content: "\e120"; } .icon-launch:before { 	content: "\e128"; } .icon-signature:before { 	content: "\e607"; } .icon-suffoca:before { 	content: "\e608"; } .icon-cart:before {content: "\e601";}
+p.intro{
+	font-size: 1.3333em; /* 20px */
+	line-height: 1.2500em; /* 25px */
+	margin-top: 1.2500em;  
+	margin-bottom: 1.2500em;
+	@media screen and (min-width:(em(800))){
+		font-size: 1.5000em; /* 22.5px */
+		line-height: 1.5em; /* 25px */
+		margin-top: 1.1111em;  
+	    margin-bottom: 1.1111em; 
+	}
+}
+
+
+blockquote{
+	font-style:italic; 
+	line-height:175%; 
+	font-size:1.15em; 
+	float:left;  
+	font-style:italic; 
+	font-weight:400; 
+	padding: 0 0 0 2em; 
+	margin: 2em 0 2em;
+	@media screen and (min-width:(em(800))){
+		font-size:1.25em;
+	}
+}
+
+blockquote:before{
+	content:"\201c";
+	font-size:5em;
+	text-indent:-1.25em;
+	margin-top:.25em;
+	float:left;
+}
+
+figure{
+
+}
+
+figcaption{
+font-size:0.9em;
+font-style:italic;
+padding:1.25em .75em .75em;
+line-height:175%;
+	@media screen and (min-width:(em(800))){
+		font-size:1em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,202 @@
+/*
+ * Layout
+ */
+
+
+/*
+ * Includes
+ */
+
+/* =========================== Header */
+#header{
+	@extend %clearfix;
+	a{
+		text-decoration:none;
+	}
+	#toggle{
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		padding:1em;
+		z-index:1000;
+		span{
+			
+			//font-size:$base-font-size *4;
+			//margin:0;
+			//line-height:$spacing-unit *2;
+		}
+	}
+	#logotype{
+		display:block;
+		text-align:center;
+		flex:1;
+		text-transform:uppercase;
+		padding:.25rem 0;
+		letter-spacing:.05rem;
+		span{
+			font-size:$base-font-size *4;
+			margin:0;
+			line-height:$spacing-unit *2;
+		}
+		
+	}
+	#cart{
+		position:absolute;
+		top:0;
+		right:0;
+		padding:1em;
+		z-index:1000;
+	}
+	
+}
+
+/* =========================== Navigation */
+#primary{
+	@include transition-tenth-sec;
+	@include transition-ease-out;
+	&.fixed{
+		position:fixed;
+		top:0;
+		bottom:100%;
+		left:0;
+		right:0;
+		z-index:-1;
+		opacity:0;
+		background-color:$white;
+	}		
+	&.open{
+		bottom:0;
+		opacity:1;
+		z-index:2;
+	}
+	ul{
+		width:100%;
+	}
+	li{
+		width:100%;
+		@media screen and (min-width:$tablet) {
+			width:25%;
+		}	
+	}
+}
+
+/* =========================== Footer */
+#footer{
+	background-color:$grey-dark;
+	color:$grey-light;
+	padding:$spacing-unit *2;
+	text-align:center;
+	#copyright{
+		
+	}
+	#signature{
+		span{
+			font-size:6rem;
+		}
+	}
+}
+
+/*
+ *
+ * Index
+ *
+ */
+
+/* =========================== Filters List */
+.filters{
+	@extend %clearfix;
+	dt, dd{
+		float:left;
+		padding:1rem;
+	}
+	dt{
+		
+	}
+	dd{
+		
+	}
+}
+
+/* =========================== Post Grid */
+.posts{
+	@extend %clearfix;
+	margin:0;
+	padding:0;
+	li{
+		//@extend %clearfix;
+		position:relative;
+		list-style-type:none;
+		float:left;
+		margin:0;
+		padding:0;
+		width:100%;
+		text-align:center;
+		display:block;
+		background-color:$grey-light;
+		box-sizing:border-box;
+		//border:1px solid $black;
+		overflow:hidden;
+		
+		@media screen and (min-width:$tablet) {
+			width:50%;
+		}
+		@media screen and (min-width:$laptop) {
+			width:33.333%;
+		}
+		@media screen and (min-width:$jumbotron) {
+			width:25%;
+		}
+		img{
+			position:absolute;
+			//top:0;
+			min-height:100%;
+			z-index:0;
+		}
+		a{
+			@include transition-tenth-sec;
+			@include transition-ease-out;
+			@include transition-ease-in;
+		
+			position:relative;
+			z-index:2;
+			
+			display:block;
+			border:5px solid $white;
+			color:$white;
+			margin:$spacing-unit *4;
+			padding:1em;
+			text-decoration:none;
+			opacity:.5;
+			h6{
+				margin:1em 0;
+			}
+		}
+		&:hover{
+			a{
+				opacity:1;
+				background-color:$smoke;
+			}
+		}
+	}
+}
+
+/* =========================== Pagination / Loading */
+#load{
+	display:block;
+	text-align:center;
+	margin:$spacing-unit *2 auto;
+	//padding:1em;
+}
+
+/*
+ *
+ * Shop
+ *
+ */
+
+/*
+ *
+ * Category View
+ *
+ */
