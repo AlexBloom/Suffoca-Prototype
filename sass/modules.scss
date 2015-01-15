@@ -83,12 +83,12 @@ font-weight: 700;
 button, input[type=submit]{
 	font-family:'Breakers-Bold',helvetica,arial,sans-serif;
 	font-size:$base-font-size;
-	//padding:$spacing-unit /2 $spacing-unit /1.5 ;
+	
 	background-color:$brand-color;
 	color:$black;
 	text-transform:uppercase;
 	letter-spacing:.1em;
-	//@include round-corners;
+	
 	border:none;
 	outline:none;
 	cursor:pointer;
@@ -100,6 +100,11 @@ button, input[type=submit]{
 		background-color: darken($brand-color, 10%);
 	}
 	@include transition-tenth-sec;
+}
+
+button{
+	@include round-corners;
+	padding:$spacing-unit /2 $spacing-unit /1.5 ;
 }
 
 /* =========================== Forms and Labels */

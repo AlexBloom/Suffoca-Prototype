@@ -770,6 +770,14 @@ button, input[type=submit] {
     color: white;
     background-color: #c5aa2e; }
 
+button {
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  -ms-border-radius: .5em;
+  -o-border-radius: .5em;
+  border-radius: .5em;
+  padding: 1rem 1.33333rem; }
+
 /* =========================== Forms and Labels */
 label {
   float: left;
