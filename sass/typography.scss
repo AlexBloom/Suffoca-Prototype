@@ -57,38 +57,44 @@ p.intro{
 
 
 blockquote{
-	font-style:italic; 
-	line-height:175%; 
-	font-size:1.15em; 
-	float:left;  
-	font-style:italic; 
+	font-family:'Breakers-Regular',helvetica, arial, sans-serif;
+	//font-style:italic; 
 	font-weight:400; 
-	padding: 0 0 0 2em; 
-	margin: 2em 0 2em;
+	color:$grey-dark;
+	border-left:.25rem solid $grey-light;
+	padding: 0 0 0 $spacing-unit;
+	font-size:$base-font-size *1.5;
 	@media screen and (min-width:(em(800))){
-		font-size:1.25em;
+		font-size:$base-font-size *2;
 	}
 }
 
-blockquote:before{
-	content:"\201c";
-	font-size:5em;
-	text-indent:-1.25em;
-	margin-top:.25em;
-	float:left;
-}
 
-figure{
 
-}
+/**
+ * Figures
+ */
 
-figcaption{
-font-size:0.9em;
-font-style:italic;
-padding:1.25em .75em .75em;
-line-height:175%;
-	@media screen and (min-width:(em(800))){
-		font-size:1em;
+figure {
+	display:block;
+	background-color:$grey-dark;
+	border-top:.25rem solid $grey-dark;
+	border-left:.25rem solid $grey-dark;
+	border-right:.25rem solid $grey-dark;
+	//box-shadow:0px 0px 1px $grey;
+	margin:$spacing-unit auto;
+	padding:0!important;
+	img{
+		margin:0!important;
+		width:100%;
+	}
+	figcaption{
+		font-family:courier,georgia,serif;
+		font-size: $small-font-size;
+		color:$grey;
+		display:block;
+		margin:0;
+		padding:$spacing-unit /2;
 	}
 }
 

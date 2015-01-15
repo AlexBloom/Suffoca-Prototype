@@ -7,7 +7,7 @@
  */
 
 /* =========================== Navigation */ 
-nav{
+header, nav{
 	ul{
 		list-style-type:none;
 		margin:0;
@@ -17,6 +17,7 @@ nav{
 		}
 	}
 	a{
+		color:$black;
 		text-decoration:none;
 	}
 }
@@ -43,15 +44,51 @@ a{
 }
 
 /* =========================== Buttons and Inputs */ 
+
+
+input{
+	margin:1em 0;
+	outline:none;
+	padding:1em 0;
+	//height:2em;
+	font-size:1em;
+}
+
+input[type="text"] {
+
+width: 60%;
+background: none;
+border: 1px solid white;
+border-radius: 4px;
+padding: 1em 5%;
+-webkit-transition: border-color 0.2s;
+-moz-transition: border-color 0.2s;
+transition: border-color 0.2s;
+}
+
+input[type="submit"], .inline-button {
+color: white;
+padding: 1em 0;
+text-align:center;
+width:25%;
+text-decoration: none;
+border-radius: 4px;
+font-weight: 700;
+
+}
+//^ These are old
+
+//Newer Below
+
 button, input[type=submit]{
 	font-family:'Breakers-Bold',helvetica,arial,sans-serif;
 	font-size:$base-font-size;
-	padding:$spacing-unit /2 $spacing-unit /1.5 ;
+	//padding:$spacing-unit /2 $spacing-unit /1.5 ;
 	background-color:$brand-color;
 	color:$black;
 	text-transform:uppercase;
 	letter-spacing:.1em;
-	@include round-corners;
+	//@include round-corners;
 	border:none;
 	outline:none;
 	cursor:pointer;
@@ -74,23 +111,70 @@ label {
 }
 
 //Posts
-
+.fluid-width-video-wrapper{
+	margin-bottom:$spacing-unit;
+}
 
 //Full Screen / Vertical Centering / Featured Posts
 .full-screen, .full-width{
     display: -webkit-flex;
     display: flex;
+	position:relative;
 	width:100%;
 	min-height:(em(600));
 	text-align:center;
+	margin:0 0 $spacing-unit/2 0;
+	z-index:1;
+	@include full-bleed-background;
 	>section{
 		margin: auto;
 		max-width:(em(800));
 		padding:$spacing-unit *2 $spacing-unit *4;
 		border:5px solid $white;
 		color:$white;
-		@include full-bleed-background;
+		background-color:$smoke;
+		
+		position:relative;
+		z-index:3;
+		display:block;
+		overflow:hidden;
+		h1{
+			.icon-suffoca{
+				font-size:$base-font-size *8;
+			}
+		}
+		h1,h6{
+			//position:relative;
+			//z-index:3;
+		}
+		&:after{
+			//-webkit-filter:blur(10px);
+			//background-size:246%;
+			//background-position:center 23%;
+			//background-image:url(../img/content/adventures/paris_01.jpg);
+			//z-index:0;
+			//display:block;
+			//content:" ";
+			//top:0;
+			//right:0;
+			//left:0;
+			//bottom:0;
+			//position:absolute;
+			//display:block;
+		}
+			
 	}
+	
+}
+.section-blur-bg{
+	position:absolute;
+	z-index:2;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	filter:blur(20px);
+	-webkit-filter:blur(20px);
 }
 
 

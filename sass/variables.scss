@@ -10,13 +10,14 @@ $spacing-unit:     2rem;
 //Color Variables
 $text-color:       #444;
 $background-color: #fdfdfd;
-$brand-color:      #d7be5a;
+$brand-color:      #D6BE50;
+
 
 $black: 		   #000;
 $smoke: rgba(0,0,0,.75);
 $grey:       	   #888888;
-$grey-light: lighten($grey, 40%);
-$grey-dark:  darken($grey, 45%);
+$grey-light: lighten($grey, 20%);
+$grey-dark: #181818 ;/*darken($grey, 45%)*/
 $white-dark:       #f9f9f9;
 $white: 		   #FFF;
 

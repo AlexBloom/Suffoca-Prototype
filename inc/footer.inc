@@ -1,11 +1,33 @@
         
         <footer id="footer">
-            <p id="copyright"> 
-				All content &copy; 
-			</p>			
+          	
+			<div id="newsletter">
+				<form>
+					<input type="text" placeholder="email" />
+					<input type="submit" text="submit" />
+				</form>
+			</div>
+			
 			<div id="signature">
 				<span class="icon-signature"> </span>
-			</div>		
+			</div>	
+			<div id="social-links">
+				<a href="http://facebook.com/suffoca" target=_blank> 
+					<span class="">Facebook </span>   
+				</a>
+				<a href="http://twitter.com/suffoca" target=_blank> 
+					<span class="">Twitter </span>    
+				</a>
+				<a href="http://youtube.com/suffoca" target=_blank> 
+					<span class="">Youtube </span>    
+				</a>
+				<a href="http://instagram.com/suffoca" target=_blank> 
+					<span class="">Instagram </span>  
+				</a>
+			</div>
+            <p id="copyright"> 
+				All content &copy; SUFFOCA™ 2008-2015 
+			</p>	
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
