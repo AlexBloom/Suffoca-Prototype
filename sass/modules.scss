@@ -133,8 +133,12 @@ label {
 	@include full-bleed-background;
 	>section{
 		margin: auto;
+		//@media screen and (min-width:$phablet){
+		//	margin:auto;
+		//}
+		//width:60%;
 		max-width:(em(800));
-		padding:$spacing-unit *2 $spacing-unit *4;
+		padding:$spacing-unit $spacing-unit $spacing-unit /2;
 		border:5px solid $white;
 		color:$white;
 		background-color:$smoke;

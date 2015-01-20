@@ -15,7 +15,7 @@
 				<span id="menu-text"> Menu </span>
 			
 			</a>
-        	<a id="logotype" href="index"> <h1> <span class="icon-suffoca"></span> </h1> </a>
+        	<a id="logotype" href="index">  <span class="icon-suffoca"></span> </a>
         	<div id="cart">
         		<a id="shop-link" href="shop"> Shop </a>
         		<a id="cart-link" href="#cart"> <span class="icon-cart"></span> </a>

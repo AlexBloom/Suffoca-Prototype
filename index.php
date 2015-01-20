@@ -2,17 +2,13 @@
 <?php include_once'inc/header.inc' ?>
 
 
-	<header id="home-intro" class="full-width" style="background-image:url(img/content/adventures/paris_01.jpg)">		
-		<section style="">
-			<h1>
+	<header id="home-intro" class="full-screen" style="background-image:url(img/content/adventures/paris_01.jpg)">		
+		<section>
+			<h2>
 				<span class="icon-suffoca"> </span>
-			</h1>
+			</h2>
 			<h6>Picture House &amp; Creator of Collectibles</h6>
-			
-			
-			
-		
-			
+
 		</section>
 		<!-- <iframe id="ytplayer" width="853" height="480" src="//www.youtube.com/embed/JTzae0fPzzM?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe> -->
 		

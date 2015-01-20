@@ -9,7 +9,7 @@
 	 		
 			
 			<span class="date">2015.01.18</span>
-	        <h1 class="title">Los Angeles</h1>
+	        <h1 class="title">Roam Where You Want To</h1>
 	        <p class="subtitle">Article Subtitle or introductory text that goes from a few words to a paragraph.</p>
 		</div>
 		
@@ -31,7 +31,7 @@
         <ul class="tags">
             <li><a href="#"> London </a> </li>
             <li><a href="#"> Fun With Friends </a> </li>
-            <li><a href="#"> AnyTagYouWant </a> </li>
+            <li><a href="#"> Los Angeles </a> </li>
         </ul>
 		
 	   
@@ -47,7 +47,7 @@
 	   	</nav>
 
 		<section class="full-bleed">
-			<small> Option 1 - Full bleed photos with padded paragraphs. </small>
+			<small> Layout Option 1 - Full bleed photos with padded paragraphs. </small>
 			<img src="img/content/adventures/post/6K3A1584.jpg" alt="6K3A1584">
 		</section>
 		
@@ -66,7 +66,7 @@
 
 		
 	    <section>
-			<small> Option 2 - Single Column with padding </small>
+			<small> Layout Option 2 - Single Column with padding </small>
 			<img src="img/content/adventures/post/6K3A1165.jpg" alt="6K3A1165">
 	        <p>This trip was amazing. I really needed it, so stoked to see what life is like outside of DC. More to come.</p>
 			<img src="img/content/adventures/post/6K3A8666.jpg" alt="6K3A8666">
