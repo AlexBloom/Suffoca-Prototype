@@ -29,5 +29,10 @@ $(document).ready(function(){
 	$('.full-screen').css('height',$(window).height());
 	// FitVids Video Containers.
     $("article").fitVids();
+	
+	$(".show-comments").click(function(){
+		$(".comments").addClass('show');
+	});
+	
 
 }); // Close Doc Ready Func

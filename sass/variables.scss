@@ -5,6 +5,8 @@ $base-font-size:   1rem;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$scaled-font-size:22px;
+
 $spacing-unit:     2rem;
 
 //Color Variables
@@ -19,6 +21,7 @@ $grey:       	   #888888;
 $grey-light: lighten($grey, 20%);
 $grey-dark: #181818 ;/*darken($grey, 45%)*/
 $white-dark:       #f9f9f9;
+$off-white:        #F2F2F2;
 $white: 		   #FFF;
 
 $red: #FF4000;

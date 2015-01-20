@@ -29,7 +29,8 @@
 
  [class^="icon-"], [class*=" icon-"] {
  	font-family: 'Suffoca-Icons';
-	font-size:2em;
+	font-size:1.5rem;
+	letter-spacing:.5rem;
  	speak: none;
  	font-style: normal;
  	font-weight: normal;
@@ -37,11 +38,50 @@
  	text-transform: none;
  	line-height: 1;
 
- 	/* Better Font Rendering =========== */
- 	-webkit-font-smoothing: antialiased;
- 	-moz-osx-font-smoothing: grayscale;
- } 
- .icon-face:before { 	content: "\e600"; } .icon-mail:before { 	content: "\e002"; } .icon-left:before { 	content: "\e094"; } .icon-right:before { 	content: "\e095"; } .icon-up:before { 	content: "\e096"; }  .icon-down:before { 	content: "\e097"; } .icon-max:before { 	content: "\e112"; } .icon-min:before { 	content: "\e113"; } .icon-plus:before { 	content: "\e114"; } .icon-minus:before { 	content: "\e115"; } .icon-close:before { 	content: "\e117"; } .icon-menu:before { 	content: "\e120"; } .icon-launch:before { 	content: "\e128"; } .icon-signature:before { 	content: "\e607"; } .icon-suffoca:before { 	content: "\e608"; } .icon-cart:before {content: "\e601";}
+/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {content: "\e602";}
+.icon-vimeo:before {content: "\e603";}
+.icon-facebook:before {content: "\f09a";}
+.icon-google-plus:before {content: "\f0d5";}
+.icon-youtube:before {content: "\f167";}
+.icon-instagram:before {content: "\f16d";}
+.icon-tumblr:before {content: "\f173";}
+.icon-cart:before {content: "\e601";}
+.icon-eye:before {content: "\e000";}
+.icon-mail:before {content: "\e002";}
+.icon-image:before {content: "\e010";}
+.icon-camera:before {content: "\e017";}
+.icon-play:before {content: "\e052";}
+.icon-pause:before {content: "\e053";}
+.icon-stop:before {content: "\e054";}
+.icon-fast-forward:before {content: "\e055";}
+.icon-download:before {content: "\e069";}
+.icon-location:before {content: "\e070";}
+.icon-location-2:before {content: "\e071";}
+.icon-map:before {content: "\e072";}
+.icon-tag:before {content: "\e085";}
+.icon-left:before {content: "\e094";}
+.icon-right:before {content: "\e095";}
+.icon-up:before {content: "\e096";}
+.icon-down:before {content: "\e097";}
+.icon-max:before {content: "\e112";}
+.icon-min:before {content: "\e113";}
+.icon-plus:before {content: "\e114";}
+.icon-minus:before {content: "\e115";}
+.icon-close:before {content: "\e117";}
+.icon-menu:before {content: "\e120";}
+.icon-launch:before {content: "\e128";}
+.icon-logo-face:before {content: "\e600";}
+.icon-signature:before {content: "\e607";}
+.icon-suffoca:before {content: "\e608";}
+
+
+
+
 p.intro{
 	font-size: 1.3333em; /* 20px */
 	line-height: 1.2500em; /* 25px */
@@ -57,16 +97,21 @@ p.intro{
 
 
 blockquote{
-	font-family:'Breakers-Regular',helvetica, arial, sans-serif;
-	//font-style:italic; 
+	font-family:'freight-text-pro',georgia,times,serif;
+	font-style:italic; 
 	font-weight:400; 
-	color:$grey;
-	border-left:.25rem solid $grey;
+	color:$text-color;
+	border-left:.25rem solid $brand-color;
 	padding: 0 0 0 $spacing-unit;
 	font-size:$base-font-size *1.5;
-	margin-bottom:$spacing-unit *2;
+	margin-bottom:$spacing-unit !important;
+	letter-spacing: 0.01rem;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga" on;
 	@media screen and (min-width:(em(800))){
-		font-size:$base-font-size *2;
+		//font-size:$base-font-size *2;
 	}
 }
 
@@ -90,8 +135,9 @@ figure {
 		width:100%;
 	}
 	figcaption{
-		font-family:courier,georgia,serif;
-		font-size: $small-font-size;
+		font-family:'freight-text-pro',georgia,times,serif;
+		letter-spacing: 0.01rem;
+		//font-size: $small-font-size;
 		color:$grey;
 		display:block;
 		margin:0;
@@ -100,7 +146,7 @@ figure {
 	blockquote{
 		border:none;
 		padding:$spacing-unit /2;
-		margin:0;
+		margin:0!important;
 		color:$grey-dark;
 	}
 }

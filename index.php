@@ -3,12 +3,27 @@
 
 
 	<header id="home-intro" class="full-width" style="background-image:url(img/content/adventures/paris_01.jpg)">		
-		<section style="" >
+		<section style="">
 			<h1>
 				<span class="icon-suffoca"> </span>
 			</h1>
 			<h6>Picture House &amp; Creator of Collectibles</h6>
+			
+			
+			
+		
+			
 		</section>
+		<!-- <iframe id="ytplayer" width="853" height="480" src="//www.youtube.com/embed/JTzae0fPzzM?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe> -->
+		
+		</iframe>
+		
+		<script>
+	    //var player;
+        //
+		//player = ('ytplayer');
+		//player.mute();
+		</script>
 		
 		<!-- <div class="section-blur-bg" style="background-image:url(img/content/adventures/paris_01.jpg)"> -->
 			
@@ -18,7 +33,9 @@
 			Explore this piece of content 
 			<span class="icon-launch"> </span>
 		</a>		
-	</header>     
+	</header>  
+	
+
 	
 	<dl class="filters">
 		<dt> Filters </dt>

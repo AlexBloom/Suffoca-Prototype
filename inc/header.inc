@@ -1,12 +1,17 @@
+		
+
 		<link rel="stylesheet" href="css/base.css">  <!-- Reset & Browser Independent -->
         <link rel="stylesheet" href="css/main.css"> <!-- Advanced & Browser Dependent -->
-
+		
+		<script src="//use.typekit.net/iwy1qra.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		
    </head>
         <body>
 
         <header id="header">
         	<a id="toggle" href="#primary"> 
-				<span class="icon-face"> </span> 
+				<span class="icon-logo-face"> </span> 
 				<span id="menu-text"> Menu </span>
 			
 			</a>
