@@ -273,6 +273,7 @@ figure {
  */
 /* =========================== Header */
 #header {
+  font-family: "breakers-regular", helvetica, arial, sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -492,10 +493,10 @@ figure {
 
 /* =========================== Post Grid */
 .posts {
-  margin: 0;
-  padding: 0; }
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 75em; }
   .posts li {
-    position: relative;
     list-style-type: none;
     float: left;
     margin: 0;
@@ -503,9 +504,8 @@ figure {
     width: 100%;
     text-align: center;
     display: block;
-    background-color: #181818;
     box-sizing: border-box;
-    overflow: hidden;
+    border: 5px solid transparent;
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -514,10 +514,98 @@ figure {
         width: 50%; } }
     @media screen and (min-width: 62.5em) {
       .posts li {
-        width: 33.333%; } }
+        width: 33.333%; }
+        .posts li:nth-of-type(1) {
+          width: 50%; }
+        .posts li:nth-of-type(2) {
+          width: 50%; } }
     @media screen and (min-width: 125em) {
       .posts li {
-        width: 25%; } }
+        width: 20%; } }
+    .posts li figure {
+      display: block;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background-color: white;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      -webkit-transition-duration: .15s;
+      -moz-transition-duration: .15s;
+      -ms-transition-duration: .15s;
+      -o-transition-duration: .15s;
+      transition-duration: .15s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+      .posts li figure:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        bottom: 4em;
+        z-index: 1;
+        opacity: 1;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent); }
+      .posts li figure > a {
+        position: relative;
+        z-index: 0;
+        padding: 0;
+        padding-top: 65%; }
+        .posts li figure > a img {
+          position: absolute;
+          top: 0; }
+      .posts li figure .author {
+        position: absolute;
+        left: 1em;
+        bottom: 5em;
+        z-index: 2;
+        opacity: 0; }
+        .posts li figure .author img {
+          position: relative;
+          width: 3em;
+          border-radius: 50%; }
+        .posts li figure .author:hover img {
+          box-shadow: 0 0 0px 2px white; }
+      .posts li figure:hover {
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        transform: scale(1.02);
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.35); }
+        .posts li figure:hover .author, .posts li figure:hover .tags {
+          opacity: 1; }
+      .posts li figure .tags {
+        position: absolute;
+        right: 1em;
+        bottom: 6em;
+        z-index: 2;
+        opacity: 0; }
+        .posts li figure .tags a {
+          float: left;
+          padding: 0 0 0 1em;
+          color: white; }
+      .posts li figure figcaption {
+        position: relative;
+        background-color: white;
+        z-index: 3; }
+        .posts li figure figcaption a {
+          margin: 0;
+          padding: 0;
+          text-decoration: none;
+          text-align: left; }
+          .posts li figure figcaption a h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            color: #181818; }
+            .posts li figure figcaption a h3:after {
+              font-family: 'Suffoca-Icons';
+              content: '\e095';
+              display: block;
+              float: right; }
+    .posts li h6 {
+      text-decoration: none; }
     .posts li a {
       -webkit-transition-duration: .15s;
       -moz-transition-duration: .15s;
@@ -530,20 +618,7 @@ figure {
       transition-timing-function: ease-in;
       position: relative;
       padding: .5rem 2rem;
-      display: block;
-      opacity: .5; }
-      .posts li a h6 {
-        margin: 1em 0;
-        border: 5px solid white;
-        z-index: 2;
-        display: inline-block;
-        padding: 1rem 2rem;
-        color: white;
-        margin: 8rem 1rem;
-        text-decoration: none; }
-    .posts li:hover a {
-      opacity: 1;
-      background-color: rgba(0, 0, 0, 0.75); }
+      display: block; }
 
 /* =========================== Pagination / Loading */
 #load {
@@ -615,6 +690,36 @@ figure {
  * Category View
  *
  */
+/*
+ *
+ * Contributor View
+ *
+ */
+.clubhouse {
+  margin: 4em 0 0 0; }
+  .clubhouse ul {
+    text-align: center;
+    margin: 0 auto;
+    text-align: center; }
+    .clubhouse ul li {
+      display: inline-block; }
+      .clubhouse ul li a {
+        display: block;
+        padding: 1em; }
+        .clubhouse ul li a.active {
+          box-shadow: 0px 3px 0 0 #d6be50; }
+
+.contributor header {
+  text-align: center;
+  margin: 4rem 0; }
+  .contributor header .profile {
+    display: block;
+    margin: 2rem auto;
+    width: 9.375em; }
+.contributor h3 {
+  text-align: center;
+  color: #888888; }
+
 /*
  *
  * Regular Post
@@ -835,11 +940,96 @@ article.post {
 
 /*
  *
+ * Product Post
+ *
+ */
+.breadcrumb ul li {
+  float: left;
+  padding: 1em 0; }
+  .breadcrumb ul li:after {
+    content: '>';
+    color: #bbbbbb; }
+  .breadcrumb ul li a {
+    padding: 0 .5em;
+    color: #888888; }
+  .breadcrumb ul li:last-child:after {
+    content: ''; }
+  .breadcrumb ul li:last-child a {
+    color: black;
+    text-decoration: underline; }
+
+article.product {
+  float: none;
+  width: auto;
+  padding: 4em 1em 0 1em; }
+  article.product header {
+    width: 100%;
+    max-width: 68.75em;
+    margin: 0 auto;
+    clear: both;
+    padding: 0; }
+  article.product #product-images {
+    width: 100%;
+    background-color: #bbbbbb;
+    position: relative;
+    box-shadow: 0px 0px 2px #bbbbbb; }
+    @media screen and (min-width: 62.5em) {
+      article.product #product-images {
+        float: left;
+        width: 65%; } }
+    article.product #product-images .button {
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+      text-align: center;
+      width: 50%;
+      cursor: pointer; }
+      article.product #product-images .button:hover {
+        color: #d6be50; }
+      article.product #product-images .button:active {
+        color: black; }
+    article.product #product-images .prev {
+      left: 0; }
+    article.product #product-images .next {
+      right: 0; }
+  article.product .product-details {
+    padding: 0; }
+    @media screen and (min-width: 62.5em) {
+      article.product .product-details {
+        float: left;
+        width: 30%;
+        padding: 0 0 0 5%; } }
+    article.product .product-details #wishlist {
+      background-color: white;
+      box-shadow: inset 0px 0px 2px #888888; }
+      article.product .product-details #wishlist:active {
+        background-color: #888888; }
+  article.product #product-selections select {
+    background-color: #181818;
+    height: 3em;
+    color: white;
+    border: none;
+    width: 30%; }
+  article.product .related-products {
+    max-width: 100%;
+    clear: both;
+    border-top: 1px solid black;
+    padding: 1rem 0; }
+    article.product .related-products ul {
+      list-style: none;
+      text-align: center; }
+      article.product .related-products ul li {
+        float: left;
+        width: 33.33%; }
+
+/*
+ *
  * Global Elements
  *
  */
 /* =========================== Navigation */
 header ul, nav ul {
+  font-family: "breakers-regular", helvetica, arial, sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0; }
@@ -861,7 +1051,19 @@ a {
     color: #181818; }
 
 /* =========================== Buttons and Inputs */
+hr {
+  margin: 1rem 0;
+  color: #bbbbbb;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #bbbbbb; }
+
+form {
+  font-family: "breakers-regular", helvetica, arial, sans-serif; }
+
 input {
+  font-family: "breakers-regular", helvetica, arial, sans-serif;
   margin: 1em 0;
   outline: none;
   padding: 1em 0;
@@ -879,15 +1081,14 @@ input[type="text"] {
 
 input[type="submit"], .inline-button {
   color: white;
-  padding: 1em 0;
+  padding: 1em;
   text-align: center;
-  width: 25%;
   text-decoration: none;
   border-radius: 4px;
   font-weight: 700; }
 
 button, input[type=submit] {
-  font-family: 'Breakers-Bold',helvetica,arial,sans-serif;
+  font-family: "breakers-bold", helvetica, arial, sans-serif;
   font-size: 1rem;
   background-color: #d6be50;
   color: black;
@@ -1073,13 +1274,14 @@ a.opened {
   -o-transform: rotateZ(-45deg); }
 
 body {
-  font-family: "Breakers-Regular", Helvetica, Arial, sans-serif;
+  font-family: "freight-text-pro", georgia, times, serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
   color: #444444;
   background-color: #fdfdfd;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  background-color: #f2f2f2; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -1129,8 +1331,11 @@ li > ol {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
-h1, h3 {
-  font-family: 'Breakers-Bold',helvetica,arial,sans-serif; }
+h1 {
+  font-family: "breakers-bold", helvetica, arial, sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "breakers-regular", helvetica, arial, sans-serif; }
 
 h1 {
   font-size: 2rem; }
@@ -1180,7 +1385,7 @@ h6 {
 /**
  * Clearfix
  */
-#header:after, #primary ul:after, .filters:after, .posts:after, .shop-categories:after, .products:after, article.post header:after, article.post header .post-title:after, article.post .tags:after, article.post .meta .author:after, article.post section.full-bleed:after, article.post footer section.comments:after, .pagination:after, ul:after {
+#header:after, #primary ul:after, .filters:after, .posts:after, .shop-categories:after, .products:after, .contributor header:after, article.post header:after, article.post header .post-title:after, article.post .tags:after, article.post .meta .author:after, article.post section.full-bleed:after, article.post footer section.comments:after, .pagination:after, .breadcrumb ul:after, article.product header:after, article.product .related-products:after, article.product .related-products ul:after, ul:after {
   content: "";
   display: table;
   clear: both; }

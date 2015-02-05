@@ -1,0 +1,102 @@
+
+<a href="">Home (Blog) </a>
+<a href="">Category</a>
+<a href="">Post</a>
+
+<a href="">Our Story (About)</a>
+<a href="">Characters</a>
+<a href="">Shop (Shop)</a>
+<a href="">Get In Touch (Contact)</a>
+
+<a href="">Author (Multiple Posts)</a>
+<a href="">Tag (Multiple Posts)</a>
+
+<a href="">Shop</a>
+<a href="">Shop Category</a>
+<a href="">Product</a>
+
+<page>
+	<title> Home Page </title>
+	<featured-post> 
+		<permalink> 
+			<post-title> Title of Post </post-title>
+			<featured-image> Image from Post </featured-image>
+			<caption> Caption </caption>
+		</permalink>
+	</featured-post>
+	<postgrid> 
+		12 Posts, From All Categories
+		<post> 
+			<permalink>
+				<post-title> Title </post-title>
+				<featured-image> Image </featured-image>
+			</permalink>
+		</post>
+	</postgrid>
+</page>
+
+Home Page
+	- Title
+	- Featured Post or Video
+	- Link Button to View
+	- Post Grid
+		- 12 Posts
+		- 
+
+Our Story Page 
+	- Featured Image (Video?)
+	- Title
+	- Text	
+
+Character Page
+	• Bean Man
+	• Carny
+	• Glump
+	• Prosper
+	• Bloom
+	• Carny JR
+
+Author Page
+	- Menu
+		• BOYCE
+		• CONOR
+		• DEL
+		• ED
+		• GILES
+		• JACK
+		• NATHAN
+		• POOSH
+		• SAM
+		• SEAN
+	- Grid of Posts From Each Author
+	
+	
+Category Page (Maybe not necessary, as everything seems focused on stories for travel, do you have plans for this content to change at all?)
+	- Menu
+	• Travels
+	• Stories
+	• Products
+
+Tag View (Pop Up / Sidebar)
+	- Menu
+		• Travel
+		• LA
+		• London
+		• Paris
+		• NYC
+		• Spain
+		
+Tag Page
+	- Tag Title
+	- Related Post Grid
+	
+Post Page
+	- Post Title
+	- Author
+	- Date
+	- Tags
+	- Featured / Header Image
+	- Post Content
+	- Load Next Post (Post Title, Featured Image, Link)
+	- Other / Related Post Lists
+	

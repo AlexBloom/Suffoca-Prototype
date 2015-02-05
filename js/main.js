@@ -34,5 +34,9 @@ $(document).ready(function(){
 		$(".comments").addClass('show');
 	});
 	
+	
+	//Fire Swipe Classes for Sliders
+	window.product = $('#product-images').Swipe().data('Swipe');
+
 
 }); // Close Doc Ready Func

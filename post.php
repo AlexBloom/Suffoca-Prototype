@@ -5,9 +5,6 @@
     <header>
 		<img src="img/content/adventures/la_01.jpg" alt=""/>
 		<div class="post-title">
-			
-	 		
-			
 			<span class="date">2015.01.18</span>
 	        <h1 class="title">Roam Where You Want To</h1>
 	        <p class="subtitle">Article Subtitle or introductory text that goes from a few words to a paragraph.</p>

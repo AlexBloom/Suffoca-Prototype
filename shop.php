@@ -12,7 +12,7 @@
 	</header>     
 	
 	<dl class="shop-categories">
-		<dt> Shop By </dt>
+		<dt> FILTER </dt>
 		<dd class="filter all"> All </dd>
 		<dd class="filter mens"> Men's 
             <ul class="subcat mens-sub">

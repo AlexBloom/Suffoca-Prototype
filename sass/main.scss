@@ -18,6 +18,7 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+	background-color:$off-white;
 	//background-size:cover;	
 	//background-image: linear-gradient(to bottom,#0ff 0,rgba(255,255,255,0)1px);
 	//background-repeat: repeat-y;
@@ -85,8 +86,11 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
-h1, h3{
-	font-family:'Breakers-Bold',helvetica,arial,sans-serif;
+h1, {
+	font-family:$sans-bold;
+}
+h2, h3, h4, h5, h6{
+	font-family:$sans-regular;
 }
 h1{
 	font-size:$base-font-size *2;

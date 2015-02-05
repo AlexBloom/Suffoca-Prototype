@@ -1,6 +1,10 @@
 
 // Typographic Variables
-$base-font-family: 'Breakers-Regular', Helvetica, Arial, sans-serif;
+
+$sans-bold: 'breakers-bold', helvetica, arial, sans-serif;
+$sans-regular: 'breakers-regular', helvetica, arial, sans-serif;
+
+$base-font-family: 'freight-text-pro', georgia, times, serif;
 $base-font-size:   1rem;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -74,6 +78,11 @@ background-repeat:no-repeat;
 -ms-transition-duration: .25s;
 -o-transition-duration: .25s;
 transition-duration: .25s;
+}
+
+@mixin teo{
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
 }
 
 @mixin transition-tenth-sec {
