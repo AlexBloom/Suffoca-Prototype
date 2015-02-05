@@ -4,7 +4,7 @@
 $sans-bold: 'breakers-bold', helvetica, arial, sans-serif;
 $sans-regular: 'breakers-regular', helvetica, arial, sans-serif;
 
-$base-font-family: 'freight-text-pro', georgia, times, serif;
+$base-font-family: 'freight-text-pro', Georgia, Cambria, Times New Roman, Times, serif;
 $base-font-size:   1rem;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -15,8 +15,10 @@ $spacing-unit:     2rem;
 
 //Color Variables
 $text-color:       #444;
+$text-color: rgba(0,0,0,.8);
 $background-color: #fdfdfd;
-$brand-color:      #D6BE50;
+$brand-color:      #04b3c8;
+$brand-color-secondary:      #D6BE50;
 
 
 $black: 		   #000;
@@ -27,6 +29,7 @@ $grey-dark: #181818 ;/*darken($grey, 45%)*/
 $white-dark:       #f9f9f9;
 $off-white:        #F2F2F2;
 $white: 		   #FFF;
+$white: 		   rgba(255,255,255,1);
 
 $red: #FF4000;
 $green: #086100;
@@ -124,4 +127,16 @@ border-radius:.5em;
 -ms-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
 -o-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
 box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+}
+
+%perfect-circle{
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+}
+
+@mixin preserve-3d{	
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
 }

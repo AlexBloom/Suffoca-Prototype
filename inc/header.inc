@@ -11,7 +11,8 @@
 
         <header id="header">
         	<a id="toggle" href="#primary"> 
-				<span class="icon-logo-face"> </span> 
+				<!-- <span class="icon-logo-face"> </span>  -->
+				<span class="icon-menu"> </span>
 				<span id="menu-text"> Menu </span>
 			
 			</a>
@@ -23,34 +24,37 @@
         </header>
 
         <nav id="primary">
-			<span class="icon-close" id="close-primary"> </span>
+			<div id="close-primary">
+				<span class="icon-close"> </span>
+			</div>
+			
 			<ul>
 				<li style=" "> 
 					<a href="story"> 
-						
-						<!-- <img src="img/UI/nav/about.jpg" alt=""/> -->
-						<h6> Our Story </h6>
+						 Our Story 
 					</a> 
 				</li>
 				<li style=" "> 
 					<a href="#characters"> 
-						
-						<!-- <img src="img/UI/nav/characters.gif" alt=""/> -->
-						<h6> The Characters </h6>
+						 The Characters 
 					</a> 
 				</li>
 				<li style=" "> 
 					<a href="shop"> 
-						
-						<!-- <img src="img/UI/nav/shop.jpg" alt=""/> -->
-						<h6> Shop </h6>
+						 Shop 
 					</a> </li>
 				<li style=" "> 
 					<a href="#contact"> 
-						
-						<!-- <img src="img/UI/nav/contact.gif" alt=""/> -->
-						<h6> Get In Touch </h6>
+						Get In Touch 
 					</a> 
 				</li>
 			</ul>
+			
+			<div id="search-toggle">
+				Search <span class="icon-map"></span>
+			</div>
+			<!-- <div id="search">
+				<input type="text" placeholder="search"/> <input type="submit" value="go" />
+			</div> -->
+			
     	</nav>

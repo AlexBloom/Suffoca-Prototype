@@ -18,6 +18,7 @@ $(document).ready(function(){
 		$(".subcat").addClass('close');
 	});
 	
+	//Shop
 	$(".mens").click(function(){
 		$(".mens-sub").removeClass('close');
 	});
@@ -26,17 +27,41 @@ $(document).ready(function(){
 		$(".womens-sub").removeClass('close');
 	});
 
-	$('.full-screen').css('height',$(window).height());
+
+
+	//$('.full-screen').css('height',$(window).height() -200);
+	
+	
+	
+	
 	// FitVids Video Containers.
-    $("article").fitVids();
+    $("article, header").fitVids();
 	
 	$(".show-comments").click(function(){
 		$(".comments").addClass('show');
 	});
 	
+
+
+	$(window).scroll(function() {
+	if ($(this).scrollTop() > 200){  
+	    $('#header').addClass("scrolled");
+	  }
+	  else{
+	    $('#header').removeClass("scrolled");
+	  }
+	});
+	
+
+
 	
 	//Fire Swipe Classes for Sliders
-	window.product = $('#product-images').Swipe().data('Swipe');
+	window.featuredPosts = $('#featured-posts').Swipe().data('Swipe');
+
+
+
+
+
 
 
 }); // Close Doc Ready Func

@@ -2,33 +2,50 @@
 <?php include_once'inc/header.inc' ?>
 
 
-	<header id="home-intro" class="full-screen" style="background-image:url(img/content/adventures/paris_01.jpg)">		
-		<section>
-			<h2>
-				<span class="icon-suffoca"> </span>
-			</h2>
-			<h6>Picture House &amp; Creator of Collectibles</h6>
+	<header id="home-intro">	
+		
+		<div class="swipe" id="featured-posts">	
+			<div class="swipe-wrap">	
+				<div>	
+					
+					<iframe id="ytplayer" width="853" height="480" src="//www.youtube.com/embed/JTzae0fPzzM?rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe> 
+					
+					<a href="post" class="permalink">
+						<h3> Keep Swimming </h3>
+						<!-- <p> Sometimes you just need to grab your friends and take it to the hills. See the full post for more. </p> -->
+					</a>
+					
+				</div>
+				<div> 
+					<div class="image" style="background-image:url(img/content/lookbook/hitch_01.jpg)"> 
+					
+					</div>
+					<!-- <img src="img/content/lookbook/hitch_01.jpg" alt="Hitch 01"> -->
+					
+					<a href="post" class="permalink">
+						<h3> Spring 2015 Collection </h3>
+						<!-- <p> Excerpt of text about collection. </p> -->
+					</a>
+				</div>
+				
+				<div> 
+					<div class="image" style="background-image:url(img/content/adventures/london_003.jpg)"> 
+					 
+					</div>
+					<!-- <img src="img/content/adventures/london_003.jpg" alt="London 003"> -->
+					
+					<a href="post" class="permalink">
+						<h3> New Product </h3>
+						<!-- <p> Excerpt of text about product </p> -->
+					</a>
+				</div>
+			</div>
+			<div class="button prev" onclick='featuredPosts.prev()'> <span class="icon-left"> </span> </div> 
+	    	<div class="button next" onclick='featuredPosts.next()'> <span class="icon-right"> </span> </div>
+		</div>
+		
+		
 
-		</section>
-		<!-- <iframe id="ytplayer" width="853" height="480" src="//www.youtube.com/embed/JTzae0fPzzM?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe> -->
-		
-		</iframe>
-		
-		<script>
-	    //var player;
-        //
-		//player = ('ytplayer');
-		//player.mute();
-		</script>
-		
-		<!-- <div class="section-blur-bg" style="background-image:url(img/content/adventures/paris_01.jpg)"> -->
-			
-		<!-- </div> -->
-		
-		<a class="featured-caption">
-			Explore this piece of content 
-			<span class="icon-launch"> </span>
-		</a>		
 	</header>  
 	
 

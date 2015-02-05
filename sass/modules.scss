@@ -8,6 +8,8 @@
 
 /* =========================== Navigation */ 
 header, nav{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	ul{
 		font-family:$sans-regular;
 		list-style-type:none;
@@ -99,26 +101,41 @@ button, input[type=submit]{
 	font-size:$base-font-size;
 	
 	background-color:$brand-color;
+	//background-color:$black;
 	color:$black;
 	text-transform:uppercase;
-	letter-spacing:.1em;
+	letter-spacing:.15em;
+	
+	box-shadow:0 2px 4px 0 rgba(0,0,0,.35);
 	
 	border:none;
 	outline:none;
 	cursor:pointer;
-	&:hover{
-		background-color: lighten($brand-color, 10%);
-	}
+
 	&:active{
-		color:$white;
+		//color:$white;
 		background-color: darken($brand-color, 10%);
 	}
 	@include transition-tenth-sec;
 }
 
 button{
-	@include round-corners;
+	//@include round-corners;
 	padding:$spacing-unit /2 $spacing-unit /1.5 ;
+	margin:$spacing-unit;
+	box-sizing:border-box;
+	//border:2px solid transparent;
+	&:hover{
+		//background-color: lighten($brand-color, 10%);
+		box-shadow:0 0px 0px 5px rgba(0,0,0,1);
+	}
+	&:active{
+		background:linear-gradient(0deg, darken($brand-color,20%),  $brand-color );
+		//border-top:2px solid black;
+		
+		//border-left:2px solid black;
+	}
+	
 }
 
 /* =========================== Forms and Labels */
@@ -132,6 +149,11 @@ label {
 //Posts
 .fluid-width-video-wrapper{
 	margin-bottom:$spacing-unit;
+}
+header{
+	.fluid-width-video-wrapper{
+		margin-bottom:0;
+	}
 }
 
 //Full Screen / Vertical Centering / Featured Posts
@@ -221,8 +243,9 @@ article{
 	}
 	section{
 		padding:1em;
-		max-width:(em(800));
+		//max-width:(em(560));
 		margin:0 auto;
+		font-weight:300;
 	}
 	@media screen and (min-width:(em(800))){
 		
@@ -244,65 +267,37 @@ article{
   overflow:hidden;
   visibility:hidden;
   position:relative;
+  .prev, .next{
+  	position:absolute;
+  	bottom:1em;
+  	width:10%!important;
+  	text-align:center;
+  }
+  .prev{
+  	left:0;
+  }
+  .next{
+  	right: 0;
+  }
 }
 .swipe-wrap {
   overflow:hidden;
-  position:relative;
+  position:relative; 
 }
 .swipe-wrap > div {
   position:relative;
   float:left;
   width:100%;
+  .image{
+	  @include full-bleed-background;
+	 &:after{
+		 content:' ';
+		 display:block;
+		 padding-top: 56.2719812426729%;
+	 }
+  }
 }
 
-
-.nontouchnav{
-	position: absolute;
-	bottom: 0;
-	top:0;
-	padding: .25em 0;
-	width: 100%;
-	z-index: 1000;
-	text-align: center;
-	font-size: 1.5em;
-	overflow: hidden;
-	
-	@media screen and (min-width:(em(1000))){
-		display:block;
-	}
-	
-	div{
-		position:absolute;
-		color:$grey;
-		width: 1.5em;
-		cursor:pointer;
-		text-align:center;
-		top:0;
-		bottom:0;
-		padding-top:27%;
-		
-		background-color: rgba(255,255,255,0);
-		opacity:0;
-		@include quarter-sec-trans;
-		
-		&:hover{
-			background-color: rgba(255,255,255,0.75);
-			opacity:0.5;
-			color:$black;
-			@include quarter-sec-trans;
-		}
-	}
-
-	.prev{		
-		left:0;
-	}
-	
-	.next{
-		right:0;
-		//border-left:1px dotted $medium-grey;
-	}
-
-}
 
 
 // Responsive Nav Styles

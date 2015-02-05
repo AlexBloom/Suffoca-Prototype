@@ -137,6 +137,7 @@
  * Copyright 2013, MIT License
  *
 */
+
 function Swipe(container, options) {
 
   "use strict";
@@ -693,4 +694,3 @@ if ( window.jQuery || window.Zepto ) {
     }
   })( window.jQuery || window.Zepto )
 }
-
