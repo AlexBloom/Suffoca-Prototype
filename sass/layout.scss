@@ -168,19 +168,36 @@
 		max-width:(em(600));
 		margin:$spacing-unit *4 auto $spacing-unit *2;
 		padding:0;
+		@media screen and (min-width:$desktop){
+			font-size:$base-font-size *4;
+		}
 		li{		
 			padding: 0;
 			margin:0;
 			text-align:center;
 			a{
+				
+				//
 				color:$grey-dark;
 				display:block;
 				padding:0em 1em;
 				@include transition-quarter-sec;
 				@include teo;
 				&:hover{
-		
-					transform:scale(1.25);
+					background:url(../img/UI/nav/static.gif) repeat;
+					-webkit-background-clip: text;
+					background-clip:text;
+					
+					color:$black;
+					color:transparent;
+					
+					//-webkit-mask-image: url(../img/UI/nav/static.gif);
+					//	 -o-mask-image: url(../img/UI/nav/static.gif);
+					//   -moz-mask-image: url(../img/UI/nav/static.gif);
+					//	    mask-image: url(../img/UI/nav/static.gif);
+						   //text-shadow: 0px 0px 30px rgba(30, 28, 28, 0.6);}
+					
+					//transform:scale(1.2);
 					letter-spacing:.1em;
 					@include teo;
 				}

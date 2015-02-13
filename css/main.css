@@ -425,6 +425,9 @@ figure {
     max-width: 37.5em;
     margin: 8rem auto 4rem;
     padding: 0; }
+    @media screen and (min-width: 87.5em) {
+      #primary #page-nav {
+        font-size: 4rem; } }
     #primary #page-nav li {
       padding: 0;
       margin: 0;
@@ -441,7 +444,11 @@ figure {
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out; }
         #primary #page-nav li a:hover {
-          transform: scale(1.25);
+          background: url(../img/UI/nav/static.gif) repeat;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: black;
+          color: transparent;
           letter-spacing: .1em;
           -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out; }
