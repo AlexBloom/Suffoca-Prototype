@@ -74,12 +74,13 @@ input[type="text"] {
 
 width: 60%;
 background: none;
-border: 1px solid white;
-border-radius: 4px;
-padding: 1em 5%;
--webkit-transition: border-color 0.2s;
--moz-transition: border-color 0.2s;
-transition: border-color 0.2s;
+border:none;
+border-bottom: 1px solid $black;
+//border-radius: 4px;
+//padding: 1em 5%;
+//-webkit-transition: border-color 0.2s;
+//-moz-transition: border-color 0.2s;
+//transition: border-color 0.2s;
 }
 
 input[type="submit"], .inline-button {
@@ -88,7 +89,7 @@ padding: 1em;
 text-align:center;
 //width:25%;
 text-decoration: none;
-border-radius: 4px;
+//border-radius: 4px;
 font-weight: 700;
 
 }
@@ -98,17 +99,17 @@ font-weight: 700;
 
 button, input[type=submit]{
 	font-family:$sans-bold;	
-	font-size:$base-font-size;
-	
+	font-size:1em;
 	background-color:$brand-color;
 	//background-color:$black;
 	color:$black;
 	text-transform:uppercase;
 	letter-spacing:.15em;
 	
-	box-shadow:0 2px 4px 0 rgba(0,0,0,.35);
+	//box-shadow:0 2px 4px 0 rgba(0,0,0,.35);
 	
 	border:none;
+	//border-bottom:1px solid $black;
 	outline:none;
 	cursor:pointer;
 
@@ -288,6 +289,11 @@ article{
   position:relative;
   float:left;
   width:100%;
+  background-color:$black;
+  .fluid-width-video-wrapper{
+	  max-width:(em(1200));
+  	  margin:0 auto;
+  }
   .image{
 	  @include full-bleed-background;
 	 &:after{

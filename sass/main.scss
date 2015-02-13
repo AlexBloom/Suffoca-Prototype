@@ -42,22 +42,28 @@ img {
 	display:block;
     width: 100%;
 	max-width:em(1200);
-	margin:0 auto;
+	margin:0 auto $spacing-unit /2;
     vertical-align: middle;
 }
 img.half{
-	width:50%;
-	//max-width:em(700);
-	float:left;
+	@extend %vertical-rhythm;
+	width:100%;
+	@media screen and (min-width:$tablet){
+		float:left;
+		width:50%;
+	}
+}
+img.half+img{
+	//margin-top:0;
 }
 img+h1, img+h2, img+h3{
-	margin-top:1em;
+	//margin-top:1em;
 }
 img+p{
-	margin-top:2em;
+	//margin-top:0;
 }
 p+img{
-	margin-top:2em;
+	
 }
 
 
@@ -90,8 +96,16 @@ h1, h3{
 	font-family:$sans-bold;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	
 }
 h2, h4, h5, h6{
+	font-family:$sans-regular;
+}
+
+.title{
+	font-family:$sans-bold;
+}
+.subtitle{
 	font-family:$sans-regular;
 }
 h1{

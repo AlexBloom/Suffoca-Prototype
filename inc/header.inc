@@ -28,15 +28,10 @@
 				<span class="icon-close"> </span>
 			</div>
 			
-			<ul>
+			<ul id="page-nav">
 				<li style=" "> 
-					<a href="story"> 
-						 Our Story 
-					</a> 
-				</li>
-				<li style=" "> 
-					<a href="#characters"> 
-						 The Characters 
+					<a href="index"> 
+						 Blog
 					</a> 
 				</li>
 				<li style=" "> 
@@ -44,17 +39,43 @@
 						 Shop 
 					</a> </li>
 				<li style=" "> 
+					<a href="characters"> 
+						 Characters 
+					</a> 
+				</li>
+				<li style=" "> 
+					<a href="story"> 
+						 Story 
+					</a> 
+				</li>
+				<li style=" ">
 					<a href="#contact"> 
-						Get In Touch 
+						Contact
 					</a> 
 				</li>
 			</ul>
-			
-			<div id="search-toggle">
-				Search <span class="icon-map"></span>
+			<form id="search">
+				<input type="text" placeholder="Search"/> <input type="submit" value="go" />
 			</div>
-			<!-- <div id="search">
-				<input type="text" placeholder="search"/> <input type="submit" value="go" />
-			</div> -->
+			<ul id="social-nav">
+				<li>
+					<a href="http://twitter.com/suffoca" target=_blank>
+						Twitter
+					</a>
+				</li>
+				<li>
+					<a href="http://instagram.com/suffoca" target=_blank>
+						Instagram
+					</a>
+				</li>
+				<li>
+					<a href="http://youtube.com/suffoca" target=_blank>
+						Youtube
+					</a>
+				</li>
+			</ul>
+			
+			
+			
 			
     	</nav>

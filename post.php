@@ -2,36 +2,30 @@
 <?php include_once'inc/header.inc' ?>
 
 <article class="post">
-    <header>
-		<img src="img/content/adventures/la_01.jpg" alt=""/>
+    <header class="post-header" style="background-image:url(img/content/adventures/blogtest.jpg)">
+		
 		<div class="post-title">
 			<span class="date">2015.01.18</span>
 	        <h1 class="title">Roam Where You Want To</h1>
 	        <p class="subtitle">Article Subtitle or introductory text that goes from a few words to a paragraph.</p>
 		</div>
 		
- 		<aside class="meta">
+ 		<div class="meta">
  	        <div class="author"> 
  				<p>
- 					<img src="img/content/contributors/boyce.jpg" alt="Boyce" /> By <a class="author-link" href="/boyce">Boyce</a> in <a class="category-link" href="category">Adventures</a>
+					<a class="author-link" href="contributor">
+ 						<img src="img/content/contributors/boyce.jpg" alt="Boyce" /> 
+						<span class="name"> Boyce </span>
+					</a>
  				</p> 
- 				<!-- <p>Boyce, also known as Suffoca. A London-based visual storyteller, creative director, and sometimes even an ornithologist. This charming chap is always on the move and on his feet.</p>
- 			</div>
- 			<ul class="contributor-links">
- 				<a href="http://instagram.com/suffoca"target=_blank> <span class="icon-instagram"></span> </a>
- 				<a href="http://facebook.com/suffoca"target=_blank> <span class="icon-facebook"></span>  </a>
- 				<a href="http://twitter.com/suffoca"target=_blank> <span class="icon-twitter"></span>   </a>
- 			</ul> -->
-        
- 		</aside>
-	
-        <ul class="tags">
+ 			</div>	
+       </div>
+	    <!-- <ul class="tags">
             <li><a href="#"> London </a> </li>
             <li><a href="#"> Fun With Friends </a> </li>
             <li><a href="#"> Los Angeles </a> </li>
-        </ul>
+        </ul> -->
 		
-	   
     </header>
 	
 	<section class="post-content">
@@ -43,27 +37,18 @@
 			<a href="http://google.com/share"><span class="icon-google-plus"></span></a>
 	   	</nav>
 
-		<section class="full-bleed">
-			<small> Layout Option 1 - Full bleed photos with padded paragraphs. </small>
-			<img src="img/content/adventures/post/6K3A1584.jpg" alt="6K3A1584">
-		</section>
 		
-		<section>
+			<img src="img/content/adventures/blogtest2.jpg" alt="Deer">
+	
 			<p> An amazing installation called Spectra, by Japanese artist Ryoji Ikeda was put up next to the House of Lords to commemorate those in world war 2. The visuals topped with the composed sounds, was a truly body tingling exsperience , it was hard not to feel something when gazing at the huge beams of light connecting us from the ground to the skys.</p>
-		</section>
 		
-		<section class="full-bleed">
 			<img class="half" src="img/content/adventures/post/6K3A1889.jpg" alt="6K3A1889">
 			<!-- <img class="half" src="img/content/adventures/post/6K3A0960.jpg"  alt="6K3A0960"> -->
 			<img class="half" src="img/content/adventures/post/6K3A1671.jpg" alt="6K3A1671">
 		
 			<img class="half" src="img/content/adventures/post/6K3A1632-Edit.jpg" alt="6K3A1632 Edit">
 			<img class="half" src="img/content/adventures/post/6K3A1816.jpg" alt="6K3A1816">
-		</section>
-
 		
-	    <section>
-			<small> Layout Option 2 - Single Column with padding </small>
 			<img src="img/content/adventures/post/6K3A1165.jpg" alt="6K3A1165">
 	        <p>This trip was amazing. I really needed it, so stoked to see what life is like outside of DC. More to come.</p>
 			<img src="img/content/adventures/post/6K3A8666.jpg" alt="6K3A8666">
@@ -74,7 +59,7 @@
 	            <img src="img/content/adventures/post/6K3A1448.jpg" alt="6K3A1448">
 	            <figcaption> Hiding in the cacti. This could be a caption style for when you want to make notes about a particular image that don't fall within the normal importance of paragraphs. </figcaption>
 	        </figure>
-        </section>
+       
 			
         		
 			

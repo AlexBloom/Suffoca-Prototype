@@ -31,7 +31,10 @@ $(document).ready(function(){
 
 	//$('.full-screen').css('height',$(window).height() -200);
 	
+	$('#home-header').css('height',$(window).height()-100);
+	$('.post-header').css('height',$(window).height());
 	
+	$('#home-posts').css('margin-top',$(window).height()-100);
 	
 	
 	// FitVids Video Containers.

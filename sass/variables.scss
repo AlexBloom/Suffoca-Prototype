@@ -4,9 +4,9 @@
 $sans-bold: 'breakers-bold', helvetica, arial, sans-serif;
 $sans-regular: 'breakers-regular', helvetica, arial, sans-serif;
 
-$base-font-family: 'freight-text-pro', Georgia, Cambria, Times New Roman, Times, serif;
+$base-font-family: 'proxima-nova', helvetica, arial, sans-serif;
 $base-font-size:   1rem;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size:  $base-font-size *0.875;
 $base-line-height: 1.5;
 
 $scaled-font-size:22px;
@@ -16,7 +16,7 @@ $spacing-unit:     2rem;
 //Color Variables
 $text-color:       #444;
 $text-color: rgba(0,0,0,.8);
-$background-color: #fdfdfd;
+$background-color: #f9f9f9;
 $brand-color:      #04b3c8;
 $brand-color-secondary:      #D6BE50;
 
@@ -70,9 +70,19 @@ $jumbotron:(em(2000));
 
 
 @mixin full-bleed-background{
-background-position:50% 0;
+background-position:50% 50%;
 background-size:cover;
 background-repeat:no-repeat;
+}
+
+@mixin pseudo-mask{
+	content:' ';
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
 }
 
 @mixin quarter-sec-trans{
@@ -94,6 +104,13 @@ transition-duration: .25s;
 	-ms-transition-duration: .15s;
 	-o-transition-duration: .15s;
 	transition-duration: .15s;
+}
+@mixin transition-quarter-sec {
+	-webkit-transition-duration: .25s;
+	   -moz-transition-duration: .25s;
+	    -ms-transition-duration: .25s;
+	     -o-transition-duration: .25s;
+	        transition-duration: .25s;
 }
 @mixin transition-ease-out {
 		-webkit-transition-timing-function: ease-out;

@@ -29,14 +29,14 @@
 
  [class^="icon-"], [class*=" icon-"] {
  	font-family: 'Suffoca-Icons';
-	font-size:1.5rem;
-	letter-spacing:.5rem;
+	font-size:1rem;
+	letter-spacing:.1rem;
  	speak: none;
  	font-style: normal;
  	font-weight: normal;
  	font-variant: normal;
  	text-transform: none;
- 	line-height: 1;
+ 	//line-height: 1;
 
 /* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
@@ -97,14 +97,14 @@ p.intro{
 
 
 blockquote{
-	font-family:'freight-text-pro',georgia,times,serif;
+	font-family:$base-font-family;
 	font-style:italic; 
 	font-weight:400; 
 	color:$text-color;
 	border-left:.25rem solid $brand-color;
 	padding: 0 0 0 $spacing-unit;
 	font-size:1.25em;
-	margin-bottom:$spacing-unit !important;
+	//margin-bottom:$spacing-unit !important;
 	letter-spacing: 0.01rem;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -135,7 +135,7 @@ figure {
 		width:100%;
 	}
 	figcaption{
-		font-family:'freight-text-pro',georgia,times,serif;
+		font-family:$base-font-family;
 		letter-spacing: 0.01rem;
 		//font-size: $small-font-size;
 		color:$grey;
@@ -145,7 +145,7 @@ figure {
 	}
 	blockquote{
 		border:none;
-		padding:$spacing-unit /2;
+		//padding:$spacing-unit /2;
 		margin:0!important;
 		color:$grey-dark;
 	}
