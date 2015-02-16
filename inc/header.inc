@@ -24,8 +24,13 @@
         </header>
 
         <nav id="primary">
+			
 			<div id="close-primary">
 				<span class="icon-close"> </span>
+			</div>
+			
+			<div id="close-primary-hidden">
+				
 			</div>
 			
 			<ul id="page-nav">
@@ -55,7 +60,7 @@
 				</li>
 			</ul>
 			<form id="search">
-				<input type="text" placeholder="Search"/> <input type="submit" value="go" />
+				<input type="text" placeholder="SEARCH"/> <input type="submit" value="go" />
 			</div>
 			<ul id="social-nav">
 				<li>

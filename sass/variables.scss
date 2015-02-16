@@ -6,7 +6,7 @@ $sans-regular: 'breakers-regular', helvetica, arial, sans-serif;
 
 $base-font-family: 'proxima-nova', helvetica, arial, sans-serif;
 $base-font-size:   1rem;
-$small-font-size:  $base-font-size *0.875;
+$small-font-size:  $base-font-size *0.8;
 $base-line-height: 1.5;
 
 $scaled-font-size:22px;
@@ -17,9 +17,11 @@ $spacing-unit:     2rem;
 $text-color:       #444;
 $text-color: rgba(0,0,0,.8);
 $background-color: #f9f9f9;
-$brand-color:      #04b3c8;
-$brand-color-secondary:      #D6BE50;
+$brand-color:rgb(221,199,97);
+//#04b3c8
 
+$brand-color-secondary:rgb(239,40,40);
+//#D6BE50
 
 $black: 		   #000;
 $smoke: rgba(0,0,0,.75);
@@ -75,6 +77,11 @@ background-size:cover;
 background-repeat:no-repeat;
 }
 
+@mixin pseudo-block{
+	content:' ';
+	display:block;
+	position:absolute;
+}
 @mixin pseudo-mask{
 	content:' ';
 	display:block;

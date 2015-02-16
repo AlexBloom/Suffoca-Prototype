@@ -1,6 +1,7 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
+	<h6 class="logo-subtitle"> Storytellers </h6>
 
 	<header id="home-header" style="background-image:url(img/content/adventures/la_01.jpg)">	
 		
@@ -15,16 +16,19 @@
 	
 
 	
-	<!-- <dl class="filters">
-		<dt> Filters </dt>
-		<dd class="filter all"> All </dd>
-		<dd class="filter adventure"> Adventure </dd>
-		<dd class="filter product"> Product </dd>
-		<dd class="filter artwork"> Artwork </dd>
-		<dd class="filter other"> Other </dd>
-	</dl> -->
+	
 
 	<div id="home-posts">
+		<dl class="filters">
+			<dt> Filters </dt>
+			<dd class="filter all"> All </dd>
+			<dd class="filter adventure"> Product </dd>
+			<dd class="filter product"> Videos </dd>
+			<dd class="filter artwork"> Travel </dd>
+			<dd class="filter artwork"> Drawings </dd>
+			<dd class="filter artwork"> Projects </dd>
+			<dd class="filter other"> Other </dd>
+		</dl>
 	    <ul class="posts">
 	     	<li>
 				<figure>

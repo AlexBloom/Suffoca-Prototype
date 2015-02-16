@@ -12,36 +12,50 @@
 	position:fixed;
 	top:0;
 	width:100%;
-	z-index:999;
-	background-color:rgba(255,255,255,0);
-	 
+	z-index:998;
+	background-color:$white;
+	background-color:rgba(255,255,255,1);	 
 	font-family:$sans-bold;	
 	font-size:$small-font-size;		
 	text-transform:uppercase;
 	letter-spacing:.05em;
 	text-align:center;
-
+	padding:1em 0 2em;
 	@include transition-tenth-sec;
 	@include teo;
-	
+	a{
+		text-decoration:none;
+		color:$black;
+	}
 	&.scrolled{
-		background-color:$white;
-		border-bottom:1px solid $grey-light;
+		
+		padding:.5em 0;
+		//border-bottom:1px solid $grey-light;
+		opacity:.8;
+		&:hover{
+			opacity:1;
+		}
 		a{
 			color:$text-color;
 		}
+		#toggle{
+			padding:.5em;
+		}
+		#cart{
+			padding:.5em;
+		}
 	}
-	a{
-		text-decoration:none;
-		color:$white;
-	}
+
 	#toggle{
 		display:block;
 		position:absolute;
-		top:$spacing-unit /2;
-		left:$spacing-unit /2;
+		top:0;
+		left:0;
 		z-index:1000;
 		width:6em;
+		padding:1.5em 1em;
+		@include transition-tenth-sec;
+		@include teo;
 		span.icon-menu{
 			display:block;
 			line-height:1.875;
@@ -51,25 +65,30 @@
 		span#menu-text{
 			float:left;
 			margin:0 .5em;
-			opacity:.75;
+			//opacity:.75;
 			line-height:2rem;
 			@include transition-tenth-sec;
 		}
 	}
 	#logotype{
 		padding:0;
+		margin:0;
 		letter-spacing:.05rem;
 		span{
 			font-size:$base-font-size *1.5;
 			margin:0;
-			line-height:$spacing-unit *2;
+			line-height:1.25;
 		}
 	}
 	#cart{
 		position:absolute;
-		top:$spacing-unit /2;
-		right:$spacing-unit /2 ;
+		top:0;
+		right:0;
 		z-index:1000;
+		float:right;
+		padding:1.5em 1em;
+		@include transition-tenth-sec;
+		@include teo;
 		#shop-link{
 			position:relative;
 			line-height:2rem;
@@ -99,6 +118,26 @@
 	}
 	
 }
+
+.logo-subtitle{
+	position:fixed;
+	top:0;
+	width:100%;
+	text-align:center;
+	font-size:$small-font-size;
+	//color:$white;
+	color:$black;
+	font-family:$sans-regular;
+	letter-spacing:.25em;
+	margin-top:3.25em;
+	z-index:999;
+	@include transition-tenth-sec;
+	@include teo;
+	&.scrolled{
+		opacity:0;
+		margin-top:2em;
+	}
+}
 /* =========================== Navigation */
 #primary{
 	@extend %clearfix;
@@ -106,6 +145,7 @@
 	text-transform:uppercase;
 	letter-spacing:.05em;
 	font-family:$sans-bold;
+	font-size:$base-font-size;
 	&.fixed{
 		@include transition-tenth-sec;
 		@include transition-ease-out;	
@@ -137,6 +177,7 @@
 		height:2em;
 		cursor:pointer;
 		text-align:center;
+		z-index:1;
 		@include transition-tenth-sec;
 		width:5em;
 		span{
@@ -149,6 +190,15 @@
 			color:$black;
 		}
 	}
+	#close-primary-hidden{
+		cursor: not-allowed;
+		position:absolute;
+		top:0;
+		bottom:0;
+		width:100%;
+		z-index:0;
+		z-index:-1;
+	}
 	#social-nav{
 		position:fixed;
 		top:0;
@@ -160,9 +210,11 @@
 		}
 	}
 	#page-nav{
+	
 		@include transition-tenth-sec;
 		@include teo;
-		font-size:$base-font-size *3;	
+		text-align:left;
+		z-index:1;
 		@extend %clearfix;
 		width:100%;
 		max-width:(em(600));
@@ -171,16 +223,31 @@
 		@media screen and (min-width:$desktop){
 			font-size:$base-font-size *4;
 		}
+		//&:before, &:after{
+		//	@include pseudo-block;
+		//	top:0;
+		//	bottom:0;
+		//	cursor:pointer;
+		//}
+		//&:before{
+		//	left:0;
+		//}
+		//&:after{
+		//	right:0;
+		//}
+		
 		li{		
 			padding: 0;
 			margin:0;
-			text-align:center;
+			line-height:1;
+			//text-align:center;
 			a{
-				
-				//
-				color:$grey-dark;
+					font-family:$sans-bold;
+				font-size:$base-font-size *4;
+				color:rgba(0,0,0,1);
 				display:block;
-				padding:0em 1em;
+				margin:0;
+				padding:0 .5em;
 				@include transition-quarter-sec;
 				@include teo;
 				&:hover{
@@ -189,7 +256,7 @@
 					background-clip:text;
 					
 					color:$black;
-					color:transparent;
+					color:rgba(0,0,0,0);
 					
 					//-webkit-mask-image: url(../img/UI/nav/static.gif);
 					//	 -o-mask-image: url(../img/UI/nav/static.gif);
@@ -198,8 +265,11 @@
 						   //text-shadow: 0px 0px 30px rgba(30, 28, 28, 0.6);}
 					
 					//transform:scale(1.2);
-					letter-spacing:.1em;
+					//letter-spacing:.1em;
 					@include teo;
+				}
+				@media screen and (min-width:$tablet){
+					font-size:$base-font-size *5;
 				}
 			}
 		}		
@@ -207,6 +277,7 @@
 	#social-nav{
 		font-size:$small-font-size;
 		padding:1em;
+		z-index:1;
 		a{
 			display:block;
 			padding:.25em .05em;
@@ -396,8 +467,9 @@
 /* =========================== Filters List */
 .filters{
 	@extend %clearfix;
+	text-align:center;
 	dt, dd{
-		float:left;
+		//float:left;
 		padding:1rem .5rem;
 		margin:0 .5rem;
 		box-sizing:border-box;
@@ -407,12 +479,13 @@
 	}
 	dt{
 		color:$grey;
+		display:none;
 	}
 	dd{
 		color:$grey-dark;
 		cursor:pointer;
-		
-		
+		//float:left;
+		display:inline-block;
 		&:hover{
 			color:$brand-color;
 			box-shadow: $brand-color 0 5px 0;
@@ -425,9 +498,10 @@
 }
 /* =========================== Post Grid */
 #home-posts{
+	@extend %clearfix;
 	z-index:500;
 	background-color:$off-white;
-	padding:$spacing-unit 0;
+	padding:$spacing-unit /2 0;
 }
 
 .posts{

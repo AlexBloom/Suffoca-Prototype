@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$("#primary").addClass('open');
 	});
 	
-	$("#close-primary").click(function(){
+	$("#close-primary, #close-primary-hidden").click(function(){
 		$("#primary").removeClass('open');
 	});
 	
@@ -48,10 +48,10 @@ $(document).ready(function(){
 
 	$(window).scroll(function() {
 	if ($(this).scrollTop() > 200){  
-	    $('#header').addClass("scrolled");
+	    $('#header, .logo-subtitle').addClass("scrolled");
 	  }
 	  else{
-	    $('#header').removeClass("scrolled");
+	    $('#header, .logo-subtitle').removeClass("scrolled");
 	  }
 	});
 	
