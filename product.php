@@ -1,6 +1,7 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
+<h6 class="logo-subtitle"> COLLECTIBLES </h6>
 <article class="product">
 	
 	<nav class="breadcrumb">

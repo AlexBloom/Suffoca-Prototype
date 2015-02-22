@@ -1,7 +1,7 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
-
+	<h6 class="logo-subtitle"> COLLECTIBLES </h6>
 	<header id="shop-header" style="background-image:url(img/content/lookbook/hitch_01.jpg)">		 
 		<section>
 			<h1 class="title">Spring 2015 Lookbook</h1>
@@ -9,7 +9,7 @@
 			
 		</section>
 	</header>  
-	<h6 class="logo-subtitle"> SHOP </h6>
+	
 	<dl class="shop-categories">
 		<dt> FILTER </dt>
 		<dd class="filter all"> All </dd>

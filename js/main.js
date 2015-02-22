@@ -33,9 +33,13 @@ $(document).ready(function(){
 	
 	$('#home-header').css('height',$(window).height()-100);
 	$('.post-header').css('height',$(window).height());
-	
 	$('#home-posts').css('margin-top',$(window).height()-100);
-	
+    $(window).resize(function(){
+		$('#home-header').css('height',$(window).height()-100);
+		$('.post-header').css('height',$(window).height());
+		$('#home-posts').css('margin-top',$(window).height()-100);
+		
+    });
 	
 	// FitVids Video Containers.
     $("article, header").fitVids();
@@ -44,7 +48,7 @@ $(document).ready(function(){
 		$(".comments").addClass('show');
 	});
 	
-
+   
 
 	$(window).scroll(function() {
 	if ($(this).scrollTop() > 200){  
@@ -60,7 +64,7 @@ $(document).ready(function(){
 	
 	//Fire Swipe Classes for Sliders
 	window.featuredPosts = $('#featured-posts').Swipe().data('Swipe');
-
+	window.product = $('#product-images').Swipe().data('Swipe');
 
 
 

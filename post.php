@@ -1,6 +1,8 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
+<h6 class="logo-subtitle"> Storytellers </h6>
+
 <article class="post">
     <header class="post-header" style="background-image:url(img/content/adventures/blogtest.jpg)">
 		
@@ -140,14 +142,22 @@
     </footer>
 </article>
 <div class="pagination">
-	<a href="post" class="prev"> 
-		<span class="icon-left"> </span> 
-		<span class="prev-post-text">Prev Post Title</span> 
-	</a>
-	<a href="post" class="next"> 
+	<!-- <a href="post" class="prev">
+		<span class="icon-left"> </span>
+		<span class="prev-post-text">Prev Post Title</span>
+	</a> -->
+	<!-- <a href="post" class="next">
 		<span class="next-post-text">Next Post Title </span>
-		<span class="icon-right"> </span> 
-	</a>
+		<span class="icon-right"> </span>
+	</a> -->
+		
+	<a href="post" class="next-up">
+		<h6>NEXT UP</h6>
+		<h1 class="post-title"> Riding the Clouds </h1>
+		<p class="subtitle"> What if we go on another adventure? </p>
+	</a>	
 </div>
+
+
 
 <?php include_once'inc/footer.inc' ?>

@@ -115,7 +115,7 @@ button, input[type=submit]{
 
 	&:active{
 		//color:$white;
-		background-color: darken($brand-color, 10%);
+		//background-color: darken($brand-color, 10%);
 	}
 	@include transition-tenth-sec;
 }
@@ -126,12 +126,15 @@ button{
 	margin:$spacing-unit;
 	box-sizing:border-box;
 	//border:2px solid transparent;
+	background-color:rgba(0,0,0,.25);
 	&:hover{
 		//background-color: lighten($brand-color, 10%);
-		box-shadow:0 0px 0px 5px rgba(0,0,0,1);
+		background-color:$smoke;
+		box-shadow:0 0px 0px 5px $smoke;
+		
 	}
 	&:active{
-		background:linear-gradient(0deg, darken($brand-color,20%),  $brand-color );
+		//background:linear-gradient(0deg, darken($brand-color,20%),  $brand-color );
 		//border-top:2px solid black;
 		
 		//border-left:2px solid black;
@@ -304,7 +307,18 @@ article{
   }
 }
 
-
+.loader{
+	text-align:center;
+	padding:$spacing-unit /2 0;
+	display:block;
+	width:100%;
+	background-color:$off-white;
+	color:$grey-light;
+	img{
+		width:1em;
+		margin:0 auto;
+	}
+}
 
 // Responsive Nav Styles
 
