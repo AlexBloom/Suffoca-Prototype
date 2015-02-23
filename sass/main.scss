@@ -109,6 +109,7 @@ h2, h4, h5, h6{
 	font-family:$sans-regular;
 }
 h1{
+	text-transform:uppercase;
 	font-size:$base-font-size *2;
 	@media screen and (min-width:$phablet) {
 		

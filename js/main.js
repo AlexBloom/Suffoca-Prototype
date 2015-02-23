@@ -19,6 +19,17 @@ $(document).ready(function(){
 	});
 	
 	//Shop
+	//Lookbook Widget
+	$("#lookbook-modal").addClass('fixed');
+	
+	$(".open-lookbook").click(function(){
+		$("#lookbook-modal").addClass('open');
+	});
+	$(".close-lookbook").click(function(){
+		$("#lookbook-modal").removeClass('open');
+	});
+	
+	
 	$(".mens").click(function(){
 		$(".mens-sub").removeClass('close');
 	});
@@ -26,6 +37,8 @@ $(document).ready(function(){
 	$(".womens").click(function(){
 		$(".womens-sub").removeClass('close');
 	});
+	
+	
 
 
 
@@ -52,10 +65,10 @@ $(document).ready(function(){
 
 	$(window).scroll(function() {
 	if ($(this).scrollTop() > 200){  
-	    $('#header, .logo-subtitle').addClass("scrolled");
+	    $('#header, .logo-subtitle, #primary').addClass("scrolled");
 	  }
 	  else{
-	    $('#header, .logo-subtitle').removeClass("scrolled");
+	    $('#header, .logo-subtitle, #primary').removeClass("scrolled");
 	  }
 	});
 	
@@ -65,7 +78,7 @@ $(document).ready(function(){
 	//Fire Swipe Classes for Sliders
 	window.featuredPosts = $('#featured-posts').Swipe().data('Swipe');
 	window.product = $('#product-images').Swipe().data('Swipe');
-
+	window.lookbook = $('#lookbook').Swipe().data('Swipe');
 
 
 

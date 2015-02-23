@@ -21,7 +21,7 @@
 	<div id="home-posts">
 		<dl class="filters">
 			<dt> Filters </dt>
-			<dd class="filter all"> All </dd>
+			<dd class="filter all active"> All </dd>
 			<dd class="filter adventure"> Product </dd>
 			<dd class="filter product"> Videos </dd>
 			<dd class="filter artwork"> Travel </dd>

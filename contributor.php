@@ -3,8 +3,8 @@
 
 	<h6 class="logo-subtitle"> Storytellers </h6>
 	<nav class="clubhouse">
-		<ul>
-			<li> <a href="#" class="active"> Boyce  </a> </li>
+		<ul class="filters">
+			<li class="active"> <a href="#"> Boyce  </a> </li>
 			<li> <a href="#"> Conor  </a> </li>
 			<li> <a href="#"> Del    </a> </li>
 			<li> <a href="#"> Ed     </a> </li>

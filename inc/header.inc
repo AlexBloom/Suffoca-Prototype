@@ -26,7 +26,7 @@
         <nav id="primary">
 			
 			<div id="close-primary">
-				<span class="icon-close"> </span>
+				<span class="icon-close"> </span> <span class="close-text"> Close </span>
 			</div>
 			
 			<div id="close-primary-hidden">

@@ -131,6 +131,7 @@ button{
 		//background-color: lighten($brand-color, 10%);
 		background-color:$smoke;
 		box-shadow:0 0px 0px 5px $smoke;
+		color:$white;
 		
 	}
 	&:active{
@@ -274,7 +275,7 @@ article{
   .prev, .next{
   	position:absolute;
   	bottom:1em;
-  	width:10%!important;
+  	//width:10%!important;
   	text-align:center;
   }
   .prev{

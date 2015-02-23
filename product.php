@@ -125,35 +125,43 @@
 	</header>
 	<section>
 	</section>
-	    
+</article>    
 	<section class="related-products">
-		<h3>Recommended Products</h3>
-	    <ul>
+		<h3>Related Products</h3>
+	    <ul class="products">
 	        <li class="product">
 	           <a href="" class="permalink">
-	               <img src="img/content/products/Black_T_.jpg" alt="Product Caption">
+	               <img src="img/content/products/all/Beanie_Suffoca-400x400.jpg" alt="Product Caption">
 	               <h6> Product Name </h6>
 	           </a>
 	        </li>
 	        <li class="product">
 	           <a href="" class="permalink">
-	               <img src="img/content/products/LONGT_.jpg" alt="Product Caption">
+	               <img src="img/content/products/all/Suffoca_Crew_Type_Full-400x400.gif" alt="Product Caption">
 	               <h6> Product Name </h6>
 	           </a>
 	        </li>
 
 	        <li class="product">
 	           <a href="" class="permalink">
-	               <img src="img/content/products/Crew.jpg" alt="Product Caption">
+	               <img src="img/content/products/all/Suffoca_Script_Front-400x400.jpg" alt="Product Caption">
 	               <h6> Product Name </h6>
 	           </a>
 	        </li>
+			
+	        <li class="product">
+	           <a href="" class="permalink">
+	               <img src="img/content/products/all/Suffoca_Strike_Full-400x400.gif" alt="Product Caption">
+	               <h6> Product Name </h6>
+	           </a>
+	        </li>
+			
 	    </ul>
 	</section>
 	
 	
    
 
-</article>
+
 
 <?php include_once'inc/footer.inc' ?>

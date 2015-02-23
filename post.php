@@ -151,13 +151,12 @@
 		<span class="icon-right"> </span>
 	</a> -->
 		
-	<a href="post" class="next-up">
+	<a href="post" class="next-up" style="background-image:url(img/content/adventures/post/6K3A1889.jpg)"> 
 		<h6>NEXT UP</h6>
 		<h1 class="post-title"> Riding the Clouds </h1>
 		<p class="subtitle"> What if we go on another adventure? </p>
 	</a>	
 </div>
-
 
 
 <?php include_once'inc/footer.inc' ?>
