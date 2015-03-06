@@ -300,6 +300,8 @@ body {
   transition-duration: .15s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
+  #header.closed {
+    top: -4em; }
   #header a {
     text-decoration: none;
     color: black; }
@@ -417,14 +419,17 @@ body {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     position: fixed;
-    top: 0;
-    bottom: 100%;
+    top: 100%;
+    bottom: 0;
     left: 0;
     right: 0;
     z-index: -1;
     opacity: 0;
-    color: #181818; }
+    color: #181818;
+    transform: scale(0.9); }
   #primary.open {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
     background-color: white;
     background-color: rgba(255, 255, 255, 0.95);
     position: fixed;
@@ -432,9 +437,10 @@ body {
     bottom: 0;
     opacity: 1;
     z-index: 1000;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    transform: scale(1); }
   #primary.scrolled #close-primary {
-    padding: .5rem 0; }
+    padding: .5rem; }
   #primary.scrolled #social-nav {
     padding: .5rem .5rem; }
   #primary #close-primary {
@@ -1316,86 +1322,107 @@ article.post {
  * Product Post
  *
  */
-.breadcrumb ul li {
-  float: left;
-  padding: 1em 0; }
-  .breadcrumb ul li:after {
-    content: '>';
-    color: #bbbbbb; }
-  .breadcrumb ul li a {
-    padding: 0 .5em;
-    color: #888888; }
-  .breadcrumb ul li:last-child:after {
-    content: ''; }
-  .breadcrumb ul li:last-child a {
-    color: black;
-    text-decoration: underline; }
+.breadcrumb ul {
+  font-size: 0.8rem; }
+  .breadcrumb ul li {
+    float: left;
+    padding: 1em 0; }
+    .breadcrumb ul li:after {
+      content: '>';
+      color: #bbbbbb; }
+    .breadcrumb ul li a {
+      padding: 0 .5em;
+      color: #888888; }
+    .breadcrumb ul li:last-child:after {
+      content: ''; }
+    .breadcrumb ul li:last-child a {
+      color: black;
+      text-decoration: underline; }
 
 article.product {
+  background-color: white;
   float: none;
   width: auto;
   padding: 0 1em 0 1em; }
   article.product header {
     width: 100%;
-    max-width: 68.75em;
+    max-width: 100%;
     margin: 0 auto;
     clear: both;
     padding: 0; }
+  article.product .product-info {
+    width: 100%; }
+    article.product .product-info h2 {
+      line-height: 1;
+      color: black; }
+    @media screen and (min-width: 62.5em) {
+      article.product .product-info {
+        float: left;
+        width: 20%;
+        padding: 6rem 5% 0 0; } }
   article.product #product-images {
     width: 100%;
-    background-color: #bbbbbb;
-    position: relative;
-    box-shadow: 0px 0px 2px #bbbbbb; }
+    position: relative; }
     article.product #product-images img {
       margin: 0; }
     @media screen and (min-width: 62.5em) {
       article.product #product-images {
         float: left;
-        width: 65%; } }
+        width: 50%; } }
+    article.product #product-images h6 {
+      text-align: center; }
     article.product #product-images .button {
-      position: absolute;
-      bottom: 0;
-      z-index: 10;
-      text-align: center;
-      width: 50%;
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border-radius: 1em;
+      margin: 0 0.5rem;
+      background-color: #888888;
       cursor: pointer; }
       article.product #product-images .button:hover {
         color: #ddc761; }
       article.product #product-images .button:active {
         color: black; }
-    article.product #product-images .prev {
-      left: 0; }
-    article.product #product-images .next {
-      right: 0; }
-  article.product .product-details {
+  article.product .product-actions {
     padding: 0; }
     @media screen and (min-width: 62.5em) {
-      article.product .product-details {
+      article.product .product-actions {
         float: left;
-        width: 30%;
-        padding: 0 0 0 5%; } }
-    article.product .product-details #wishlist {
+        width: 20%;
+        padding: 6rem 0 0 5%; } }
+    article.product .product-actions h6.price {
+      font-size: 1.25em;
+      color: black; }
+    article.product .product-actions #wishlist {
       background-color: white;
       box-shadow: inset 0px 0px 2px #888888; }
-      article.product .product-details #wishlist:active {
+      article.product .product-actions #wishlist:active {
         background-color: #888888; }
+    article.product .product-actions #add-to-cart:hover {
+      box-shadow: 0 0 0 4px #ef2828; }
   article.product #product-selections select {
     background-color: #181818;
     height: 3em;
     color: white;
     border: none;
     width: 30%; }
-  article.product .related-products {
-    max-width: 100%;
+  article.product .sizing {
     clear: both;
-    border-top: 1px solid black;
-    padding: 1rem 0; }
-    article.product .related-products ul {
-      list-style: none;
-      text-align: center; }
-      article.product .related-products ul li {
-        float: left;
-        width: 33.33%; }
+    text-align: center;
+    cursor: pointer; }
+
+.related-products {
+  max-width: 100%;
+  clear: both;
+  padding: 1rem 0;
+  background-color: white;
+  text-align: center; }
+  .related-products ul {
+    list-style-type: none;
+    margin: 0; }
+    .related-products ul li {
+      float: left;
+      width: 33.33% !important; }
 
 /*
  *
@@ -1463,8 +1490,8 @@ input[type="submit"], .inline-button {
 button, input[type=submit] {
   font-family: "breakers-bold", helvetica, arial, sans-serif;
   font-size: 1em;
-  background-color: white;
-  color: black;
+  background-color: #ef2828;
+  color: white;
   text-transform: uppercase;
   letter-spacing: .15em;
   border: none;
@@ -1586,13 +1613,7 @@ article {
   visibility: hidden;
   position: relative; }
   .swipe .prev, .swipe .next {
-    position: absolute;
-    bottom: 1em;
     text-align: center; }
-  .swipe .prev {
-    left: 0; }
-  .swipe .next {
-    right: 0; }
 
 .swipe-wrap {
   overflow: hidden;
@@ -1740,7 +1761,7 @@ h1 {
       font-size: 6rem; } }
 
 h2 {
-  font-size: 1rem; }
+  font-size: 1.5rem; }
   @media screen and (min-width: 43.75em) {
     h2 {
       font-size: 2rem; } }
@@ -1778,7 +1799,7 @@ h6 {
 /**
  * Clearfix
  */
-#header:after, #primary:after, #primary #page-nav:after, #primary #search:after, .filters:after, #home-posts:after, .posts:after, #shop-header:after, .shop-categories:after, .products:after, .contributor header:after, article.post header.post-header .post-title:after, article.post .meta .author:after, article.post .tags:after, article.post footer section.comments:after, .pagination:after, .breadcrumb ul:after, article.product header:after, article.product .related-products:after, article.product .related-products ul:after, ul:after, .instawrap #instafeed:after {
+#header:after, #primary:after, #primary #page-nav:after, #primary #search:after, .filters:after, #home-posts:after, .posts:after, #shop-header:after, .shop-categories:after, .products:after, .contributor header:after, article.post header.post-header .post-title:after, article.post .meta .author:after, article.post .tags:after, article.post footer section.comments:after, .pagination:after, .breadcrumb ul:after, article.product header:after, .related-products:after, .related-products ul:after, ul:after, .instawrap #instafeed:after {
   content: "";
   display: table;
   clear: both; }

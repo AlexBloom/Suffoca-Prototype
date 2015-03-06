@@ -6,10 +6,12 @@ $(document).ready(function(){
 	
 	$("#toggle").click(function(){
 		$("#primary").addClass('open');
+		$("#header").addClass('closed');
 	});
 	
 	$("#close-primary, #close-primary-hidden").click(function(){
 		$("#primary").removeClass('open');
+		$("#header").removeClass('closed');
 	});
 	
 	$(".subcat").addClass('close');

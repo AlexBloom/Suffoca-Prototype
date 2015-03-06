@@ -22,16 +22,17 @@ body{
 	font-family:$base-font-family;
 	font-weight:600;	
 	font-size:12px;
-	
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-			
+	-moz-osx-font-smoothing: grayscale;		
 	text-transform:uppercase;
 	letter-spacing:.1em;
 	text-align:center;
 	padding:.5em 0;
 	@include transition-tenth-sec;
 	@include teo;
+	&.closed{
+		top:-4em;
+	}
 	a{
 		text-decoration:none;
 		color:$black;
@@ -165,15 +166,17 @@ body{
 		@include transition-tenth-sec;
 		@include transition-ease-out;	
 		position:fixed;
-		top:0;
-		bottom:100%;
+		top:100%;
+		bottom:0;
 		left:0;
 		right:0;
 		z-index:-1;
 		opacity:0;		
 		color:$grey-dark;
+		transform:scale(.9);
 	}		
 	&.open{
+		@include transition-ease-out;
 		background-color:$white;
 		background-color:rgba(255,255,255,.95);
 		position:fixed;
@@ -182,10 +185,11 @@ body{
 		opacity:1;
 		z-index:1000;
 		overflow-y:scroll;
+		transform:scale(1);
 	}
 	&.scrolled{
 		#close-primary{
-			padding:.5rem 0;
+			padding:.5rem;
 		}
 		#social-nav{
 			padding:.5rem .5rem;
@@ -1645,7 +1649,7 @@ article.post{
 .breadcrumb{
 	ul{
 		@extend %clearfix;
-		
+		font-size:$small-font-size;
 		li{
 			float:left;
 			padding:1em 0;
@@ -1673,22 +1677,36 @@ article.post{
 	}
 }
 article.product{
+	background-color:$white;
 	float:none;
 	width:auto;
 	padding:0 1em 0 1em;
 	header{
 		@extend %clearfix;
 		width:100%;
-		max-width:(em(1100));
+		max-width:100%;
 		margin:0 auto;
 		clear:both;
 		padding:0;
 	}
+	.product-info{
+		h2{
+			line-height:1;
+			color:$black;
+		}
+		width:100%;
+		@media screen and (min-width:$laptop){
+			float:left;
+			width:20%;
+			padding:$spacing-unit *3 5% 0 0;
+			//max-width:(em(300));
+		}
+	}
 	#product-images{
 		width:100%;
-		background-color:$grey-light;
+		//background-color:$grey-light;
 		position:relative;	
-		box-shadow:0px 0px 2px $grey-light;
+		//box-shadow:0px 0px 2px $grey-light;
 		//max-width:(em(800));
 		
 		//padding:1em 0;
@@ -1703,15 +1721,25 @@ article.product{
 			}
 		@media screen and (min-width:$laptop){
 			float:left;
-			width:65%;
+			width:50%;
 			//max-width:(em(800));
 		}
-		.button{
-			position:absolute;
-			bottom:0;
-			z-index:10;
+		h6{
 			text-align:center;
-			width:50%;
+		}
+		.button{
+			//position:absolute;
+			//bottom:0;
+			//z-index:10;
+			//text-align:center;
+			//width:50%;
+			display:inline-block;
+			width:1em;
+			height:1em;
+			border-radius:1em;
+			margin:0 $spacing-unit /4;
+			//@include circle;
+			background-color:$grey;
 			cursor:pointer;
 			&:hover{
 				color:$brand-color;
@@ -1720,19 +1748,26 @@ article.product{
 				color:$black;
 			}
 		}
-		.prev{left:0;}
-		.next{right:0;}
+		.prev{
+			//left:0;
+		}
+		.next{
+			//right:0;
+		}
 	}
-	.product-details{
+	.product-actions{
 		//width:95%;
 		padding:0;
 		@media screen and (min-width:$laptop){
 			float:left;
-			width:30%;
-			padding:0 0 0 5%;
+			width:20%;
+			padding:$spacing-unit *3 0 0 5%;
 			//max-width:(em(300));
 		}
-		
+		h6.price{
+			font-size:1.25em;
+			color:$black;
+		}
 		#wishlist{
 			background-color:$white;
 			//border:1px solid $grey;
@@ -1741,6 +1776,12 @@ article.product{
 			box-shadow:inset 0px 0px 2px $grey;
 			&:active{
 				background-color:$grey;
+			}
+		}
+		#add-to-cart{
+			&:hover{
+				//transform:scale(1.1);
+				box-shadow:0 0 0 4px $brand-color-secondary;
 			}
 		}
 		
@@ -1754,23 +1795,31 @@ article.product{
 			width:30%;
 		}
 	}
-	.related-products{
-		@extend %clearfix;
-		max-width:100%;
+	.sizing{
 		clear:both;
-		border-top:1px solid $black;
-		padding:$spacing-unit /2 0;
-		//margin-top:$spacing-unit *2;
-		ul{
-			@extend %clearfix;
-			list-style:none;
-			text-align:center;
-			li{
-				float:left;
-				width:33.33%;
-			}
-		}
+		text-align:center;
+		cursor:pointer;
+	}
+	.product-detail-images{
+		//border:1px solid red;
 	}
 	
+}
+.related-products{
+	@extend %clearfix;
+	max-width:100%;
+	clear:both;
+	padding:$spacing-unit /2 0;
+	background-color:$white;
+	text-align:center;
+	ul{
+		@extend %clearfix;
+		list-style-type:none;
+		margin:0;
+		li{
+			float:left;
+			width:33.33%!important;
+		}
+	}
 }
 
