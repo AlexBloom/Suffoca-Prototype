@@ -26,7 +26,7 @@
         <nav id="primary">
 			
 			<div id="close-primary">
-				<span class="icon-close"> </span> <span class="close-text"> Close </span>
+				<span class="icon-close"> </span> 
 			</div>
 			
 			<div id="close-primary-hidden">
@@ -65,17 +65,17 @@
 			<ul id="social-nav">
 				<li>
 					<a href="http://twitter.com/suffoca" target=_blank>
-						Twitter
+						<span class="icon-twitter"></span>
 					</a>
 				</li>
 				<li>
 					<a href="http://instagram.com/suffoca" target=_blank>
-						Instagram
+						<span class="icon-instagram"></span>
 					</a>
 				</li>
 				<li>
 					<a href="http://youtube.com/suffoca" target=_blank>
-						Youtube
+						<span class="icon-youtube"></span>
 					</a>
 				</li>
 			</ul>

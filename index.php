@@ -1,15 +1,16 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
-	<h6 class="logo-subtitle"> Storytellers </h6>
+	
 
 	<header id="home-header" style="background-image:url(img/content/adventures/la_01.jpg)">	
 		
-	
-		<div class="post-title">
-			<h1 class="title">Riding the Clouds</h1>
-			<h2 class="subtitle">What would an adventure be like if...</h2>
-		</div>
+			<a class="post-title" href="post">
+					
+				<h1 class="title">Riding the Clouds</h1>
+				<h2 class="subtitle">What would an adventure be like if...</h2>
+				
+			</a>
 		
 
 	</header>  
@@ -27,7 +28,7 @@
 			<dd class="filter artwork"> Travel </dd>
 			<dd class="filter artwork"> Drawings </dd>
 			<dd class="filter artwork"> Projects </dd>
-			<dd class="filter other"> Other </dd>
+			<dd class="filter other"> Inspired </dd>
 		</dl>
 	    <ul class="posts">
 	     	<li style="background-image:url(img/content/adventures/la_01.jpg)">
@@ -143,6 +144,14 @@
 						<a href="tag" class="tag">Another Tag</a>
 					</nav>
 	     	</li>
+	     	<li style="background-image:url(img/content/products/Hoodie_01.jpeg)">
+					<a href="post" class="permalink">
+						<h3> Last Post </h3>
+					</a>
+					<a href="contributor" class="author">
+						<img src="img/content/contributors/boyce.jpg" alt="Boyce"/>
+					</a>
+	     	</li>
 		
 		
    		<!-- <li style="background-image:url(img/content/adventures/la_03.jpg)">
@@ -203,6 +212,145 @@
      		</a>
      	</li> -->
     	</ul>
+		
+		
+		<div class="instawrap">
+			<h3 class="instatitle">Instagram</h3>
+			
+			<div id="instafeed"> </div>
+			
+			<h3 class="instatitle"><a href="http://instagram.com/suffoca"target=_blank>Follow @Suffoca </a></h3>
+		</div>
+		
+		
+	    <ul class="posts">
+	     	<li style="background-image:url(img/content/adventures/la_01.jpg)">
+				
+		     	<a href="post" class="permalink">
+	     			<h3> Keep Swimming </h3>
+		     	</a>
+				
+				 <a href="contributor" class="author"> 
+					 <img src="img/content/contributors/boyce.jpg" alt="Boyce"/> 
+				 </a> 
+				 <nav class="tags"> 
+					 <a href="tag" class="tag">Los Angeles</a> 
+					 <a href="tag" class="tag">Another Tag</a> 
+				 </nav> 
+				
+	     	</li>
+	     	<li style="background-image:url(img/content/adventures/la_02.jpg)">
+
+					<a href="post" class="permalink">
+						<h3> More Los Angeles </h3>
+					</a>
+					<a href="contributor" class="author">
+						<img src="img/content/contributors/boyce.jpg" alt="Boyce"/>
+					</a>
+					<nav class="tags">
+						<a href="tag" class="tag">Los Angeles</a>
+						<a href="tag" class="tag">Another Tag</a>
+					</nav>
+					
+						
+					
+				
+	     	</li>
+	     	<li style="background-image:url(img/content/adventures/tokyo_03.jpg)">
+					<a href="post" class="permalink">
+						<h3> Tokyo </h3>
+					</a>
+
+					<a href="contributor" class="author">
+						<img src="img/content/contributors/boyce.jpg" alt="Boyce"/>
+					</a>
+					<nav class="tags">
+						<a href="tag" class="tag">Tokyo</a>
+						<a href="tag" class="tag">Another Tag</a>
+					</nav>
+	     	</li>
+	     	<li style="background-image:url(img/content/adventures/london_004.jpg)">
+					<a href="post" class="permalink">
+						<h3> Keep Swimming </h3>
+					</a>
+					<a href="contributor" class="author">
+						<img src="img/content/contributors/boyce.jpg" alt="Boyce"/>
+					</a>
+					<nav class="tags">
+						<a href="tag" class="tag">Los Angeles</a>
+						<a href="tag" class="tag">Another Tag</a>
+					</nav>	
+				
+	     	</li>
+	     	<li style="background-image:url(img/content/adventures/travels_003.jpg)">
+				
+					<a href="post" class="permalink">
+						<h3> Travels Far and Wide </h3>
+					</a>
+					<a href="contributor" class="author">
+						<img src="img/content/contributors/boyce.jpg" alt="Boyce"/>
+					</a>
+					<nav class="tags">
+						<a href="tag" class="tag">Los Angeles</a>
+						<a href="tag" class="tag">Another Tag</a>
+					</nav>	
+				
+	     	</li>
+		
+		
+	     	<li style="background-image:url(img/content/adventures/london_003.jpg)">
+
+					<a href="post" class="permalink">
+						<h3> Tokyo </h3>
+					</a>
+					<a href="contributor" class="author">
+						<img src="img/content/contributors/boyce.jpg" alt="Boyce"/>
+					</a>
+					<nav class="tags">
+						<a href="tag" class="tag">Tokyo</a>
+						<a href="tag" class="tag">Another Tag</a>
+					</nav>
+	     	</li>
+	     	<li style="background-image:url(img/content/products/Hoodie_01.jpg)">
+				
+					<a href="post" class="permalink">
+						<h3> Keep Swimming </h3>
+					</a>
+					<a href="contributor" class="author">
+						<img src="img/content/contributors/boyce.jpg" alt="Boyce"/>
+					</a>
+					<nav class="tags">
+						<a href="tag" class="tag">Los Angeles</a>
+						<a href="tag" class="tag">Another Tag</a>
+					</nav>
+	     	</li>
+	     	<li style="background-image:url(img/content/products/Unknown.jpeg)">
+				
+					<a href="post" class="permalink">
+						<h3> Travels Far and Wide </h3>
+					</a>
+					<a href="contributor" class="author">
+						<img src="img/content/contributors/boyce.jpg" alt="Boyce"/>
+					</a>
+					<nav class="tags">
+						<a href="tag" class="tag">Los Angeles</a>
+						<a href="tag" class="tag">Another Tag</a>
+					</nav>
+	     	</li>
+	     	<li style="background-image:url(img/content/products/Hoodie_01.jpeg)">
+					<a href="post" class="permalink">
+						<h3> Last Post </h3>
+					</a>
+					<a href="contributor" class="author">
+						<img src="img/content/contributors/boyce.jpg" alt="Boyce"/>
+					</a>
+	     	</li>
+			
+		</ul>
+		
+		
+		
+		
 	</div>
     
 <?php include_once'inc/loader.inc' ?>

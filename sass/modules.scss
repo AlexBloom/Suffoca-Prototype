@@ -267,6 +267,62 @@ article{
 //}
 
 
+
+//INSTAFEED
+
+.instawrap{
+	//width:100%;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	background-color:$grey-dark;
+	padding:$spacing-unit $spacing-unit;
+	
+	.instatitle{
+		text-align:center;
+		color:$off-white;
+		margin:$spacing-unit *2 0;
+		a{
+			color:$grey;
+			@include transition-tenth-sec;
+			&:hover{
+				color:$grey-light;
+				
+			}
+			
+		}
+	}
+	
+	#instafeed{
+		@extend %clearfix;
+		width:100%;
+		img{
+			float:left;
+			width:46%;
+			padding:0 2%;
+			
+			@media screen and (min-width:$tablet){
+				width:21%;
+			}
+		}
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Swipe Classes
 .swipe {
   overflow:hidden;

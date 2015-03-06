@@ -1,7 +1,7 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
-	<h6 class="logo-subtitle"> Storytellers </h6>
+	
 	<nav class="clubhouse">
 		<ul class="filters">
 			<li class="active"> <a href="#"> Boyce  </a> </li>

@@ -1,7 +1,6 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
-<h6 class="logo-subtitle"> Storytellers </h6>
 
 <article class="post">
     <header class="post-header" style="background-image:url(img/content/adventures/blogtest.jpg)">
@@ -81,7 +80,7 @@
 	</section>
 	
     <footer> 
-		<h6>20 Comments <button class="show-comments"> SHOW </button> </h6>
+		<!-- <h6>20 Comments <button class="show-comments"> SHOW </button> </h6> -->
 		
 		<section class="comments">
 			<div class="th-comment-area">

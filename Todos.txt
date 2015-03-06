@@ -1,0 +1,25 @@
+HomePage:
+X Clean up top Nav, always thinner version, no story tellers, monkey, menu lines, shop in white text
+X Compress the categories line so much thinner like mockup, replace other with Inspired
+X Be able to click on feature top post
+X Rework post layout with headers, more like first version handed over
+X Work in social banner in the post line, bit like http://www.stampd.com at the bottom
+
+Blog Post:
+X Movement of page should be like the home page, with content as you scroll down going over bg picture at top
+X Softening the text slightly as spoken about?
+
+Menu:
+X Make Close just a X, Social links to be icons instead 
+
+Shop:
+X 3 Products wide, white background, no price name etc
+
+
+
+
+- Add cart
+- Product view, work on something like mock up sent over
+- Only show guest spot, as far as contributors pin
+
+:: Maybe we should look in to a type face more suited to going smaller with out cracking out. As on my big screen the typeface looks a bit choppy.
