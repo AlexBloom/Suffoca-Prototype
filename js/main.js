@@ -32,13 +32,22 @@ $(document).ready(function(){
 	});
 	
 	
-	$(".mens").click(function(){
-		$(".mens-sub").removeClass('close');
+	// Shop Size Chart
+	$(".open-size-chart").click(function(){
+		$('.size-chart').addClass('open');
+	});	
+	$(".close-size-chart").click(function(){
+		$('.size-chart').removeClass('open');
 	});
 	
-	$(".womens").click(function(){
-		$(".womens-sub").removeClass('close');
-	});
+	
+	//$(".mens").click(function(){
+	//	$(".mens-sub").removeClass('close');
+	//});
+	//
+	//$(".womens").click(function(){
+	//	$(".womens-sub").removeClass('close');
+	//});
 	
 	
 

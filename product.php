@@ -87,8 +87,16 @@
 	   
 		</aside>
 		<section class="sizing">
-			<h5>Sizing Chart</h5>
+			<h5 class="open-size-chart">Sizing Chart</h5>
 		</section>
+		
+		<section class="size-chart">
+			<span class="close-size-chart icon-close"></span>
+			<div class="size-chart-float">
+				<img src="img/content/products/sizechart.png" alt="Sizechart">
+			</div>
+		</section>
+		
 	</header>
 	<section class="product-detail-images">
 		  <img src="img/content/products/Hoodie_01.jpg"  alt="Hoodie 01">

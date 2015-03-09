@@ -10,7 +10,7 @@
         <body>
 
         <header id="header">
-        	<a id="toggle" href="#primary"> 
+        	<a id="toggle" > 
 				<!-- <span class="icon-logo-face"> </span>  -->
 				<span class="icon-menu"> </span>
 				<span id="menu-text"> Menu </span>

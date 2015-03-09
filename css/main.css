@@ -1424,6 +1424,40 @@ article.product {
       float: left;
       width: 33.33% !important; }
 
+.open-size-chart {
+  cursor: pointer; }
+
+.size-chart {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  display: flex;
+  display: -webkit-flex;
+  background-color: white;
+  -webkit-transition-duration: .15s;
+  -moz-transition-duration: .15s;
+  -ms-transition-duration: .15s;
+  -o-transition-duration: .15s;
+  transition-duration: .15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+  .size-chart.open {
+    top: 0;
+    opacity: 1;
+    z-index: 999; }
+  .size-chart .close-size-chart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    cursor: pointer; }
+  .size-chart .size-chart-float {
+    margin: auto;
+    padding: 1em; }
+
 /*
  *
  * Global Elements
