@@ -6,7 +6,7 @@
 
 
 
-	<header id="home-header" style="background-image:url(img/content/adventures/la_01.jpg)">	
+	<header id="home-header" class="page-header" style="background-image:url(img/content/adventures/la_01.jpg)">	
 		
 			<a id="post-title" class="post-title" href="post">
 					
@@ -22,7 +22,7 @@
 	
 	
 
-	<div id="home-posts">
+	<div id="home-posts" class="page-content">
 		<dl class="filters">
 			<dt> Filters </dt>
 			<dd class="filter all active"> All </dd>
@@ -360,6 +360,8 @@
 		
 		
 	</div>
+	
+	<script src="js/home-anim.js"> </script>
     
 <?php include_once'inc/loader.inc' ?>
 

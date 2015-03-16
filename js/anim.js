@@ -12,25 +12,59 @@ $(document).ready(function($) {
 					//.addTo(controller);
 					
 
-	var dur = ($(window).height()/1.5);
+	var dur = ($(window).height());
 	//var durCountdown = ($(window).height()*8);
 
+/* HOME CONTENT */ 
+
 // build tween
-var titleFade = TweenMax.fromTo("#post-title", 1, 
+//var titleFadeHome = TweenMax.fromTo("#post-title", 1, 
+//		{scale: 1, opacity:1 },
+//		{scale: .75, opacity:.25}
+//	);
+//	
+//// build scene
+//var scene = new ScrollScene({triggerElement: "#home-posts", duration: dur, offset: -200 })
+//	.setTween(titleFadeHome)
+//	//.setTween(bgSlide)	
+//	.addTo(controller);
+//	
+//
+//var bgHome = TweenMax.fromTo("#home-header", 1,
+//	//{css:{"background-position":"50% 50%"}},
+//	//{css:{"background-position":"50% 100%"}}
+//	{top:0, opacity:1  },
+//	{top:-200, opacity:.5 }
+//	);
+//	
+//// build scene
+//var scene = new ScrollScene({triggerElement: "#home-posts", duration: dur, offset: -200 })
+//	//.setTween(titleFade)
+//	.setTween(bgHome)
+//	
+//	.addTo(controller);
+//
+//
+
+/* POST CONTENT */ 
+
+
+// build tween
+var titleFade = TweenMax.fromTo(".post-title", 1.5, 
 		{scale: 1, opacity:1 },
 		{scale: .75, opacity:.25}
 	);
 	
-
-	
 // build scene
-var scene = new ScrollScene({triggerElement: "#home-posts", duration: dur, offset: -200 })
+var scene = new ScrollScene({triggerElement: ".page-content", duration: dur, offset: -300 })
+	//.setTween(titleFade)
 	.setTween(titleFade)
-	//.setTween(bgSlide)
 	
 	.addTo(controller);
 
-var bgSlide = TweenMax.fromTo("#home-header", 1,
+
+
+var bgPost = TweenMax.fromTo(".page-header", 1.5,
 	//{css:{"background-position":"50% 50%"}},
 	//{css:{"background-position":"50% 100%"}}
 	{top:0, opacity:1  },
@@ -38,12 +72,10 @@ var bgSlide = TweenMax.fromTo("#home-header", 1,
 	);
 	
 // build scene
-var scene = new ScrollScene({triggerElement: "#home-posts", duration: dur, offset: -200 })
+var scene = new ScrollScene({triggerElement: ".page-content", duration: dur, offset: -300 })
 	//.setTween(titleFade)
-	.setTween(bgSlide)
+	.setTween(bgPost)
 	
 	.addTo(controller);
 
-
 });
-

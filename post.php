@@ -3,7 +3,7 @@
 
 
 <article class="post">
-    <header class="post-header" style="background-image:url(img/content/adventures/blogtest.jpg)">
+    <header class="post-header page-header" style="background-image:url(img/content/adventures/blogtest.jpg)">
 		
 		<div class="post-title">
 			<span class="date">2015.01.18</span>
@@ -11,7 +11,7 @@
 	        <p class="subtitle">Article Subtitle or introductory text that goes from a few words to a paragraph.</p>
 		</div>
 		
- 		<div class="meta">
+ 		<!-- <div class="meta"> 
  	        <div class="author"> 
  				<p>
 					<a class="author-link" href="contributor">
@@ -20,7 +20,7 @@
 					</a>
  				</p> 
  			</div>	
-       </div>
+       </div>-->
 	    <!-- <ul class="tags">
             <li><a href="#"> London </a> </li>
             <li><a href="#"> Fun With Friends </a> </li>
@@ -29,7 +29,7 @@
 		
     </header>
 	
-	<section class="post-content">
+	<section class="post-content page-content">
 	   	<nav class="share">
 			Share
 	   		<a href="http://facebook.com/share"><span class="icon-facebook"></span></a>
