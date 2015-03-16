@@ -87,6 +87,22 @@ $(document).ready(function(){
 	
 
 
+	//PARRALLAX TITLES FADE OUT
+
+	//var controller = new ScrollMagic.Controller();
+
+	
+	
+	
+	// build scene
+
+	//var scene = new ScrollMagic.Scene({triggerElement: "#home-header", duration: 300})
+	//// animate color and top border in relation to scroll position
+	//.setTween("#home-posts", {borderTop: "30px solid white", backgroundColor: "blue", scale: 0.7}) // the tween durtion can be omitted and defaults to 1
+	//.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+	//.addTo(controller);
+
+
 
 	//INITIATE INSTAFEED
 		
@@ -102,6 +118,9 @@ $(document).ready(function(){
 		resolution: 'standard_resolution',
     });
     feed.run();
+	
+
+
 	
 
 

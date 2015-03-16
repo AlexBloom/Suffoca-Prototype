@@ -1,11 +1,14 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
+
 	
+
+
 
 	<header id="home-header" style="background-image:url(img/content/adventures/la_01.jpg)">	
 		
-			<a class="post-title" href="post">
+			<a id="post-title" class="post-title" href="post">
 					
 				<h1 class="title">Riding the Clouds</h1>
 				<h2 class="subtitle">What would an adventure be like if...</h2>
@@ -34,7 +37,7 @@
 	     	<li style="background-image:url(img/content/adventures/la_01.jpg)">
 				
 		     	<a href="post" class="permalink">
-	     			<h3> Keep Swimming </h3>
+	     			<h3 id="test-anim"> Keep Swimming </h3>
 		     	</a>
 				
 				 <a href="contributor" class="author"> 
@@ -144,7 +147,7 @@
 						<a href="tag" class="tag">Another Tag</a>
 					</nav>
 	     	</li>
-	     	<li style="background-image:url(img/content/products/Hoodie_01.jpeg)">
+	     	<li style="background-image:url(img/content/products/Hoodie_01.jpg)">
 					<a href="post" class="permalink">
 						<h3> Last Post </h3>
 					</a>
@@ -153,6 +156,11 @@
 					</a>
 	     	</li>
 		
+		
+		
+		
+			
+			
 		
    		<!-- <li style="background-image:url(img/content/adventures/la_03.jpg)">
      		<a href="post" class="permalink">
@@ -337,7 +345,7 @@
 						<a href="tag" class="tag">Another Tag</a>
 					</nav>
 	     	</li>
-	     	<li style="background-image:url(img/content/products/Hoodie_01.jpeg)">
+	     	<li style="background-image:url(img/content/products/Unknown.jpeg)">
 					<a href="post" class="permalink">
 						<h3> Last Post </h3>
 					</a>

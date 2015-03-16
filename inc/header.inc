@@ -1,6 +1,6 @@
 		
 
-		<link rel="stylesheet" href="css/base.css">  <!-- Reset & Browser Independent -->
+		<!--<link rel="stylesheet" href="css/base.css">   Reset & Browser Independent -->
         <link rel="stylesheet" href="css/main.css"> <!-- Advanced & Browser Dependent -->
 		
 		<script src="//use.typekit.net/iwy1qra.js"></script>

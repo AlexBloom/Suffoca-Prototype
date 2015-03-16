@@ -1,0 +1,2 @@
+//anim.js
+$(document).ready(function(e){var t=new ScrollMagic,n=e(window).height()/1.5,r=TweenMax.fromTo("#post-title",1,{scale:1,opacity:1},{scale:.75,opacity:.25}),i=(new ScrollScene({triggerElement:"#home-posts",duration:n,offset:-200})).setTween(r).addTo(t),s=TweenMax.fromTo("#home-header",1,{top:0,opacity:1},{top:-200,opacity:.5}),i=(new ScrollScene({triggerElement:"#home-posts",duration:n,offset:-200})).setTween(s).addTo(t)});

@@ -29,10 +29,24 @@
 				All content &copy; SUFFOCA™ 2008-2015 
 			</p>	
         </footer>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+		
+		
+		<script src="js/gsap/TweenMax.min.js"> </script>
+		<!-- // <script src="js/gsap/ScrollToPlugin.min.js"> </script> -->
+		<!-- // <script src="js/gsap/TextPlugin.min.js"> </script> -->
+		<script src="js/jquery.scrollmagic.min.js"></script>
+		
+		<script src="js/jquery.scrollmagic.debug.js"></script>
+		
+		<script src="js/anim.js"></script>
+		
+		
+		
         <script src="js/main.js"></script>
 
         <script>
