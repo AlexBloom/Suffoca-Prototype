@@ -55,14 +55,14 @@ $(document).ready(function(){
 
 	//$('.full-screen').css('height',$(window).height() -200);
 	
-	$('#home-header').css('height',$(window).height()-100);
+	//$('#home-header').css('height',$(window).height()-100);
 	$('.post-header').css('height',$(window).height()-50);
-	$('#home-posts').css('margin-top',$(window).height()-100);
+	//$('#home-posts').css('margin-top',$(window).height()-100);
 	$('.post-content').css('margin-top',$(window).height()-100);
     $(window).resize(function(){
-		$('#home-header').css('height',$(window).height()-100);
+		//$('#home-header').css('height',$(window).height()-100);
 		$('.post-header').css('height',$(window).height()-50);
-		$('#home-posts').css('margin-top',$(window).height()-100);
+		//$('#home-posts').css('margin-top',$(window).height()-100);
 		$('.post-content').css('margin-top',$(window).height()-100);
 		
     });
@@ -107,14 +107,14 @@ $(document).ready(function(){
 	//INITIATE INSTAFEED
 		
     var feed = new Instafeed({
-        //get: 'tagged',
-		//tagName: 'suffoca',
-		get: 'user',		
-		userId: 2023173,
+        get: 'tagged',
+		tagName: 'suffoca',
+		//get: 'user',		
+		//userId: 2023173,
 		accessToken: '2023173.467ede5.add2f7a2796448ea87bb5f034df16040',
         clientId: '513b251ee14d416fa01ad5f53eddf91c',
 		template: '<a href="{{link}}"><img src="{{image}}" /></a>',
-		limit: 4,
+		limit: 3,
 		resolution: 'standard_resolution',
     });
     feed.run();
@@ -127,10 +127,17 @@ $(document).ready(function(){
 	
 	//Fire Swipe Classes for Sliders
 	window.featuredPosts = $('#featured-posts').Swipe().data('Swipe');
-	window.product = $('#product-images').Swipe().data('Swipe');
+	// window.product = $('#product-images').Swipe().data('Swipe');
 	window.lookbook = $('#lookbook').Swipe().data('Swipe');
 
 
+
+
+// Slick Slider
+$('.product-slider').slick({
+  dots: true,
+  speed: 500
+});
 
 
 

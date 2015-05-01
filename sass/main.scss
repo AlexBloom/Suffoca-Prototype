@@ -7,6 +7,7 @@
 @import "typography";
 @import "layout";
 @import "modules";
+@import "slick-theme";
 
 
 
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
 }
 
 /**
@@ -42,7 +43,7 @@ img {
 	display:block;
     width: 100%;
 	max-width:em(1200);
-	margin:0 auto $spacing-unit /2;
+	margin:0 auto $spacing-unit;
     vertical-align: middle;
 }
 img.half{
@@ -109,16 +110,17 @@ h2, h4, h5, h6{
 	font-family:$sans-regular;
 }
 h1{
+    font-weight:800;
 	text-transform:uppercase;
 	font-size:$base-font-size *2;
 	@media screen and (min-width:$phablet) {
 		
 	}
 	@media screen and (min-width:$tablet) {
-		font-size:$base-font-size *4;
+		//font-size:$base-font-size *4;
 	}
 	@media screen and (min-width:$desktop) {
-		font-size:$base-font-size *6;
+		//font-size:$base-font-size *6;
 	}
 }
 h2{

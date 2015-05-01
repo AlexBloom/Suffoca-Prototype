@@ -1,6 +1,14 @@
 <?php include_once'inc/head.inc' ?>
+
+	<style>
+		#cart-link{
+			display:inline!important;
+		}
+	</style>
+
 <?php include_once'inc/header.inc' ?>
 
+	
 	
 	<header id="shop-header" style="background-image:url(img/content/lookbook/hitch_01.jpg)">		 
 		<section class="open-lookbook">

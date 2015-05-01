@@ -1,14 +1,16 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
-
+<style>
+	
+</style>
 <article class="post">
     <header class="post-header page-header" style="background-image:url(img/content/adventures/blogtest.jpg)">
 		
 		<div class="post-title">
 			<span class="date">2015.01.18</span>
-	        <h1 class="title">Roam Where You Want To</h1>
-	        <p class="subtitle">Article Subtitle or introductory text that goes from a few words to a paragraph.</p>
+	        <h1 class="title">The Great Swim</h1>
+	        <!-- <p class="subtitle">Article Subtitle or introductory text that goes from a few words to a paragraph.</p> -->
 		</div>
 		
  		<!-- <div class="meta"> 
@@ -43,12 +45,15 @@
 	
 			<p> An amazing installation called Spectra, by Japanese artist Ryoji Ikeda was put up next to the House of Lords to commemorate those in world war 2. The visuals topped with the composed sounds, was a truly body tingling exsperience , it was hard not to feel something when gazing at the huge beams of light connecting us from the ground to the skys.</p>
 		
-			<img class="half" src="img/content/adventures/post/6K3A1889.jpg" alt="6K3A1889">
-			<!-- <img class="half" src="img/content/adventures/post/6K3A0960.jpg"  alt="6K3A0960"> -->
-			<img class="half" src="img/content/adventures/post/6K3A1671.jpg" alt="6K3A1671">
-		
-			<img class="half" src="img/content/adventures/post/6K3A1632-Edit.jpg" alt="6K3A1632 Edit">
-			<img class="half" src="img/content/adventures/post/6K3A1816.jpg" alt="6K3A1816">
+			<div class="photoset four"> 
+				<img src="img/content/adventures/post/6K3A1889.jpg" alt="6K3A1889">
+			
+				<img src="img/content/adventures/post/6K3A1671.jpg" alt="6K3A1671">
+			
+				<img src="img/content/adventures/post/6K3A1632-Edit.jpg" alt="6K3A1632 Edit">
+			
+				<img src="img/content/adventures/post/6K3A1816.jpg" alt="6K3A1816">
+			</div>
 		
 			<img src="img/content/adventures/post/6K3A1165.jpg" alt="6K3A1165">
 	        <p>This trip was amazing. I really needed it, so stoked to see what life is like outside of DC. More to come.</p>
@@ -152,7 +157,7 @@
 		
 	<a href="post" class="next-up" style="background-image:url(img/content/adventures/post/6K3A1889.jpg)"> 
 		<h6>NEXT UP</h6>
-		<h1 class="post-title"> Riding the Clouds </h1>
+		<h1 class="next-post-title"> Riding the Clouds </h1>
 		<p class="subtitle"> What if we go on another adventure? </p>
 	</a>	
 </div>

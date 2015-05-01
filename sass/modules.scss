@@ -71,16 +71,10 @@ input{
 }
 
 input[type="text"] {
-
 width: 60%;
 background: none;
 border:none;
 border-bottom: 1px solid $black;
-//border-radius: 4px;
-//padding: 1em 5%;
-//-webkit-transition: border-color 0.2s;
-//-moz-transition: border-color 0.2s;
-//transition: border-color 0.2s;
 }
 
 input[type="submit"], .inline-button {
@@ -99,7 +93,7 @@ font-weight: 700;
 
 button, input[type=submit]{
 	font-family:$sans-bold;	
-	font-size:1em;
+	font-size:$small-font-size;
 	background-color:$brand-color-secondary;
 	//background-color:$black;
 	color:$white;
@@ -160,6 +154,8 @@ header{
 		margin-bottom:0;
 	}
 }
+
+
 
 //Full Screen / Vertical Centering / Featured Posts
 .full-screen, .full-width{
@@ -257,36 +253,39 @@ article{
 	}
 }
 
-//#sidebar{
-//	width:100%;
-//	@media screen and (min-width:(em(800))){
-//		float:left;
-//		max-width:(em(300));
-//		padding:0 1em;
-//	}
-//}
-
-
 
 //INSTAFEED
 
 .instawrap{
-	//width:100%;
+	display:flex;
+	display:-webkit-flex;
 	overflow-x:scroll;
 	overflow-y:hidden;
-	background-color:$grey-dark;
-	padding:$spacing-unit $spacing-unit;
+	background-color:$white;
+	&:before{
+		content:' ';
+		display:block;
+		padding:0 0 56.25%;
+	}
+
+	@media screen and (min-width:$laptop){
+		float:left;
+		width:50%;
+	}
 	
+	div.insta-content{
+		margin:auto;
+	}
+
 	.instatitle{
 		text-align:center;
-		color:$off-white;
-		margin:$spacing-unit *2 0;
+		color:$grey;
+		margin:$spacing-unit/2 0;
 		a{
 			color:$grey;
 			@include transition-tenth-sec;
 			&:hover{
-				color:$grey-light;
-				
+				color:$grey-dark;
 			}
 			
 		}
@@ -297,18 +296,162 @@ article{
 		width:100%;
 		img{
 			float:left;
-			width:46%;
+			width:29%;
 			padding:0 2%;
-			
-			@media screen and (min-width:$tablet){
-				width:21%;
-			}
+			margin:0;
 		}
-	
+		
 	}
 }
 
+.video-module{
+	background-color:$black;
+	width:100%;
+	position:relative;
 
+	@media screen and (min-width:$laptop){
+		float:left;
+		width:50%;
+	}
+	&:before{
+		content:' ';
+		display:block;
+		padding:0 0 56.25%;
+	}
+
+	.background-video{
+		position:absolute;
+		display:block;
+		top:0;
+		min-width:100%;
+		min-height: 100%;
+		bottom:0;
+		left:0;
+	}
+
+}
+
+
+
+// SLICK SLIDER
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    width:100%;
+    min-height: 85vh;
+    @include full-bleed-background;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
 
 
 
@@ -369,10 +512,10 @@ article{
 	padding:$spacing-unit /2 0;
 	display:block;
 	width:100%;
-	background-color:$off-white;
+	background-color:$white;
 	color:$grey-light;
 	img{
-		width:1em;
+		width:5em;
 		margin:0 auto;
 	}
 }

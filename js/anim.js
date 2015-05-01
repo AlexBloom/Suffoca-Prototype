@@ -13,6 +13,7 @@ $(document).ready(function($) {
 					
 
 	var dur = ($(window).height());
+	var halfDur = ($(window).height()/2);
 	//var durCountdown = ($(window).height()*8);
 
 /* HOME CONTENT */ 
@@ -52,7 +53,7 @@ $(document).ready(function($) {
 // build tween
 var titleFade = TweenMax.fromTo(".post-title", 1.5, 
 		{scale: 1, opacity:1 },
-		{scale: .75, opacity:.25}
+		{scale: .75, opacity:0}
 	);
 	
 // build scene
@@ -77,5 +78,27 @@ var scene = new ScrollScene({triggerElement: ".page-content", duration: dur, off
 	.setTween(bgPost)
 	
 	.addTo(controller);
+	
+	
+	
+	
+// build tween
+	var tween = TweenMax.fromTo(".next-up", .5,
+	{css:{"background-position":"50% 0%"}},
+	{css:{"background-position":"50% 50%"}}
+);
+
+// build scene
+var scene = new ScrollScene({triggerElement: ".pagination", duration: dur, offset: -halfDur })
+				.setTween(tween)
+				.addTo(controller);
+
+// show indicators (requires debug extension)
+//scene.addIndicators();
+	
+	
+	
+	
+	//Close doc ready
 
 });

@@ -2,16 +2,12 @@
 <?php include_once'inc/header.inc' ?>
 
 
-	
-
-
-
 	<header id="home-header" class="page-header" style="background-image:url(img/content/adventures/la_01.jpg)">	
 		
 			<a id="post-title" class="post-title" href="post">
 					
-				<h1 class="title">Riding the Clouds</h1>
-				<h2 class="subtitle">What would an adventure be like if...</h2>
+				<h1 class="title">The Golden Carrot</h1>
+				<p class="subtitle">The Barbican Centre, a golden carrot in the city of London...</p>
 				
 			</a>
 		
@@ -19,8 +15,6 @@
 	</header>  
 	
 
-	
-	
 
 	<div id="home-posts" class="page-content">
 		<dl class="filters">
@@ -155,80 +149,32 @@
 						<img src="img/content/contributors/boyce.jpg" alt="Boyce"/>
 					</a>
 	     	</li>
-		
-		
-		
-		
-			
-			
-		
-   		<!-- <li style="background-image:url(img/content/adventures/la_03.jpg)">
-     		<a href="post" class="permalink">
-
-     		</a>
-
-			<h6> Paramount </h6>
-     	</li>
-     	<li style="background-image:url(img/content/adventures/london_003.jpg)">
-     		<a href="post" class="permalink">
-     			<h6> Eats Eggslut </h6>
-     		</a>
-     	</li>
-   		<li style="background-image:url(img/content/adventures/tokyo_03.jpg)">
-     		<a href="post" class="permalink">
-     			<h6> Post Title </h6>
-     		</a>
-     	</li>
-     	<li style="background-image:url(img/content/products/Beanie.jpg)">
-     		<a href="post" class="permalink">
-     			<h6> Product </h6>
-     		</a>
-     	</li>
-   		<li style="background-image:url(img/content/adventures/travels_003.jpg)">
-     		<a href="post" class="permalink">
-     			<h6> Post Title </h6>
-     		</a>
-     	</li>
-     	<li style="background-image:url(img/content/adventures/la_02.jpg)">
-     		<a href="post" class="permalink">
-     			<h6> Post Title </h6>
-     		</a>
-     	</li>
-     	<li style="background-image:url(img/content/products/Unknown.jpeg)">
-     		<a href="post" class="permalink">
-     			<h6> New Product </h6>
-     		</a>
-     	</li>
-   		<li style="background-image:url(img/content/adventures/travels_002.jpg)">
-     		<a href="post" class="permalink">
-     			<h6> Post Title </h6>
-     		</a>
-     	</li>
-     	<li style="background-image:url(img/content/lookbook/hitch_04.jpg)">
-     		<a href="post" class="permalink">
-     			<h6> Post Title </h6>
-     		</a>
-     	</li>
-     	<li style="background-image:url(img/content/products/Hoodie_01.jpg)">
-     		<a href="post" class="permalink">
-     			<h6> Other Product </h6>
-     		</a>
-     	</li>
-   		<li style="background-image:url(img/content/adventures/london_004.jpg)">
-     		<a href="post" class="permalink">
-     			<h6> Post Title </h6>
-     		</a>
-     	</li> -->
     	</ul>
 		
 		
-		<div class="instawrap">
-			<h3 class="instatitle">Instagram</h3>
-			
-			<div id="instafeed"> </div>
-			
-			<h3 class="instatitle"><a href="http://instagram.com/suffoca"target=_blank>Follow @Suffoca </a></h3>
-		</div>
+		<section>
+			<div class="instawrap">
+				<div class="insta-content">
+					<h3 class="instatitle">Instagram</h3>
+					<div id="instafeed"> </div>
+					
+					<h3 class="instatitle">
+						<a href="http://instagram.com/suffoca"target=_blank>Follow @Suffoca </a>
+					</h3>
+				</div>
+			</div>
+
+			<div class="video-module">
+
+				<video class="background-video" autoplay loop muted>
+					<source src="video/China.mp4" type="video/mp4"/>
+					<source src="video/China.ogg" type="video/ogg"/>
+				</video>
+
+			</div>
+		</section>
+
+		
 		
 		
 	    <ul class="posts">

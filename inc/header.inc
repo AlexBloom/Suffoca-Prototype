@@ -12,14 +12,16 @@
         <header id="header">
         	<a id="toggle" > 
 				<!-- <span class="icon-logo-face"> </span>  -->
-				<span class="icon-menu"> </span>
-				<span id="menu-text"> Menu </span>
+				<span class="menu"> </span>
+				<!-- <span id="menu-text"> Menu </span> -->
 			
 			</a>
         	<a id="logotype" href="index">  <span class="icon-suffoca"></span> </a>
         	<div id="cart">
-        		<a id="shop-link" href="shop"> Shop </a>
-        		<a id="cart-link" href="#cart"> <span class="icon-cart"></span> </a>
+        		<a id="shop-link" href="shop"> Store </a>
+        		<a id="cart-link" href="#cart"> 
+					<span class="icon-cart"> </span> <span class="count"> 2 </span> 
+				</a>
         	</div>
         </header>
 
