@@ -532,7 +532,8 @@ body {
       line-height: 1; }
       #primary #page-nav li a {
         font-family: "proxima-nova", helvetica, arial, sans-serif;
-        font-size: 4rem;
+        font-weight: 800;
+        font-size: 3rem;
         color: black;
         display: block;
         margin: 0;
@@ -575,19 +576,21 @@ body {
   #primary #search {
     display: block;
     width: 100%;
-    max-width: 32.5em;
+    width: 100%;
+    max-width: 37.5em;
     padding: 0;
     margin: 0 auto;
     position: relative;
     font-size: 1rem; }
     #primary #search input[type="text"] {
       font-size: 3em;
-      width: 100%;
-      margin: 0;
-      padding: 0; }
+      margin: 0 1em;
+      padding: 0;
+      border-bottom: 1px solid black; }
     #primary #search input[type="submit"] {
       font-size: 1.5em;
       opacity: 0;
+      padding: 1em;
       color: #888888;
       position: absolute;
       right: 0;
@@ -1594,10 +1597,8 @@ input {
   font-size: 1em; }
 
 input[type="text"] {
-  width: 60%;
   background: none;
-  border: none;
-  border-bottom: 1px solid black; }
+  border: none; }
 
 input[type="submit"], .inline-button {
   color: white;

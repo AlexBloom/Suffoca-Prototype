@@ -63,8 +63,9 @@
 				</li>
 			</ul>
 			<form id="search">
-				<input type="text" placeholder="SEARCH"/> <input type="submit" value="go" />
-			</div>
+				<input type="text" placeholder="SEARCH"/> 
+				<!-- <input type="submit" value="go" /> -->
+			</form>
 			<ul id="social-nav">
 				<li>
 					<a href="http://twitter.com/suffoca" target=_blank>

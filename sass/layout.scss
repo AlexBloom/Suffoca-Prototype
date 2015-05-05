@@ -318,8 +318,9 @@ body{
 			line-height:1;
 			//text-align:center;
 			a{
-					font-family:$sans-bold;
-				font-size:$base-font-size *4;
+				font-family:$sans-bold;
+				font-weight: 800;
+				font-size:$base-font-size *3;
 				color:rgba(0,0,0,1);
 				display:block;
 				margin:0;
@@ -381,16 +382,19 @@ body{
 		display:block;
 		@extend %clearfix;
 		width:100%;
-		max-width:(em(520));
+		//max-width:(em(520));
+		width:100%;
+		max-width:(em(600));
 		padding:0;
 		margin:0 auto;
 		position:relative;
 		font-size:$base-font-size;
 		input[type="text"]{
 			font-size:3em;
-			width:100%;
-			margin:0;
+			//width:100%;
+			margin:0 1em;
 			padding:0;
+			border-bottom:1px solid black;
 			//padding:0 $spacing-unit;
 			//margin:1em 5%;
 		}
@@ -402,6 +406,7 @@ body{
 		input[type="submit"]{
 			font-size:1.5em;
 			opacity:0;
+			padding:1em;
 			color:$grey;
 			position:absolute;
 			right:0;
