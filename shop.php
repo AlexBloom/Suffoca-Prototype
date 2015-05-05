@@ -1,10 +1,13 @@
 <?php include_once'inc/head.inc' ?>
 
 	<style>
-		#cart-link{
-			display:inline!important;
-		}
-	</style>
+    #shop-link{
+      display:none!important;
+    }
+    #cart-link{
+      display:block!important;
+    }
+  </style>
 
 <?php include_once'inc/header.inc' ?>
 
@@ -35,14 +38,34 @@
 	</section>
 	
 	
-	<dl class=" filters">
+	<!-- <dl class=" filters">
 		<dt> FILTER </dt>
 		<dd class="filter all active"> All </dd>
 		<dd class="filter shortsleeve"> Shortsleeve  </dd>
 		<dd class="filter longsleeve"> Longsleeve </dd>
 		<dd class="filter misc"> Misc </dd>
 		<dd class="filter art"> Art </dd>
-	</dl>
+	</dl> -->
+
+  <section id="shop-intro">
+    <p>Now let me think about where it began…
+      Ah yes, by a lake, with a small, bean-shaped man.
+      So tell me, are you ready for me to begin?
+      Well then my friends, settle down and lean in…
+      At the spot where the wild crosses paths with the town,
+      Where the trees grow up tall, and their roots grow deep down,
+      And the buildings sprawl freely, entangled with vines,
+      There lies a great lake, obscured by the pines.
+      As he tiptoed away from that gate in the woods,
+      Where the trees he had known all his life proudly stood,
+      He waved them goodbye with a song in his heart,
+      It was now, Beanman knew, that his journey would start. 
+      Now this lake is so large, so deep and so wide,
+      That the trees are pulled in by the strength of the tide,
+      And if you should wish to see the far shore,
+      It would be nigh impossible with your feet on the floor.
+    </p>
+  </section>
 
     <ul class="products">
         <li class="product">

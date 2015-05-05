@@ -56,14 +56,16 @@ $(document).ready(function(){
 	//$('.full-screen').css('height',$(window).height() -200);
 	
 	//$('#home-header').css('height',$(window).height()-100);
-	$('.post-header').css('height',$(window).height()-50);
+	//$('.post-header').css('height',$(window).height()-50);
 	//$('#home-posts').css('margin-top',$(window).height()-100);
-	$('.post-content').css('margin-top',$(window).height()-100);
+	//$('.post-content').css('margin-top',$(window).height()-100);
     $(window).resize(function(){
 		//$('#home-header').css('height',$(window).height()-100);
-		$('.post-header').css('height',$(window).height()-50);
+		
+		//$('.post-header').css('height',$(window).height()-50);
 		//$('#home-posts').css('margin-top',$(window).height()-100);
-		$('.post-content').css('margin-top',$(window).height()-100);
+		
+		//$('.post-content').css('margin-top',$(window).height()-100);
 		
     });
 	

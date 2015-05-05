@@ -1,9 +1,12 @@
 <?php include_once'inc/head.inc' ?>
 
 	<style>
-		#cart-link{
-			display:inline!important;
+		#shop-link{
+			display:none!important;
 		}
+		#cart-link{
+	      display:block!important;
+	    }
 	</style>
 	
 <?php include_once'inc/header.inc' ?>

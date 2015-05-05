@@ -19,8 +19,9 @@
         	<a id="logotype" href="index">  <span class="icon-suffoca"></span> </a>
         	<div id="cart">
         		<a id="shop-link" href="shop"> Store </a>
+        		
         		<a id="cart-link" href="#cart"> 
-					<span class="icon-cart"> </span> <span class="count"> 2 </span> 
+					<span class="cart"> Cart </span> <span class="total"><span class="currency">&pound;</span>100</span> 
 				</a>
         	</div>
         </header>
