@@ -13,10 +13,10 @@
 
 	
 	
-	<header id="shop-header" style="background-image:url(img/content/lookbook/hitch_01.jpg)">		 
-		<section class="open-lookbook">
+	<header id="shop-header" class="open-lookbook" style="background-image:url(img/content/lookbook/hitch_01.jpg)">		 
+		<section>
 			<h1 class="title">Spring 2015 Lookbook</h1>
-      <h2 class="subtitle"> <button type="reset"> View  </button>  </h2>			
+      <!-- <h2 class="subtitle"> <button type="reset"> View  </button>  </h2>			 -->
 		</section>		
 	</header>  
 	
