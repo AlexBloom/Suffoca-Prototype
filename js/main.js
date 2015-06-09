@@ -109,11 +109,12 @@ $(document).ready(function(){
 	//INITIATE INSTAFEED
 		
     var feed = new Instafeed({
-        get: 'tagged',
-		tagName: 'suffoca',
-		//get: 'user',		
-		//userId: 2023173,
-		accessToken: '2023173.467ede5.add2f7a2796448ea87bb5f034df16040',
+        //get: 'tagged',
+		//tagName: 'suffoca',
+		get: 'user',		
+		userId: 5000335,
+		accessToken: '5000335.467ede5.f2f39714cc1d4a02aad4bddba9558579',
+		//accessToken: '2023173.467ede5.add2f7a2796448ea87bb5f034df16040',
         clientId: '513b251ee14d416fa01ad5f53eddf91c',
 		template: '<a href="{{link}}"><img src="{{image}}" /></a>',
 		limit: 3,

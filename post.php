@@ -10,7 +10,7 @@
 		<div class="post-title">
 			<span class="date">2015.01.18</span>
 	        <h1 class="title">The Great Swim</h1>
-	        <!-- <p class="subtitle">Article Subtitle or introductory text that goes from a few words to a paragraph.</p> -->
+	        <p class="subtitle">Article Subtitle or introductory text that goes from a few words to a paragraph.</p>
 		</div>
 		
  		<!-- <div class="meta"> 

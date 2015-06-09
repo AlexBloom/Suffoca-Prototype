@@ -6,6 +6,36 @@
  *
  */
 
+/* - - - - - - - - - - - - - - - Typographic */
+.post-title{
+	display:block;
+	position:relative;
+	z-index:2;
+	text-align:center;
+	padding-top:3em;
+	margin:auto;
+	max-width:(em(300));
+	color:$white;
+
+	
+	p.subtitle{
+		//font-size:100%;
+	}
+	&:hover{
+		//box-shadow:0 5px 0 0 $white;
+	}
+}
+
+h1.title{
+	box-shadow:0 0 0 2px $white;
+	font-size:1em;
+	letter-spacing:.25em;
+	font-weight:800;
+	text-transform:uppercase;
+	margin:1em auto;
+}
+
+
 /* =========================== Navigation */ 
 header, nav{
 	-webkit-font-smoothing: antialiased;

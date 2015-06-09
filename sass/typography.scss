@@ -101,8 +101,9 @@ blockquote{
 	font-style:italic; 
 	font-weight:400; 
 	color:$text-color;
-	border-left:.25rem solid $brand-color;
-	padding: 0 0 0 $spacing-unit;
+	//border-left:.25rem solid $brand-color;
+	background-color:$white-dark;
+	padding: $spacing-unit;
 	font-size:1.25em;
 	//margin-bottom:$spacing-unit !important;
 	letter-spacing: 0.01rem;
