@@ -11,7 +11,7 @@
 	
 <?php include_once'inc/header.inc' ?>
 
-<nav class="breadcrumb">
+<!-- <nav class="breadcrumb"> 
 	<ul>
 		<li> <a href="shop"> Shop </a> </li>
 		<li> <a href="shop/mens"> Mens </a> </li>
@@ -19,6 +19,8 @@
 		<li> <a href="product">This Product</a></li>
 	</ul>
 </nav>
+-->
+
 
 <article class="product">
 		
@@ -89,39 +91,35 @@
 		
 </article>    
 
+<!--  
 <section class="related-products">
 	<h3>Related Products</h3>
     <ul>
         <li>
            <a href="" class="permalink">
                <img src="img/content/products/all/Beanie_Suffoca-400x400.jpg" alt="Product Caption">
-               <!-- <h6> Product Name </h6> -->
            </a>
         </li>
         
 		<li>
            <a href="" class="permalink">
                <img src="img/content/products/all/Suffoca_Crew_Type_Full-400x400.gif" alt="Product Caption">
-               <!-- <h6> Product Name </h6> -->
            </a>
         </li>
 
         <li>
            <a href="" class="permalink">
                <img src="img/content/products/all/Suffoca_Script_Front-400x400.jpg" alt="Product Caption">
-               <!-- <h6> Product Name </h6> -->
            </a>
         </li>	
          <li>
            <a href="" class="permalink">
                <img src="img/content/products/all/Beanie_Suffoca-400x400.jpg" alt="Product Caption">
-               <!-- <h6> Product Name </h6> -->
            </a>
         </li>
-    </ul>
-	
+    </ul>	
 </section>
-
+-->
 <footer class="shop-footer">
 
 	

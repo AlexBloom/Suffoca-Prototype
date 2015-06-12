@@ -445,8 +445,9 @@ article{
 {
     display: none;
     float: left;
-    height: 100%;
+    //height: 100%;
     width:100%;
+    height:90vh;
     min-height: 85vh;
     @include full-bleed-background;
 }
