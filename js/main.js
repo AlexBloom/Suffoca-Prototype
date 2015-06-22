@@ -27,6 +27,13 @@ $(document).ready(function(){
 	$(".open-lookbook").click(function(){
 		$("#lookbook-modal").addClass('open');
 	});
+
+	$(document).on('keyup',function(evt) {
+	    if (evt.keyCode == 27) {
+	       $("#lookbook-modal").removeClass('open');
+	    }
+	});
+
 	$(".close-lookbook").click(function(){
 		$("#lookbook-modal").removeClass('open');
 	});

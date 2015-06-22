@@ -678,6 +678,7 @@ body{
 				width:100%;
 				display:block;
 				display:flex;
+				display:-webkit-flex;
 				z-index:1;		
 			h3{
 				@include transition-tenth-sec;
@@ -1822,6 +1823,7 @@ article.product{
 		display:flex;
 		display:-webkit-flex;
 		flex-direction:column;
+		-webkit-flex-direction:column;
 		justify-content:space-around;
 		.featured-image{
 			background:#f7f7f7;
@@ -1833,6 +1835,7 @@ article.product{
 		.featured-image{order:1;}
 		.product-actions{order:3;}
 		@media screen and (min-width:$laptop){
+			-webkit-flex-direction: row;
 			flex-direction:row;
 			align-items:center;
 			.product-info{order:1;}

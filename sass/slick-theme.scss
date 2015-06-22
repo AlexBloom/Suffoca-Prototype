@@ -63,15 +63,16 @@ $slick-opacity-not-active: 0.25 !default;
     width: 20px;
     line-height: 0px;
     font-size: 0px;
-    cursor: pointer;
+    cursor:pointer!important;
     background: transparent;
     color: transparent;
-    top: 50%;
-    margin-top: -10px;
-    padding: 0;
+    bottom: 0;
+    padding:1.5rem!important;
+    margin: 1rem .5rem!important;
     border: none;
     outline: none;
     font-weight:bold;
+    z-index:1;
     &:hover, &:focus {
         outline: none;
         background: transparent;
@@ -89,22 +90,24 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-prev:before, .slick-next:before {
     font-family: $slick-font-family;
-    font-size: 20px;
+    font-family: 'Suffoca-Icons';
+    font-size: 24px;
     line-height: 1;
-    color: $slick-arrow-color;
+
+    color: $grey;
     opacity: $slick-opacity-default;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-    left: -25px;
+    left: 0;
     [dir="rtl"] & {
         left: auto;
-        right: -25px;
+        right: 0;
     }
     &:before {
-        content: $slick-prev-character;
+        content: "\e094";
         [dir="rtl"] & {
             content: $slick-next-character;
         }
@@ -112,13 +115,13 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: 0;
     [dir="rtl"] & {
-        left: -25px;
+        left: 0;
         right: auto;
     }
     &:before {
-        content: $slick-next-character;
+        content: "\e095";
         [dir="rtl"] & {
             content: $slick-prev-character;
         }
@@ -146,7 +149,7 @@ $slick-opacity-not-active: 0.25 !default;
         display: inline-block;
         height: 20px;
         width: 20px;
-        margin: 0 4px;
+        margin: 0 .25em;
         padding: 0;
         cursor: pointer;
         button {
@@ -181,7 +184,7 @@ $slick-opacity-not-active: 0.25 !default;
                 top: 0;
                 left: 0;
                 content: $slick-dot-character;
-                width: 16px;
+                width: 17px;
                 height: 16px;
                 font-family: $slick-font-family;
                 font-size: $slick-dot-size;
