@@ -21,19 +21,17 @@
 	</header>  
 	
 	<section id="lookbook-modal">
-		<div id="lookbook" class="swipe">
-			<div class="swipe-wrap">
-				<div> <img src="img/content/lookbook/hitch_01.jpg" alt="Hitch 01">  </div>
-				<div> <img src="img/content/lookbook/hitch_02.jpg" alt="Hitch 02">  </div>
-				<div> <img src="img/content/lookbook/hitch_03.jpg" alt="Hitch 03">  </div>
-				<div> <img src="img/content/lookbook/hitch_04.jpg" alt="Hitch 04">  </div>
-				<div> <img src="img/content/lookbook/hitch_05.jpg" alt="Hitch 05">  </div>				
-			</div>
-			<h3 class="lookbook-title"> SPRING 2015 </h3>
-			<div class="button prev" onclick='lookbook.prev()'> <span class="icon icon-left"> </span> </div> 
-	    	<div class="button next" onclick='lookbook.next()'> <span class="icon icon-right"> </span> </div>
-			<span class="close-lookbook"> <span class="icon-close"> </span> </span>
+  <h3 class="lookbook-title"> SPRING 2015 </h3>
+		<div id="lookbook">
+				<div class="pane" style="background-image:url(img/content/lookbook/hitch_01.jpg)"> </div>
+				<div class="pane" style="background-image:url(img/content/lookbook/hitch_02.jpg)"> </div>
+				<div class="pane" style="background-image:url(img/content/lookbook/hitch_03.jpg)"> </div>
+				<div class="pane" style="background-image:url(img/content/lookbook/hitch_04.jpg)"> </div>
+				<div class="pane" style="background-image:url(img/content/lookbook/hitch_05.jpg)"> </div>				
 		</div>
+    <span class="close-lookbook"> <span class="icon-close"> </span> </span>
+    <!-- <div class="button prev" onclick='lookbook.prev()'> <span class="icon icon-left"> </span> </div>  -->
+        <!-- <div class="button next" onclick='lookbook.next()'> <span class="icon icon-right"> </span> </div> -->
 		
 	</section>
 	

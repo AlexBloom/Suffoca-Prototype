@@ -77,8 +77,7 @@
 				<div style="background-image:url(img/content/products/Hoodie_01.jpg);">  </div>
 				<div style="background-image:url(img/content/products/Hoodie_01.jpg);"> </div>
 				<div style="background-image:url(img/content/products/Black_T_.jpg);"> </div>
-				<div style="background-image:url(img/content/products/img-thing.jpeg);"> </div>
-			
+				<div style="background-image:url(img/content/products/img-thing.jpeg);"> </div>		
 		</div> 
 		
 		

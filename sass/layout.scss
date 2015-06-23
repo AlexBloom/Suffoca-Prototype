@@ -57,7 +57,7 @@ body{
 			//padding:.5em .25em;
 		}
 	}
-
+	
 	#toggle{
 		display:block;
 		position:absolute;
@@ -89,8 +89,11 @@ body{
 		letter-spacing:.05rem;
 		display:inline-block;
 		&:hover{
-			transform: scaleX(1.2);
-			transform: rotate(5deg);
+			transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			//transform: rotate(5deg);
 		}
 		span{
 			font-size:$base-font-size ;
@@ -230,6 +233,14 @@ body{
 		overflow-y:scroll;
 		transform:scale(1);
 	}
+	&.left{
+		left:-100%;
+		right:100%;
+	}
+	&.right{
+		right:-100%;
+		left:100%;
+	}
 	&.scrolled{
 		#close-primary{
 			padding:.5rem;
@@ -239,6 +250,7 @@ body{
 		}
 	}
 	#close-primary{
+
 		position:fixed;
 		top:0;
 		left:0;
@@ -249,21 +261,16 @@ body{
 		text-align:center;
 		z-index:1;
 		@include transition-tenth-sec;
-		//width:4.5em;
 		span.icon-close{
 			font-size:1.5rem;
-			
 			line-height:1;
-			//margin-left:.2em;
-			//vertical-align:middle;
+			font-weight:bold;
 		}
 		span.close-text{
 			font-family:$sans-regular;
 			font-size:.75rem;
 			line-height:1;
-			vertical-align:.25em;
-			//float:left;
-			
+			vertical-align:.25em;			
 		}
 		&:hover{
 			color:$black;
@@ -369,7 +376,8 @@ body{
 				
 			}
 			&:hover{
-				box-shadow:0px 2px 0 0 $black;
+				color:$grey;
+				//box-shadow:0px 2px 0 0 $black;
 				//text-decoration:underline;
 			}
 		}
@@ -415,6 +423,58 @@ body{
 		}
 	}
 }
+
+/* =========================== Off Site Slide In Pages */
+
+#about, #contact{
+	position:fixed;
+	top:0;
+	bottom:0;
+	width:100%;
+	@include transition-quarter-sec;
+	//opacity:0;
+	z-index:0;
+	background-color:$white;
+	h1{
+		text-align:center;
+	}
+	//background-color:rgba(255,255,255,.95);
+	&.open{
+		left:0;
+		right:0;
+		z-index:2000;
+		opacity:1;
+	}
+}
+//off-canvas-left
+#about{	
+	left:-100%;
+	right:100%;
+}
+//off-canvas-right
+#contact{
+	left:100%;
+	right:-100%;
+}
+
+.closeOffCanvas{
+	position:fixed;
+	top:50%;
+	height:1px;
+	line-height:.5;
+	z-index:1;
+	color:$black;
+	font-size:2em;
+	cursor:pointer;
+}
+#closeAbout{
+	right:1em;
+}
+#closeContact{
+	left:1em;
+}
+
+
 /* =========================== Footer */
 #footer{
 	display:none;
@@ -1011,8 +1071,24 @@ body{
 	height:50vh;
 	display:flex;
 	display:-webkit-flex;
+	position:relative;
+	&:before{
+		@include pseudo-block;
+		//position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		@include transition-tenth-sec;
+	}
+	&:hover{
+		&:before{
+			background-color:rgba(0,0,0,.25);
+		}		
+	}
 	section{
 		margin:auto;
+		z-index:2;
 	}
 
 	h1{
@@ -1060,7 +1136,6 @@ body{
 		font-size:2em;
 		color:$black;
 	}
-
 }
 
 #lookbook-modal{
@@ -1077,11 +1152,16 @@ body{
 		@include transition-tenth-sec;
 		@include teo;
 		//margin:1em;
-		z-index:999;
+		z-index:1;
 		color:$white;
+
 		#lookbook{
 			visibility:hidden;
 			max-height:0;
+			.pane{
+				height:100vh;
+
+			}
 		}
 		.lookbook-title{
 			@include transition-tenth-sec;
@@ -1097,6 +1177,7 @@ body{
 		opacity:1;
 		top:0;
 		bottom:0;
+		z-index:1000;
 		#lookbook{
 			visibility:visible;
 			max-height:150%;
@@ -1111,11 +1192,31 @@ body{
 	
 	.close-lookbook{
 		position:fixed;
-		bottom:0;
+		top:0;
+		padding:.5em;
 		left:3em;
 		right:3em;
 		text-align:center;
 		cursor:pointer;
+		@include transition-tenth-sec;
+		@include teo;
+		&:hover{
+			transform:rotate(180deg);
+		}
+		&:active{
+			transition-delay:.1s;
+			-webkit-transition-delay:.1s;
+			-moz-transition-delay:.1s;
+			-ms-transition-delay:.1s;
+			transform:scale(.75);
+		}
+		.icon-close{
+			font-size:1.5em;
+			//color:$grey-light
+		}
+	}
+	.slick-prev:before, .slick-next:before{
+		color:$white;
 	}
 	.prev, .next{
 		position:fixed;
@@ -1123,6 +1224,7 @@ body{
 		width:1em;
 		padding:0 1em;
 		cursor:pointer;
+
 	}
 	.prev{
 		left:0;

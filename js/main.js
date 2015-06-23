@@ -13,6 +13,29 @@ $(document).ready(function(){
 		$("#primary").removeClass('open');
 		$("#header").removeClass('closed');
 	});
+
+	$(document).on('keyup',function(evt) {
+	    if (evt.keyCode == 27) {
+	       $("#primary").removeClass('open');
+		   $("#header").removeClass('closed');
+	    }
+	});
+
+	$("#openAbout").click(function(){
+		$("#primary").addClass('right');
+		$("#about").addClass('open');
+	});
+	$("#openContact").click(function(){
+		$("#primary").addClass('left');
+		$("#contact").addClass('open');
+	});
+	
+	$(".closeOffCanvas").click(function(){
+		$("#about").removeClass('open');
+		$("#contact").removeClass('open');
+		$("#primary").removeClass('left');
+		$("#primary").removeClass('right');
+	});
 	
 	$(".subcat").addClass('close');
 	
@@ -142,6 +165,11 @@ $(document).ready(function(){
 
 // Slick Slider
 $('.product-slider').slick({
+  dots: true,
+  speed: 500
+});
+
+$('#lookbook').slick({
   dots: true,
   speed: 500
 });

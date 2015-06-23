@@ -11,10 +11,7 @@
 
         <header id="header">
         	<a id="toggle" > 
-				<!-- <span class="icon-logo-face"> </span>  -->
 				<span class="menu"> </span>
-				<!-- <span id="menu-text"> Menu </span> -->
-			
 			</a>
         	<a id="logotype" href="index">  <span class="icon-suffoca"></span> </a>
         	<div id="cart">
@@ -27,15 +24,10 @@
         </header>
 
         <nav id="primary">
-			
 			<div id="close-primary">
 				<span class="icon-close"> </span> 
 			</div>
-			
-			<div id="close-primary-hidden">
-				
-			</div>
-			
+			<div id="close-primary-hidden">	</div>			
 			<ul id="page-nav">
 				<li style=" "> 
 					<a href="index"> 
@@ -47,17 +39,12 @@
 						 Shop 
 					</a> </li>
 				<li style=" "> 
-					<a href="characters"> 
-						 Characters 
-					</a> 
-				</li>
-				<li style=" "> 
-					<a href="story"> 
-						 Story 
+					<a id="openAbout" href="#about"> 
+						 About 
 					</a> 
 				</li>
 				<li style=" ">
-					<a href="#contact"> 
+					<a id="openContact" href="#contact"> 
 						Contact
 					</a> 
 				</li>
@@ -83,8 +70,14 @@
 					</a>
 				</li>
 			</ul>
-			
-			
-			
-			
     	</nav>
+
+		<div id="about">
+    		<h1>About Content</h1>
+    		<div class="closeOffCanvas" id="closeAbout"><span class="icon-right"></span></div>
+    	</div>
+
+    	<div id="contact">
+    		<h1>Contact Content</h1>
+    		<div class="closeOffCanvas" id="closeContact"><span class="icon-left"></span></div>
+    	</div> 

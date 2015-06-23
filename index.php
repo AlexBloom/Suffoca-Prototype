@@ -155,12 +155,19 @@
 		<section>
 			<div class="instawrap">
 				<div class="insta-content">
-					<h3 class="instatitle">Instagram</h3>
+					<h3 class="instatitle">
+						<a href="http://instagram.com/suffoca"target=_blank>Instagram</a>
+					</h3>
+
 					<div id="instafeed"> </div>
 					
-					<h3 class="instatitle">
-						<a href="http://instagram.com/suffoca"target=_blank>Follow @Suffoca </a>
-					</h3>
+				<!-- 	<h3 class="instatitle">
+						<a href="http://mailchimp.com/"target=_blank> Subscribe </a>
+					</h3> -->
+					<form action="" id="email-subscribe">
+						<input id="email" type="text" value="email" placeholder="email">
+						<input id="submit" type="submit" value="subscribe">
+					</form>
 				</div>
 			</div>
 
