@@ -45,7 +45,7 @@
 				</li>
 				<li style=" ">
 					<a id="openContact" href="#contact"> 
-						Contact
+						Email
 					</a> 
 				</li>
 			</ul>
@@ -73,11 +73,24 @@
     	</nav>
 
 		<div id="about">
-    		<h1>About Content</h1>
+    		<div class="about-text">
+    			<p>Suffoca is a lifestyle brand and purveyor of visual storytelling. Sharing a creative view on travel, art and experience. </p>
+    			<p>Building on British ethics of preserving history and embracing the new, each creation has a relation to a previous experience. </p>
+    			<p>Creativity is in all of us. Some express it in different ways but there isn't a better feeling of creating something which really communicates, reflects a feeling, memory or solves a problem. </p>
+    			<h6> Creatures of habit • Masters of travel • Dreamers of creativity </h6>
+    			<img src="img/content/about/about_lounging.gif" alt="">
+    		</div>
     		<div class="closeOffCanvas" id="closeAbout"><span class="icon-right"></span></div>
     	</div>
 
     	<div id="contact">
-    		<h1>Contact Content</h1>
+    		
+    		<form id="email-form" action="">
+    			<input type="text" placeholder="Enter your email address here" class="email">
+    			<input type="text" placeholder="Type Message Here" class="message">
+    			
+    			<input type="submit" value="Send" class="send">
+    		</form>
+
     		<div class="closeOffCanvas" id="closeContact"><span class="icon-left"></span></div>
     	</div> 

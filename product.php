@@ -68,8 +68,9 @@
 						  
 							  
 						 	  <input type="submit" value="Add to Cart" id="add-to-cart" />
-						  
+								
 						   </form>
+						   <h6><a href="shop" id="back-to-shop">Back to Shop</a></h6>
 					</aside>
 					</header>
 					

@@ -155,19 +155,16 @@
 		<section>
 			<div class="instawrap">
 				<div class="insta-content">
-					<h3 class="instatitle">
-						<a href="http://instagram.com/suffoca"target=_blank>Instagram</a>
-					</h3>
-
 					<div id="instafeed"> </div>
+
+					<h3 class="instatitle">
+						<a href="http://instagram.com/suffoca"target=_blank>Instagram Feed</a>
+					</h3>
 					
 				<!-- 	<h3 class="instatitle">
 						<a href="http://mailchimp.com/"target=_blank> Subscribe </a>
 					</h3> -->
-					<form action="" id="email-subscribe">
-						<input id="email" type="text" value="email" placeholder="email">
-						<input id="submit" type="submit" value="subscribe">
-					</form>
+					
 				</div>
 			</div>
 
@@ -181,9 +178,6 @@
 			</div>
 		</section>
 
-		
-		
-		
 	    <ul class="posts">
 	     	<li style="background-image:url(img/content/adventures/la_01.jpg)">
 				
@@ -318,4 +312,9 @@
     
 <?php include_once'inc/loader.inc' ?>
 
+<form action="" id="email-subscribe">
+		<h6>Subscribe</h6>
+		<input id="email" type="text" value="Your Email" placeholder="Your Email">
+		<input id="submit" type="submit" value="OK">
+	</form>
 <?php include_once'inc/footer.inc' ?>

@@ -52,8 +52,8 @@ $(document).ready(function($) {
 
 // build tween
 var titleFade = TweenMax.fromTo(".post-title", 1.5, 
-		{scale: 1, opacity:1 },
-		{scale: .75, opacity:0}
+		{opacity:1 },
+		{opacity:0}
 	);
 	
 // build scene

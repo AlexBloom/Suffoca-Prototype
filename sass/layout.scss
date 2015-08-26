@@ -72,7 +72,20 @@ body{
 		cursor:pointer;
 		@include transition-tenth-sec;
 		@include teo;
+		
+		&:hover{
+			span.menu{
+				transform:rotateY(180deg);
+				-webkit-transform:rotateY(180deg);
+				-moz-transform:rotateY(180deg);
+				-ms-transform:rotateY(180deg);
+			}
+			
+		}
+		
 		span.menu{
+			@include transition-tenth-sec;
+			@include teo;
 			background:url(../img/UI/logos/menu-icon.png);
 			background:url(../img/UI/logos/menu-icon.svg);
 			@include full-bleed-background;
@@ -88,6 +101,7 @@ body{
 		margin:0;
 		letter-spacing:.05rem;
 		display:inline-block;
+		@include transition-bounce;
 		&:hover{
 			transform: scale(1.2);
 			-webkit-transform: scale(1.2);
@@ -119,18 +133,30 @@ body{
 		
 		#shop-link{
 			position:relative;
-			line-height:1.5;
-			background-color:$brand-color-secondary;
-			color:$white;
+			line-height:1.35;
+			//background-color:$brand-color-secondary;
+			border:2px solid $grey-dark;
+			border-radius:.5em;
+			-ms-border-radius:.5em;
+			-moz-border-radius:.5em;
+			-webkit-border-radius:.5em;
+			//line-height:1;
+			//color:$white;
+			font-size:10px;
+			letter-spacing:.1em;
 			font-weight:700;
-			padding:0 2em;
-			margin:.5em 0;
+			padding:.25em 1.5em;
+			margin:.5em;
 			display:block;
-			@include transition-tenth-sec;
-			@include teo;
-			@include transition-ease-in;
+			@include transition-bounce;
 			&:hover{
-				transform: scaleX(1.2);
+				//padding:.25em 2em;
+				//margin:.5em .25em;
+				transform: scale(1.2);
+				-ms-transform: scale(1.2);
+				-moz-transform: scale(1.2);
+				-webkit-transform: scale(1.2);
+				
 			}
 		}
 		
@@ -212,7 +238,7 @@ body{
 		@include transition-tenth-sec;
 		@include transition-ease-out;	
 		position:fixed;
-		top:100%;
+		top:100vh;
 		bottom:0;
 		left:0;
 		right:0;
@@ -243,18 +269,17 @@ body{
 	}
 	&.scrolled{
 		#close-primary{
-			padding:.5rem;
+			padding:.75em;
 		}
 		#social-nav{
 			padding:.5rem .5rem;
 		}
 	}
 	#close-primary{
-
 		position:fixed;
 		top:0;
 		left:0;
-		padding:.5em;
+		padding:.75em;
 		width:1em;
 		height:1.5em;
 		cursor:pointer;
@@ -287,31 +312,15 @@ body{
 	}
 	#page-nav{
 	
-		@include transition-tenth-sec;
+		@include transition-bounce;
 		@include teo;
 		text-align:left;
 		z-index:1;
 		@extend %clearfix;
 		width:100%;
 		max-width:(em(600));
-		margin:$spacing-unit *4 auto $spacing-unit;
+		margin:$spacing-unit *4 auto $spacing-unit*2;
 		padding:0;
-		@media screen and (min-width:$desktop){
-			
-			//max-width:(em(125));
-		}
-		//&:before, &:after{
-		//	@include pseudo-block;
-		//	top:0;
-		//	bottom:0;
-		//	cursor:pointer;
-		//}
-		//&:before{
-		//	left:0;
-		//}
-		//&:after{
-		//	right:0;
-		//}
 		
 		li{	
 			font-size:$base-font-size *4;	
@@ -326,27 +335,15 @@ body{
 				color:rgba(0,0,0,1);
 				display:block;
 				margin:0;
-				padding:0 .5em;
-				@include transition-quarter-sec;
-				@include teo;
+				padding:.5rem .5em;
+				@include transition-bounce;
 				&:hover{
-					//background:url(../img/UI/nav/static.gif) repeat;
-					//-webkit-background-clip: text;
-					//background-clip:text;
-					//-moz-background-clip:text;
-					
 					color:$black;
-					//color:rgba(0,0,0,0);
-					
-					//-webkit-mask-image: url(../img/UI/nav/static.gif);
-					//	 -o-mask-image: url(../img/UI/nav/static.gif);
-					//   -moz-mask-image: url(../img/UI/nav/static.gif);
-					//	    mask-image: url(../img/UI/nav/static.gif);
-						   //text-shadow: 0px 0px 30px rgba(30, 28, 28, 0.6);}
-					
-					transform:scale(1.2);
-					//letter-spacing:.1em;
-					@include teo;
+					transform:scale(1.15);
+					-webkit-transform:scale(1.15);
+					-moz-transform:scale(1.15);
+					-ms-transform:scale(1.15);
+					//@include teo;
 				}
 				@media screen and (min-width:$tablet){
 					font-size:$base-font-size *5;
@@ -355,20 +352,23 @@ body{
 		}		
 	}
 	#social-nav{
-		position:fixed;
-		top:0;
-		right:0;
+		//position:fixed;
+		//top:0;
+		//right:0;
 		
 		font-size:$small-font-size;
 		padding:.5em 1em;
 		z-index:1;
+		width:10em;
+		margin:0 auto;
 		li{
 			float:left;
-			width:auto;
+			width:33%;
 		}
 		a{
 			display:block;
 			padding:.25em 1em;
+			color:$grey;
 			span{
 				font-size:1.5em;
 			}
@@ -376,7 +376,7 @@ body{
 				
 			}
 			&:hover{
-				color:$grey;
+				color:$black;
 				//box-shadow:0px 2px 0 0 $black;
 				//text-decoration:underline;
 			}
@@ -390,18 +390,22 @@ body{
 		width:100%;
 		max-width:(em(600));
 		padding:0;
-		margin:0 auto;
+		margin:0 auto $spacing-unit;
 		position:relative;
 		font-size:$base-font-size;
+		text-align:center;
 		input[type="text"]{
-			font-size:3em;
+			text-align:center;
+			font-size:2.5em;
 			//width:100%;
 			margin:0 1em;
 			padding:0;
-			border-bottom:1px solid black;
+			color:$black;
+			//border-bottom:1px solid black;
 			//padding:0 $spacing-unit;
 			//margin:1em 5%;
 		}
+
 		&:hover{
 			input[type="submit"]{
 				//opacity:1;
@@ -411,7 +415,7 @@ body{
 			font-size:1.5em;
 			opacity:0;
 			padding:1em;
-			color:$grey;
+			//color:$grey;
 			position:absolute;
 			right:0;
 			top:0;
@@ -424,6 +428,22 @@ body{
 	}
 }
 
+		::-webkit-input-placeholder {
+		   color: $black;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: $black;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: $black;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: $black;  
+		}
+
 /* =========================== Off Site Slide In Pages */
 
 #about, #contact{
@@ -432,6 +452,8 @@ body{
 	bottom:0;
 	width:100%;
 	@include transition-quarter-sec;
+	display:flex;
+	display:-webkit-flex;
 	//opacity:0;
 	z-index:0;
 	background-color:$white;
@@ -444,28 +466,100 @@ body{
 		right:0;
 		z-index:2000;
 		opacity:1;
+		.closeOffCanvas{
+			z-index:1;
+			opacity:1;
+		}
 	}
 }
+
 //off-canvas-left
 #about{	
-	left:-100%;
-	right:100%;
+	left:-100vw;
+	right:100vw;
+
+	.about-text{
+		max-width:(em(800));
+		margin:auto;
+		text-transform:uppercase;
+		letter-spacing:.05em;
+		font-size: $small-font-size;
+		font-weight:bold;
+		img{
+			width:80%;
+		}
+		h6{
+			text-align:center;
+		}
+	}
+
 }
+
+
+
 //off-canvas-right
 #contact{
-	left:100%;
-	right:-100%;
+	left:100vw;
+	right:-100vw;
 }
+#email-form{
+	width:50%;
+	max-width:(em(500));
+	margin:auto;
+	padding:$spacing-unit*2 $spacing-unit;
+	input{
+		text-transform:uppercase;
+		clear:both;
+		text-align:center;
+		display:block;
+		margin:$spacing-unit auto;
+	}
+	.email{
+		border:1px solid $grey;
+		padding:.5em 1.5em;
+		font-size:10px;
+		min-width:em(350);
+		font-weight:bold;
+		letter-spacing: .05em;
+	}
+	.message{
+		color:$black;
+		font-size:2em;
+		width:100%;
+		letter-spacing: .05em;
+		text-align:center;
+		border:none;
+		outline:none;
+		text-transform:uppercase;
+		font-family:$sans-bold;
+	}
+	.send{
+		text-transform:none;
+		background-color:$white;
+		color:$grey;
+		border:2px solid $grey;
+		border-radius:2em;
+		padding:1em 2em;
+		&:hover, &:active{
+			color:$black;
+			border:2px solid $black;
+		}
+	}
+}
+
+
 
 .closeOffCanvas{
 	position:fixed;
 	top:50%;
 	height:1px;
 	line-height:.5;
-	z-index:1;
+	z-index:0;
 	color:$black;
 	font-size:2em;
 	cursor:pointer;
+	opacity:0;
+	font-weight:bold;
 }
 #closeAbout{
 	right:1em;
@@ -555,10 +649,8 @@ body{
 	z-index:-1;
 	background-color:$off-white;
 	width:100%;
-	height:80vh;
+	height:100vh;
 	text-decoration:none;
-	//position:relative;
-	//margin-top:4em;
 	display:flex;
 	display:-webkit-flex;
 	
@@ -639,7 +731,8 @@ body{
 		-webkit-box-sizing:border-box;
 		//border:1px solid black;
 		@include transition-tenth-sec;
-		font-size:$small-font-size;
+		font-size:10px;
+		
 		font-family:$sans-regular;
 		text-transform:uppercase;
 		letter-spacing:.05em;
@@ -649,7 +742,7 @@ body{
 		display:none;
 	}
 	dd, li{
-		color:$grey-dark;
+		color:$grey;
 		cursor:pointer;
 		//float:left;
 		display:inline-block;
@@ -669,7 +762,7 @@ body{
 	z-index:500;
 	background-color:$off-white;
 	padding: 0;
-	margin-top:75vh;
+	margin-top:90vh;
 }
 
 .posts{
@@ -1099,18 +1192,7 @@ body{
 		line-height:1.5;
 		
 	}
-	@media screen and (min-width:$desktop){
-		//background-size:50%;
-		//background-position:0 50%;
-		//background-color:$grey-dark;
-		//section{
-		//	h1{
-		//		margin:.5em 0 0 0;
-		//	}
-		//	width:50%;
-		//	float:right;
-		//}
-	}
+
 }
 
 #shop-intro{
@@ -1141,7 +1223,7 @@ body{
 #lookbook-modal{
 	&.fixed{
 		position:fixed;
-		top:-200px;
+		top:-100vh;
 		left:0;
 		right:0;
 		bottom:100%;
@@ -1746,32 +1828,6 @@ article.post{
 		p{}
 	}
 	
-
-//	.contributor-links{
-//		list-style:none;
-//		margin:0;
-//		li{
-//			float:left;
-//			padding:0;
-//			margin:0;
-//		}
-//		a{
-//			text-decoration:none;
-//			box-shadow:none;
-//			color:$grey;
-//			&:hover{
-//				color:$grey-dark;
-//			}
-//			&:active{
-//				color:$black;
-//			}
-//			&:visited{
-//				color:$grey-light;
-//			}
-//		}
-//	}
-//
-	
 	footer{
 		position:relative;
 		background-color:$off-white;
@@ -2007,10 +2063,20 @@ article.product{
 			}
 		}
 		#add-to-cart{
+			padding: .5em 2em;
+			@include transition-bounce;
 			&:hover{
-				//transform:scale(1.1);
-				box-shadow:0 0 0 4px $brand-color-secondary;
+				transform:scale(1.1);
+				-webkit-transform:scale(1.1);
+				-moz-transform:scale(1.1);
+				-ms-transform:scale(1.1);
+				box-shadow:0 0 0 2px $brand-color-secondary;
 			}
+		}
+		#back-to-shop{
+			display:block;
+			font-size:10px;
+			color:$grey-light;
 		}
 		
 	}

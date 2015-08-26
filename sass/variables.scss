@@ -105,6 +105,20 @@ transition-duration: .25s;
 	transition-timing-function: ease-out;
 }
 
+@mixin transition-bounce{
+-webkit-transition: all 250ms cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+-webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+   -moz-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+     -o-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+        transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+
+-webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+-webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+   -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+     -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+        transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+}
+
 @mixin transition-tenth-sec {
 	-webkit-transition-duration: .15s;
 	-moz-transition-duration: .15s;

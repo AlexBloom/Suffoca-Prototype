@@ -124,18 +124,46 @@ font-weight: 700;
 
 form#email-subscribe{
 	text-align:center;
-	margin-top:1.5em;
+	margin:0;
+	padding:$spacing-unit 0;
+	background-color:$black;
+	color:$grey;
+	h6{
+		color:$white;
+		font-size:$small-font-size;
+		margin-bottom:0;
+	}
 	#email{
+
 		font-size:$small-font-size;
 		padding:1em;
-		min-width:50%;
-		box-shadow:inset 0 0 0 2px $grey-light;
+		min-width:(em(300));
+		box-shadow:inset 0 0 0 2px $grey-dark;
+		color:$grey-light;
+		
+		::-webkit-input-placeholder {
+		   color: $grey;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: $grey;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: $grey;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: $grey;  
+		}
 	}
 	#submit{
 		//box-shadow:1px  $grey-light;
-		background-color:$grey;
+		background-color:$white;
+		color:$grey;
 		&:hover{
-			background-color:$brand-color-secondary;
+			//background-color:$brand-color-secondary;
+			color:$black;
 		}
 	}
 }
@@ -324,12 +352,14 @@ article{
 	
 	div.insta-content{
 		margin:auto;
+		padding-top:$spacing-unit*2.5;
 	}
 
 	.instatitle{
+		font-size:$small-font-size;
 		text-align:center;
-		color:$grey;
-		margin:$spacing-unit/2 0;
+		color:$grey-light;
+		margin:$spacing-unit 0;
 		a{
 			color:$grey;
 			@include transition-tenth-sec;
@@ -341,10 +371,11 @@ article{
 	}
 	#instafeed{
 		@extend %clearfix;
-		width:100%;
+		//width:100%;
+		padding:0 $spacing-unit;
 		img{
 			float:left;
-			width:29%;
+			width:29.333%;
 			padding:0 2%;
 			margin:0;
 			@include transition-tenth-sec;
@@ -378,8 +409,8 @@ article{
 		position:absolute;
 		display:block;
 		top:0;
-		min-width:100%;
-		min-height: 100%;
+		width:100%;
+		height: 100%;
 		bottom:0;
 		left:0;
 	}
