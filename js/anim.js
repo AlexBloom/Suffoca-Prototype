@@ -69,11 +69,11 @@ var bgPost = TweenMax.fromTo(".page-header", 1.5,
 	//{css:{"background-position":"50% 50%"}},
 	//{css:{"background-position":"50% 100%"}}
 	{top:0, opacity:1  },
-	{top:-200, opacity:.5 }
+	{top:-300, opacity:0.75 }
 	);
 	
 // build scene
-var scene = new ScrollScene({triggerElement: ".page-content", duration: dur, offset: -300 })
+var scene = new ScrollScene({triggerElement: "body", duration: dur, offset: -300 })
 	//.setTween(titleFade)
 	.setTween(bgPost)
 	

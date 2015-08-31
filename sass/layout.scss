@@ -64,35 +64,69 @@ body{
 		top:0;
 		left:0;
 		z-index:1000;
-		width:6em;
-		padding:.75em 1em;
+		width:24px;
+		height:21px;
+		padding:0;
 		@media screen and (min-width:$phablet){
 			padding:1.25em;
 		}
 		cursor:pointer;
-		@include transition-tenth-sec;
-		@include teo;
-		
-		&:hover{
-			span.menu{
-				transform:rotateY(180deg);
-				-webkit-transform:rotateY(180deg);
-				-moz-transform:rotateY(180deg);
-				-ms-transform:rotateY(180deg);
-			}
+		span.menu{
+			width:50%;
+			height:21px;
+			position:relative;
 			
+			.icon-menu{
+				position:absolute;
+				width:12px;
+				height:18px;
+				margin:0;
+				padding:0;
+				-webkit-transition: all 150ms cubic-bezier(0.5, 0, 0.345, 1); /* older webkit */
+				-webkit-transition: all 150ms cubic-bezier(0.5, -0.2, 0.345, 1.80); 
+				   -moz-transition: all 150ms cubic-bezier(0.5, -0.2, 0.345, 1.80); 
+				     -o-transition: all 150ms cubic-bezier(0.5, -0.2, 0.345, 1.80); 
+				        transition: all 150ms cubic-bezier(0.5, -0.2, 0.345, 1.80); /* easeInOutBack */
+
+				-webkit-transition-timing-function: cubic-bezier(0.5, 0, 0.345, 1); /* older webkit */
+				-webkit-transition-timing-function: cubic-bezier(0.5, -0.2, 0.345, 1.80); 
+				   -moz-transition-timing-function: cubic-bezier(0.5, -0.2, 0.345, 1.80); 
+				     -o-transition-timing-function: cubic-bezier(0.5, -0.2, 0.345, 1.80); 
+				        transition-timing-function: cubic-bezier(0.5, -0.2, 0.345, 1.80); /* easeInOutBack */
+			}
+		}
+		span.menu-l{
+			.icon-menu{
+				bottom:0px;
+			}	
+		}
+		span.menu-r{
+			.icon-menu{
+				bottom:3px;	
+			}
+		}
+		&:hover{			
+			span.menu-r{
+				.icon-menu{
+					bottom:0;
+				}
+			}	
 		}
 		
 		span.menu{
-			@include transition-tenth-sec;
-			@include teo;
-			background:url(../img/UI/logos/menu-icon.png);
-			background:url(../img/UI/logos/menu-icon.svg);
-			@include full-bleed-background;
-			line-height:1.875;
+			//@include transition-tenth-sec;
+			//@include teo;
+			//background:url(../img/UI/logos/menu-icon.png);
+			//background:url(../img/UI/logos/menu-icon.svg);
+			//@include full-bleed-background;
+			//line-height:1.875;
 			float:left;
-			width:2em;
+			width:50%;
 			height:1.5em;
+			//background-color:blue;
+			display:block;
+			padding:0;
+			margin:0;
 			//margin:.5em .25em;
 		}
 	}
@@ -109,14 +143,16 @@ body{
 			-ms-transform: scale(1.2);
 			//transform: rotate(5deg);
 		}
-		span{
+		.icon-wordmark{
+			display:inline-block;
+			width:110px;
 			font-size:$base-font-size ;
-			margin:0;
+			margin:.25em 0 0;
 			line-height:1.5;
 			@media screen and (min-width:$phablet){
-				font-size:$base-font-size *1.25;
-				margin:0;
-				line-height:2;
+			    font-size:$base-font-size *1.25;
+				margin:.5em 0 .25em;
+				line-height:1.5;
 			}
 		}
 	}
@@ -133,9 +169,9 @@ body{
 		
 		#shop-link{
 			position:relative;
-			line-height:1.35;
+			line-height:1.5;
 			//background-color:$brand-color-secondary;
-			border:2px solid $grey-dark;
+			box-shadow:0 0 0 1.5px #333;
 			border-radius:.5em;
 			-ms-border-radius:.5em;
 			-moz-border-radius:.5em;
@@ -143,19 +179,30 @@ body{
 			//line-height:1;
 			//color:$white;
 			font-size:10px;
-			letter-spacing:.1em;
-			font-weight:700;
+			letter-spacing:.15em;
+			font-weight:600;
 			padding:.25em 1.5em;
-			margin:.5em;
+			margin:.5em .5em;
 			display:block;
+			-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 			@include transition-bounce;
+
 			&:hover{
+				color:$white;
+				background-color:$grey-dark;
+				box-shadow:0 0 0 1.5px $grey-dark;
+
+							animation:wiggle .4s;
+						-ms-animation:wiggle .4s;
+					   -moz-animation:wiggle .4s;
+					-webkit-animation:wiggle .4s;
 				//padding:.25em 2em;
 				//margin:.5em .25em;
-				transform: scale(1.2);
-				-ms-transform: scale(1.2);
-				-moz-transform: scale(1.2);
-				-webkit-transform: scale(1.2);
+				//transform: scale(1.2);
+				//-ms-transform: scale(1.2);
+				//-moz-transform: scale(1.2);
+				//-webkit-transform: scale(1.2);
 				
 			}
 		}
@@ -166,25 +213,31 @@ body{
 			padding:0;
 			margin:.5em 0;
 			color:$grey-dark;
-			border:1px solid #cccccc;
+			font-size:10px;
+			line-height:1.5;
+			box-shadow:0 0 0 1px #cccccc;
+			//border:1px solid #cccccc;
 			@include round-corners;
 			overflow:hidden;
-			span{
+			>span{
 				display:block;
 				float:left;
+				padding:.25em 1em;
 			}
 			.cart{
-				padding:0em 1em;
+				//padding:0em 1em;
 			}
 			.total{
 				background-color:#e5e5e5;
-				padding:0em 1em;
+				//padding:0em 1em;
 
 			}
 
 			&:hover{
 				//background-color:$brand-color-secondary;
 				//color:$white;
+				background-color:#cccccc;
+				color:$black;
 				@include transition-tenth-sec;
 				@include teo;
 			}
@@ -206,6 +259,36 @@ body{
 	}
 	
 }
+
+@keyframes wiggle{
+			0%{transform:rotate(0deg);}
+		   35%{transform:rotate(-8deg);}
+		   50%{transform:rotate(6deg);}
+		   75%{transform:rotate(-4deg);}
+		   90%{transform:rotate(2deg);}
+		  100%{transform:rotate(0deg);}}
+	@-ms-keyframes wiggle{
+		    0%{-ms-transform:rotate(0deg);}
+		   35%{-ms-transform:rotate(-8deg);}
+		   50%{-ms-transform:rotate(6deg);}
+		   75%{-ms-transform:rotate(-4deg);}
+		   90%{-ms-transform:rotate(2deg);}
+		  100%{-ms-transform:rotate(0deg);}}
+   @-moz-keyframes wiggle{
+   	  0%{-moz-transform:rotate(0deg);}
+		   35%{-moz-transform:rotate(-8deg);}
+		   50%{-moz-transform:rotate(6deg);}
+		   75%{-moz-transform:rotate(-4deg);}
+		   90%{-moz-transform:rotate(2deg);}
+		  100%{-moz-transform:rotate(0deg);}}
+@-webkit-keyframes wiggle{
+			0%{-webkit-transform:rotate(0deg);}
+		   35%{-webkit-transform:rotate(-8deg);}
+		   50%{-webkit-transform:rotate(6deg);}
+		   75%{-webkit-transform:rotate(-4deg);}
+		   90%{-webkit-transform:rotate(2deg);}
+		  100%{-webkit-transform:rotate(0deg);}}
+
 
 .logo-subtitle{
 	position:fixed;
@@ -286,11 +369,23 @@ body{
 		text-align:center;
 		z-index:1;
 		@include transition-tenth-sec;
-		span.icon-close{
+		.icon-close{
+			display:block;
 			font-size:1.5rem;
+			width:21px;
+			height:21px;
 			line-height:1;
 			font-weight:bold;
+			.path1{
+				stroke-width:10px;
+			}
+			#icon-close{
+				.path1{
+					stroke-width:10px;
+				}
+			}
 		}
+		
 		span.close-text{
 			font-family:$sans-regular;
 			font-size:.75rem;
@@ -310,8 +405,7 @@ body{
 		z-index:0;
 		z-index:-1;
 	}
-	#page-nav{
-	
+	#page-nav{	
 		@include transition-bounce;
 		@include teo;
 		text-align:left;
@@ -351,11 +445,7 @@ body{
 			}
 		}		
 	}
-	#social-nav{
-		//position:fixed;
-		//top:0;
-		//right:0;
-		
+	#social-nav{		
 		font-size:$small-font-size;
 		padding:.5em 1em;
 		z-index:1;
@@ -377,16 +467,12 @@ body{
 			}
 			&:hover{
 				color:$black;
-				//box-shadow:0px 2px 0 0 $black;
-				//text-decoration:underline;
 			}
 		}
 	}	
 	#search{
 		display:block;
 		@extend %clearfix;
-		width:100%;
-		//max-width:(em(520));
 		width:100%;
 		max-width:(em(600));
 		padding:0;
@@ -649,7 +735,8 @@ body{
 	z-index:-1;
 	background-color:$off-white;
 	width:100%;
-	height:100vh;
+	height:95vh;
+	min-height:500px;
 	text-decoration:none;
 	display:flex;
 	display:-webkit-flex;
@@ -657,14 +744,14 @@ body{
 	@include full-bleed-background;
 	&:hover{
 		&:after{
-			background-color:rgba(0,0,0,.35);
+			//background-color:rgba(0,0,0,.35);
 		}
 	}
 	&:after{
 		@include transition-quarter-sec;
 		@include teo;
 		@include pseudo-mask;
-		background-color:rgba(0,0,0,.25);
+		background-color:rgba(0,0,0,.2);
 		//background:linear-gradient(0deg, rgba(0,0,0,.5), transparent);
 	}
 	section{
@@ -762,7 +849,7 @@ body{
 	z-index:500;
 	background-color:$off-white;
 	padding: 0;
-	margin-top:90vh;
+	margin-top:85vh;
 }
 
 .posts{
@@ -793,7 +880,7 @@ body{
 		
 		&:hover{
 			&:before{
-				background-color:rgba(0,0,0,.5);
+				background-color:rgba(0,0,0,.85);
 			}
 			
 		}
@@ -813,12 +900,7 @@ body{
 		@media screen and (min-width:$desktop) {
 			// width:25%;
 		}
-//		@media screen and (min-width:$jumbotron) {
-//			width:20%;
-//		}
-//		@media screen and (min-width:(em(2400))) {
-//			width:16.6667%;
-//		}
+
 		@include full-bleed-background;
 		
 		//WRAP POST AREA BG WITH LINK
@@ -1118,15 +1200,6 @@ body{
 	
 }
 
-
-
-
-
-
-
-
-
-
 .title{
 	text-transform:uppercase;
 	margin:1em 0 0 0;
@@ -1176,7 +1249,7 @@ body{
 	}
 	&:hover{
 		&:before{
-			background-color:rgba(0,0,0,.25);
+			//background-color:rgba(0,0,0,.25);
 		}		
 	}
 	section{
@@ -1270,8 +1343,7 @@ body{
 		.lookbook-title{
 			top:0;
 		}
-	}
-	
+	}	
 	.close-lookbook{
 		position:fixed;
 		top:0;
@@ -1294,6 +1366,8 @@ body{
 		}
 		.icon-close{
 			font-size:1.5em;
+			width:21px;
+			height:21px;
 			//color:$grey-light
 		}
 	}
@@ -1518,14 +1592,12 @@ body{
  */
 
 
-article.post{
-	
+article.post{	
 	small{
 		text-align:center;
 		display:block;
 		margin:0 auto;
-		color:$grey-light;
-		
+		color:$grey-light;	
 	}
 	position:relative;
 	header.post-header{
@@ -1546,8 +1618,8 @@ article.post{
 		color:rgba(255,255,255,1);
       
 		&:after{
-			@include pseudo-mask;
-			background-color:rgba(0,0,0,.35);
+			//@include pseudo-mask;
+			//background-color:rgba(0,0,0,.35);
 		}
 		.post-title{
 			//margin:auto;
@@ -1721,7 +1793,6 @@ article.post{
 				}
 		}
 	}
-
 	.categories{
 		position:absolute;
 		top:0;
@@ -1730,8 +1801,7 @@ article.post{
 		padding:$spacing-unit /2;
 		margin:0;
 		list-style:none;
-	}
-	
+	}	
 	.post-content{
 		margin-top:80vh;
 		background-color:$background-color;

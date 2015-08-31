@@ -9,11 +9,27 @@
    </head>
         <body>
 
+		<?php include_once("icons/suffoca.svg"); ?>
+
         <header id="header">
         	<a id="toggle" > 
-				<span class="menu"> </span>
+				<!-- <span class="menu"> </span> -->
+				<span class="menu menu-l"> 
+					<svg class="icon icon-menu">
+						<use xlink:href="#icon-menu"></use>
+					</svg>
+				</span>
+				<span class="menu menu-r"> 
+					<svg class="icon icon-menu">
+						<use xlink:href="#icon-menu"></use>
+					</svg>
+				</span>
 			</a>
-        	<a id="logotype" href="index">  <span class="icon-suffoca"></span> </a>
+        	<a id="logotype" href="index">  
+				<svg class="icon icon-wordmark">
+					<use xlink:href="#icon-wordmark"></use>
+				</svg>
+        	</a>
         	<div id="cart">
         		<a id="shop-link" href="shop"> Store </a>
         		
@@ -25,7 +41,12 @@
 
         <nav id="primary">
 			<div id="close-primary">
-				<span class="icon-close"> </span> 
+				<!-- <span class="icon-close">  -->
+				<span>
+					<svg class="icon icon-close">
+						<use xlink:href="#icon-close"></use>
+					</svg> 
+				</span>
 			</div>
 			<div id="close-primary-hidden">	</div>			
 			<ul id="page-nav">
@@ -80,7 +101,11 @@
     			<h6> Creatures of habit • Masters of travel • Dreamers of creativity </h6>
     			<img src="img/content/about/about_lounging.gif" alt="">
     		</div>
-    		<div class="closeOffCanvas" id="closeAbout"><span class="icon-right"></span></div>
+    		<div class="closeOffCanvas" id="closeAbout">
+    			<span> 
+	    		 	<img src="img/UI/nav/arrow_r.png" alt="back to main menu">
+	    		 </span>
+    		</div>
     	</div>
 
     	<div id="contact">
@@ -92,5 +117,9 @@
     			<input type="submit" value="Send" class="send">
     		</form>
 
-    		<div class="closeOffCanvas" id="closeContact"><span class="icon-left"></span></div>
+    		<div class="closeOffCanvas" id="closeContact">
+    		 <span> 
+    		 	<img src="img/UI/nav/arrow_l.png" alt="back to main menu">
+    		 </span>
+    		</div>
     	</div> 

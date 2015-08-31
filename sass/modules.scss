@@ -598,6 +598,8 @@ article{
 	display:block;
 	width:100%;
 	background-color:$white;
+	background:url(../img/UI/nav/loading_ride.jpg);
+	@include full-bleed-background;
 	color:$grey-light;
 	img{
 		width:5em;

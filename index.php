@@ -1,20 +1,12 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
-
 	<a href="post" id="home-header" class="page-header" style="background-image:url(img/content/adventures/la_01.jpg)">	
-		
 			<div id="post-title" class="post-title">
-					
 				<h1 class="title">The Golden Carrot</h1>
 				<p class="subtitle">The Barbican Centre, a golden carrot in the city of London...</p>
-				
 			</div>
-		
-
 	</a>  
-	
-
 
 	<div id="home-posts" class="page-content">
 		<dl class="filters">
