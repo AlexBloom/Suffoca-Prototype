@@ -24,6 +24,12 @@
 
 <article class="product">
 		
+		<div class="back-link-container">
+			<h6>
+				<a href="shop" id="back-to-shop">Back to Shop</a>
+			</h6>
+		</div>
+
 		<div class="product-slider">			
 				<div>
 					<header>
@@ -33,7 +39,7 @@
 							Product description goes here. Lots of stuff to describe. Custom this and that. New these and those.
 						</p>
 						<h6 class="price"> <strong> £40.00</strong> </h6>
-					</section>
+						</section>
 					<div class="featured-image">
 						<img src="img/content/products/Hoodie_01.jpg" alt="">
 					</div>
@@ -47,33 +53,15 @@
 									<option value=""> Medium </option>
 									<option value=""> Large </option>
 									<option value=""> X Large </option>
-							   </select>
-						   
-						   	   <p class="open-size-chart"><small>Sizing Chart</small></p>
-							   
-							  <!--  <select name="" id="">
-							   	<option value="-1"> Quantity </option>
-								<option value="">1</option>
-								<option value="">2</option>
-								<option value="">3</option>
-								<option value="">4</option>
-								<option value="">5</option>
-								<option value="">6</option>
-								<option value="">7</option>
-								<option value="">8</option>
-								<option value="">9</option>
-								<option value="">10</option>
-							
-							   </select> -->	  	
-						  
-							  
-						 	  <input type="submit" value="Add to Cart" id="add-to-cart" />
+							   </select>	  	
+						 	  <input type="submit" value="Buy Now" id="add-to-cart" />
 								
 						   </form>
-						   <h6><a href="shop" id="back-to-shop">Back to Shop</a></h6>
 					</aside>
 					</header>
-					
+					<div class="size-chart-link">
+						<p class="open-size-chart"><small>Sizing Chart</small></p>
+					</div>
 				</div>			
 				<div style="background-image:url(img/content/products/Hoodie_01.jpg);">  </div>
 				<div style="background-image:url(img/content/products/Hoodie_01.jpg);"> </div>
@@ -82,8 +70,13 @@
 		</div> 
 		
 		
+
 		<section class="size-chart">
-			<span class="close-size-chart icon-close"></span>
+			<span class="close-size-chart">
+					<svg class="icon icon-close">
+						<use xlink:href="#icon-close"></use>
+					</svg> 
+			</span>
 			<div class="size-chart-float">
 				<img src="img/content/products/sizechart.png" alt="Sizechart">
 			</div>
@@ -120,24 +113,19 @@
     </ul>	
 </section>
 -->
+<!--
 <footer class="shop-footer">
-
-	
-
 	<div class="shipping">
 		<p>Shipping Worldwide - Returns within 10 days of purchase only, unless faulty. <span class="open-size-chart">Sizing Chart</span></p>
-	</div>
-	
+	</div>	
 	<dl class="payment"> 
-		<!-- <dt>Payments Accepted </dt> -->
+		 <dt>Payments Accepted </dt> 
 		<dd>Visa</dd>
 		<dd>Mastercard</dd>
 		<dd>Paypal</dd>
 	</dl>
-	
-	
 </footer>
-	
+-->	
 	
    
 

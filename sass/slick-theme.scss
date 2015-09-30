@@ -59,20 +59,21 @@ $slick-opacity-not-active: 0.75 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 16px;
+    width: 28px;
     line-height: 0px;
     font-size: 0px;
     cursor:pointer!important;
     background: transparent;
     color: transparent;
     bottom: 0;
-    padding:1.5rem!important;
-    margin: 1rem .5rem!important;
+    padding:16px;
+    margin:8px 20px;
     border: none;
     outline: none;
     font-weight:bold;
     z-index:1;
+    opacity:.75;
     &:hover, &:focus {
         outline: none;
         background: transparent;
@@ -89,11 +90,14 @@ $slick-opacity-not-active: 0.75 !default;
 }
 
 .slick-prev:before, .slick-next:before {
-    font-family: $slick-font-family;
-    font-family: 'Suffoca-Icons';
-    font-size: 24px;
+    //font-family: $slick-font-family;
+    //font-family: 'Suffoca-Icons';
+    
+    display:inline-block;
+    width:16px;
+    height:20px;
+    //font-size: 24px;
     line-height: 1;
-
     color: $grey;
     opacity: $slick-opacity-default;
     -webkit-font-smoothing: antialiased;
@@ -102,30 +106,34 @@ $slick-opacity-not-active: 0.75 !default;
 
 .slick-prev {
     left: 0;
+    opacity:.75;
+    background:url(../icons/PNG/prev.png) no-repeat;
+    background:url(../icons/SVG/prev.svg) no-repeat;
     [dir="rtl"] & {
         left: auto;
         right: 0;
     }
-    &:before {
-        content: "\e094";
-        [dir="rtl"] & {
-            content: $slick-next-character;
-        }
-    }
+   &:hover{
+    background:url(../icons/PNG/prev.png) no-repeat;
+    background:url(../icons/SVG/prev.svg) no-repeat;
+    opacity:1;
+   }
 }
 
 .slick-next {
+    opacity:.75;
     right: 0;
+    background:url(../icons/PNG/next.png) no-repeat;
+    background:url(../icons/SVG/next.svg) no-repeat;
     [dir="rtl"] & {
         left: 0;
         right: auto;
     }
-    &:before {
-        content: "\e095";
-        [dir="rtl"] & {
-            content: $slick-prev-character;
-        }
-    }
+  &:hover{
+    background:url(../icons/PNG/next.png) no-repeat;
+    background:url(../icons/SVG/next.svg) no-repeat;
+    opacity:1;
+  }
 }
 
 /* Dots */

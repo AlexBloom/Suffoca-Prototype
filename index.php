@@ -1,12 +1,14 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
-
-	<a href="post" id="home-header" class="page-header" style="background-image:url(img/content/adventures/la_01.jpg)">	
+	
+	<header>
+		<a href="post" id="home-header" class="page-header" style="background-image:url(img/content/adventures/la_01.jpg)">	
 			<div id="post-title" class="post-title">
 				<h1 class="title">The Golden Carrot</h1>
 				<p class="subtitle">The Barbican Centre, a golden carrot in the city of London...</p>
 			</div>
-	</a>  
+		</a> 
+	</header> 
 
 	<div id="home-posts" class="page-content">
 		<dl class="filters">
@@ -305,8 +307,11 @@
 <?php include_once'inc/loader.inc' ?>
 
 <form action="" id="email-subscribe">
+		
+		<p> YO! So I messed up and this will actually jump out of view when the new content is auto loaded in, or it will have to sit right here, and then the new posts will load in below it, your call, but I'm not sure it's a good idea to have an "actionable" block where someone is trying to enter an email right when they try to load new stuff. I feel like it will be distracting at best, and frustrating at worst. We could possibly do a fixed option, kinda like the header but ultra slim, and have it jump out of view after a certain scroll distance, but programming this could get tricky depending on which devices you want to run it on.</p>
+
 		<h6>Subscribe</h6>
 		<input id="email" type="text" value="Your Email" placeholder="Your Email">
 		<input id="submit" type="submit" value="OK">
-	</form>
+</form>
 <?php include_once'inc/footer.inc' ?>

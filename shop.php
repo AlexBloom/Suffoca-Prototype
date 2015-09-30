@@ -29,7 +29,11 @@
 				<div class="pane" style="background-image:url(img/content/lookbook/hitch_04.jpg)"> </div>
 				<div class="pane" style="background-image:url(img/content/lookbook/hitch_05.jpg)"> </div>				
 		</div>
-    <span class="close-lookbook"> <span class="icon-close"> </span> </span>
+    <!-- <span class="close-lookbook">  -->
+      <svg class="icon icon-close close-lookbook">
+        <use xlink:href="#icon-close"></use>
+      </svg> 
+    <!-- </span> -->
     <!-- <div class="button prev" onclick='lookbook.prev()'> <span class="icon icon-left"> </span> </div>  -->
         <!-- <div class="button next" onclick='lookbook.next()'> <span class="icon icon-right"> </span> </div> -->
 		

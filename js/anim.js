@@ -79,9 +79,6 @@ var scene = new ScrollScene({triggerElement: "body", duration: dur, offset: -300
 	
 	.addTo(controller);
 	
-	
-	
-	
 // build tween
 	var tween = TweenMax.fromTo(".next-up", .5,
 	{css:{"background-position":"50% 0%"}},
@@ -92,11 +89,6 @@ var scene = new ScrollScene({triggerElement: "body", duration: dur, offset: -300
 var scene = new ScrollScene({triggerElement: ".pagination", duration: dur, offset: -halfDur })
 				.setTween(tween)
 				.addTo(controller);
-
-// show indicators (requires debug extension)
-//scene.addIndicators();
-	
-	
 	
 	
 	//Close doc ready

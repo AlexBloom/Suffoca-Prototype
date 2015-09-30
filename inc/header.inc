@@ -77,17 +77,23 @@
 			<ul id="social-nav">
 				<li>
 					<a href="http://twitter.com/suffoca" target=_blank>
-						<span class="icon-twitter"></span>
+						<svg class="icon icon-twitter">
+							<use xlink:href="#icon-twitter"></use>
+						</svg>
 					</a>
 				</li>
 				<li>
 					<a href="http://instagram.com/suffoca" target=_blank>
-						<span class="icon-instagram"></span>
+						<svg class="icon icon-instagram">
+							<use xlink:href="#icon-instagram"></use>
+						</svg>
 					</a>
 				</li>
 				<li>
 					<a href="http://youtube.com/suffoca" target=_blank>
-						<span class="icon-youtube"></span>
+						<svg class="icon icon-youtube">
+							<use xlink:href="#icon-youtube"></use>
+						</svg>
 					</a>
 				</li>
 			</ul>
@@ -95,10 +101,15 @@
 
 		<div id="about">
     		<div class="about-text">
-    			<p>Suffoca is a lifestyle brand and purveyor of visual storytelling. Sharing a creative view on travel, art and experience. </p>
-    			<p>Building on British ethics of preserving history and embracing the new, each creation has a relation to a previous experience. </p>
-    			<p>Creativity is in all of us. Some express it in different ways but there isn't a better feeling of creating something which really communicates, reflects a feeling, memory or solves a problem. </p>
-    			<h6> Creatures of habit • Masters of travel • Dreamers of creativity </h6>
+    			<p> 05. <br>
+				Suffoca is a lifestyle brand and upholder of visual story telling, sharing a creative view on travel, art and experience. </p>
+
+				<p> Building on a British tradition of preserving history, whilst embracing the new, each creation has a connection to a past experience. </p>
+
+				<p> Creativity is in all of us and there is no better feeling than creating something that truly communicates, evokes a feeling, triggers a memory or solves a problem. </p>
+
+				<h6> Creatures of habit - Masters of travel - Dreamers in creativity. </h6>
+
     			<img src="img/content/about/about_lounging.gif" alt="">
     		</div>
     		<div class="closeOffCanvas" id="closeAbout">

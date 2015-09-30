@@ -1,11 +1,8 @@
 <?php include_once'inc/head.inc' ?>
 <?php include_once'inc/header.inc' ?>
 
-<style>
-	
-</style>
 <article class="post">
-    <header class="post-header page-header" style="background-image:url(img/content/adventures/blogtest.jpg)">
+    <header class="page-header" style="background-image:url(img/content/adventures/blogtest.jpg)">
 		
 		<div class="post-title">
 			<span class="date">2015.01.18</span>
