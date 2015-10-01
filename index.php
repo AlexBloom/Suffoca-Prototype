@@ -302,16 +302,10 @@
 		
 	</div>
 	
-	<script src="js/home-anim.js"> </script>
-    
-<?php include_once'inc/loader.inc' ?>
+<div class="pagination">
+	<?php include_once'inc/loader.inc' ?>
+</div>
 
-<form action="" id="email-subscribe">
-		
-		<p> YO! So I messed up and this will actually jump out of view when the new content is auto loaded in, or it will have to sit right here, and then the new posts will load in below it, your call, but I'm not sure it's a good idea to have an "actionable" block where someone is trying to enter an email right when they try to load new stuff. I feel like it will be distracting at best, and frustrating at worst. We could possibly do a fixed option, kinda like the header but ultra slim, and have it jump out of view after a certain scroll distance, but programming this could get tricky depending on which devices you want to run it on.</p>
 
-		<h6>Subscribe</h6>
-		<input id="email" type="text" value="Your Email" placeholder="Your Email">
-		<input id="submit" type="submit" value="OK">
-</form>
+
 <?php include_once'inc/footer.inc' ?>

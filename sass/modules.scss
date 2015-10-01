@@ -596,17 +596,32 @@ article{
 }
 
 .loader{
+	&:before{
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    /* background-color: rgba(0,0,0,0); */
+	    z-index: 1;
+	    content: ' ';
+	}
 	text-align:center;
-	padding:$spacing-unit /2 0;
+	padding:$spacing-unit 0;
 	display:block;
 	width:100%;
 	background-color:$white;
+	color:$white;
 	background:url(../img/UI/nav/loading_ride.jpg);
 	@include full-bleed-background;
-	color:$grey-light;
+	//color:$grey-light;
 	img{
-		width:5em;
+		width:50vw;
+		min-width:4em;
+		max-width:20em;
 		margin:0 auto;
+		position:relative;
+		z-index:2;
 	}
 }
 

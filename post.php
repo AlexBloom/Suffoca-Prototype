@@ -5,7 +5,7 @@
     <header class="page-header" style="background-image:url(img/content/adventures/blogtest.jpg)">
 		
 		<div class="post-title">
-			<span class="date">2015.01.18</span>
+			<!-- <span class="date">2015.01.18</span> -->
 	        <h1 class="title">The Great Swim</h1>
 	        <p class="subtitle">Article Subtitle or introductory text that goes from a few words to a paragraph.</p>
 		</div>
@@ -30,11 +30,28 @@
 	
 	<section class="post-content page-content">
 	   	<nav class="share">
-			Share
-	   		<a href="http://facebook.com/share"><span class="icon-facebook"></span></a>
-	   		<a href="http://twitter.com/share"><span class="icon-twitter"></span></a>
-	   		<a href="http://tumblr.com/share"><span class="icon-tumblr"></span></a>
-			<a href="http://google.com/share"><span class="icon-google-plus"></span></a>
+			<span> Share </span>
+
+					<a href="http://facebook.com/share">
+						<svg class="icon icon-facebook" alt="facebook">
+							<use xlink:href="#icon-facebook"></use>
+						</svg>
+			   		</a>
+					<a href="http://twitter.com/share">
+			   			<svg class="icon icon-twitter" alt="twitter">
+							<use xlink:href="#icon-twitter"></use>
+						</svg>
+			   		</a>	
+			   		<a href="http://tumblr.com/share">
+			   			<svg class="icon icon-tumblr" alt="tumblr">
+							<use xlink:href="#icon-tumblr"></use>
+						</svg>
+			   		</a>	
+					<a href="http://google.com/share">
+						<svg class="icon icon-google" alt="google">
+							<use xlink:href="#icon-google"></use>
+						</svg>
+					</a>
 	   	</nav>
 
 		
@@ -82,7 +99,6 @@
 	</section>
 	
     <footer> 
-		<!-- <h6>20 Comments <button class="show-comments"> SHOW </button> </h6> -->
 		
 		<section class="comments">
 			<div class="th-comment-area">
@@ -143,21 +159,19 @@
     </footer>
 </article>
 <div class="pagination">
-	<!-- <a href="post" class="prev">
-		<span class="icon-left"> </span>
-		<span class="prev-post-text">Prev Post Title</span>
-	</a> -->
-	<!-- <a href="post" class="next">
-		<span class="next-post-text">Next Post Title </span>
-		<span class="icon-right"> </span>
-	</a> -->
-		
-	<a href="post" class="next-up" style="background-image:url(img/content/adventures/post/6K3A1889.jpg)"> 
+	<a href="post" class="next-up slide-in-bg" style="background-image:url(img/content/adventures/post/6K3A1889.jpg)"> 
 		<h6>NEXT UP</h6>
 		<h1 class="next-post-title"> Riding the Clouds </h1>
 		<p class="subtitle"> What if we go on another adventure? </p>
 	</a>	
 </div>
+
+
+<form action="" id="email-subscribe">
+		<h6>Subscribe</h6>
+		<input id="email" type="text" value="Your Email" placeholder="Your Email">
+		<input id="submit" type="submit" value="OK">
+</form>
 
 
 <?php include_once'inc/footer.inc' ?>

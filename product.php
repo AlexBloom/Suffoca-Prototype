@@ -58,10 +58,11 @@
 								
 						   </form>
 					</aside>
-					</header>
 					<div class="size-chart-link">
 						<p class="open-size-chart"><small>Sizing Chart</small></p>
 					</div>
+					</header>
+					
 				</div>			
 				<div style="background-image:url(img/content/products/Hoodie_01.jpg);">  </div>
 				<div style="background-image:url(img/content/products/Hoodie_01.jpg);"> </div>

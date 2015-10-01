@@ -151,17 +151,6 @@ $(document).ready(function(){
 	
 
 
-	
-
-
-	
-	//Fire Swipe Classes for Sliders
-	window.featuredPosts = $('#featured-posts').Swipe().data('Swipe');
-	// window.product = $('#product-images').Swipe().data('Swipe');
-	window.lookbook = $('#lookbook').Swipe().data('Swipe');
-
-
-
 
 // Slick Slider
 $('.product-slider').slick({

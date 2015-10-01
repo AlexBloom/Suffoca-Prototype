@@ -114,7 +114,9 @@
     		</div>
     		<div class="closeOffCanvas" id="closeAbout">
     			<span> 
-	    		 	<img src="img/UI/nav/arrow_r.png" alt="back to main menu">
+	    		 	<svg class="icon icon-next">
+						<use xlink:href="#icon-next"></use>
+					</svg>
 	    		 </span>
     		</div>
     	</div>
@@ -130,7 +132,9 @@
 
     		<div class="closeOffCanvas" id="closeContact">
     		 <span> 
-    		 	<img src="img/UI/nav/arrow_l.png" alt="back to main menu">
+    		 	<svg class="icon icon-prev">
+						<use xlink:href="#icon-prev"></use>
+					</svg>
     		 </span>
     		</div>
     	</div> 

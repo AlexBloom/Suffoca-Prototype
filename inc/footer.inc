@@ -35,19 +35,10 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/vendor/slick.js"></script>
-		
-		
 		<script src="js/gsap/TweenMax.min.js"> </script>
-		<!-- // <script src="js/gsap/ScrollToPlugin.min.js"> </script> -->
-		<!-- // <script src="js/gsap/TextPlugin.min.js"> </script> -->
 		<script src="js/jquery.scrollmagic.min.js"></script>
-		
 		<script src="js/jquery.scrollmagic.debug.js"></script>
-		
 		<script src="js/anim.js"></script>
-		
-		
-		
         <script src="js/main.js"></script>
 
         <script>

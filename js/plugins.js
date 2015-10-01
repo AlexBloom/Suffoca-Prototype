@@ -123,7 +123,7 @@
  * Copyright 2013, MIT License
  *
 */
-
+/*
 function Swipe(container, options) {
 
   "use strict";
@@ -669,8 +669,6 @@ function Swipe(container, options) {
   }
 
 }
-
-
 if ( window.jQuery || window.Zepto ) {
   (function($) {
     $.fn.Swipe = function(params) {
@@ -680,3 +678,4 @@ if ( window.jQuery || window.Zepto ) {
     }
   })( window.jQuery || window.Zepto )
 }
+*/

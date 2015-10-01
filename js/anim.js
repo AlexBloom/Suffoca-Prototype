@@ -80,7 +80,7 @@ var scene = new ScrollScene({triggerElement: "body", duration: dur, offset: -300
 	.addTo(controller);
 	
 // build tween
-	var tween = TweenMax.fromTo(".next-up", .5,
+	var tween = TweenMax.fromTo(".slide-in-bg", .5,
 	{css:{"background-position":"50% 0%"}},
 	{css:{"background-position":"50% 50%"}}
 );
